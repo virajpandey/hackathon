@@ -49,7 +49,7 @@
  <text x="945" y="210" font-size="21">answer pieces</text>
  <text x="945" y="235" font-size="21">+ checksums</text>
  <text x="290" y="703" font-size="22">Squaring step: checked, goes through your computer</text>
- <text x="65" y="805" font-size="25">If one of the servers is yours, nobody else can get every piece</text>
- <text x="65" y="850" font-size="19" fill="#62625c">Now: 2 round trips per character. In the demo, all servers run on our desk.</text>
+ <text x="65" y="805" font-size="25">A server that changes one number is caught before its answer is used</text>
+ <text x="65" y="850" font-size="19" fill="#62625c">Now: 2 round trips per character. In real use, different people run the servers.</text>
 </g>
 </svg>

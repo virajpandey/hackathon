@@ -37,7 +37,7 @@ class Session:
                     threading.Thread(target=lambda p=process: ready.put(p.stdout.readline()), daemon=True).start()
                     message = ready.get(timeout=10)
                     if not message:
-                        raise RuntimeError("A local worker did not start")
+                        raise RuntimeError("A local server did not start")
                     port = json.loads(message)["port"]
                     spec = f"tcp:127.0.0.1:{port}"
                 self.links.append(Link(spec))
@@ -78,7 +78,7 @@ class Session:
         prompt = "".join(c for c in prompt.lower() if c in self.device.idx and c != "\n").strip()
         if not prompt:
             raise ValueError("Enter a short note in English")
-        if lie is not None and lie not in NAMES[:len(self.specs)]:
+        if lie is not None and (not isinstance(lie, str) or len(lie) != 1 or lie not in NAMES[:len(self.specs)]):
             raise ValueError("Choose one of the servers")
         with self.lock:
             normal = self.device.plain_text(prompt)

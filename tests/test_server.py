@@ -60,7 +60,7 @@ class ServerTests(unittest.TestCase):
 
     def test_bad_requests_do_not_run(self):
         for data in [None, [], {"prompt": ""}, {"prompt": 12}, {"prompt": "x" * 121},
-                     {"prompt": "hello", "lie": "D"}]:
+                     {"prompt": "hello", "lie": "D"}, {"prompt": "hello", "lie": "AB"}, {"prompt": "hello", "lie": ""}]:
             status, _, _ = self.request("POST", "/api/run", data)
             self.assertIn(status, (400, 413))
 

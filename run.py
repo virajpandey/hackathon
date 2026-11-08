@@ -61,7 +61,7 @@ class Handler(SimpleHTTPRequestHandler):
         except (ValueError, TypeError):
             return self.reply(400, {"error": "Use a short English prompt and an optional server letter"})
         except (OSError, EOFError, RuntimeError):
-            return self.reply(503, {"error": "A worker disconnected or timed out. Restart the server and retry."})
+            return self.reply(503, {"error": "A server disconnected or timed out. Restart the server and retry."})
         self.reply(200, result)
 
 
