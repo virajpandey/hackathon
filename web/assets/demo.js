@@ -113,6 +113,16 @@ async function tamper() {
     const data = source === "recorded" ? {...recording.tampered, mode: "recorded"} : await request(current.prompt, $("#liar").value);
     current = data;
     reset(); locations(data);
+    const ticket = ++serial;
+    const animate = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let text = data.prompt;
+    for (const step of data.steps) {
+      if (ticket !== serial) return;
+      text += step.char;
+      note(data.prompt, text);
+      view(step);
+      if (animate) await pause(20);
+    }
     if (data.rejected_view) view({view: data.rejected_view});
     note(data.prompt, data.private_text);
     $("#head-" + data.attack_node).classList.add("altered");

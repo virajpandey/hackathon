@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-08 14:09 UTC",
+  "recorded_at": "2026-11-08 14:33 UTC",
   "source": "Three local TCP worker processes; synthetic input; actual protocol execution",
   "honest": {
     "prompt": "patient reports chest",
@@ -11,36 +11,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "1de923caf2dc44c4",
-            "0e7ca2db62c8933f",
-            "1c001fbd9ac94d87",
-            "1e486163719f7439"
+            "19424676518688b0",
+            "147618b91f743925",
+            "1bacbf305dc1279d",
+            "169bcb649d4093b4"
           ],
           "node_shares": {
             "A": [
-              "16d0cb1c51bdbca6",
-              "012784cabd58c10f",
-              "11b1d08567c12413",
-              "1c5c4315e7987b40"
+              "1b3746ce178be476",
+              "02bc3d553639e876",
+              "1550bac116afb29f",
+              "07b5ed3c144d0aeb"
             ],
             "B": [
-              "010448fdd0c011ba",
-              "01d2c9fe38929ab0",
-              "07657de83ab49085",
-              "1fa2cbef1ddbcb83"
+              "1c3bd444bf27ec6b",
+              "0e460a3e341d3e9f",
+              "1760bb7991971096",
+              "1758e4b2923745b0"
             ],
             "C": [
-              "082aebe5dd823190",
-              "1d05b1370a14a442",
-              "06e8b1925d8a4b31",
-              "0400f0fafa8bb984"
+              "088ce4ed294c2f0e",
+              "0efdb86c95a8d8ec",
+              "134e89c557b93c93",
+              "00f12e11597bafad"
             ]
           },
           "opened_square_mask": [
-            "038a50f2ecf076dc",
-            "18a61bb3b5e14e48",
-            "056991eacba027c2",
-            "1bacd965fcf0f5f7"
+            "112e3c55635a43ab",
+            "0d89b71b5c89ac4a",
+            "0af0785c0d9bd8d0",
+            "02b52c09ed8a07d3"
           ]
         }
       },
@@ -48,36 +48,36 @@
         "char": "p",
         "view": {
           "device_sends": [
-            "03c9a2039e9c212d",
-            "14f53624a909285a",
-            "15b1fb7acac3d957",
-            "134164ca6c96193a"
+            "1f588b5a5caacd42",
+            "17c67e6d231c8de7",
+            "19043c02df997566",
+            "0926b5d33e53a5ab"
           ],
           "node_shares": {
             "A": [
-              "0f432e74ffc2f56b",
-              "0418ffeb7a468f73",
-              "1f09fbfe97e80d6c",
-              "1ae565848083f5ef"
+              "053b3d43696c6abd",
+              "1a8c1211273427ba",
+              "13550bb501deab76",
+              "02f837b1b708ec62"
             ],
             "B": [
-              "0a2d080cc7948d0c",
-              "037d5c96353050f7",
-              "127392bc7b8cc977",
-              "151b7106afb90373"
+              "18f5d08189402ea5",
+              "142248a25ca8d114",
+              "14899d4e55ddccb5",
+              "0c2c3c9ff6cc294e"
             ],
             "C": [
-              "068fc97e38a87d5b",
-              "1869a37e50891f74",
-              "0e827144ec8b292d",
-              "0fff2974cfc306b0"
+              "01cef23b0d536670",
+              "1151a54c7c23070f",
+              "182156fca84387e5",
+              "10db8bae522aea63"
             ]
           },
           "opened_square_mask": [
-            "065e582116e70618",
-            "06676314c7473f12",
-            "1c5f8352587b175e",
-            "0d0099d1c1f98324"
+            "15d9c08626c2c3d0",
+            "1a2fc7001af13de7",
+            "0083dde3c9cf8974",
+            "0a7b293a7a46b084"
           ]
         }
       },
@@ -85,36 +85,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "049070816741f4b9",
-            "0650bf98a748d075",
-            "0cb84660c048a493",
-            "0db64c8ffffacddd"
+            "0f8ae4a17b6fd199",
+            "1c4c150296c56bef",
+            "0c985efc1b5b4bda",
+            "13f619ead86df641"
           ],
           "node_shares": {
             "A": [
-              "14e72cc88ebe243a",
-              "15d01433bf7f3df8",
-              "1e4d98a85cc21714",
-              "0d5099179726f478"
+              "03ae1d393eca7f52",
+              "001bbe8e47374fcf",
+              "0ff85f1f0a43d0d8",
+              "06e3a7ce53095793"
             ],
             "B": [
-              "10c31a5cad82e7e1",
-              "18d9e702978800b4",
-              "076a74012062c005",
-              "01535ede32edb541"
+              "1c7da6b0a289bb5d",
+              "10ec6cf3f3fdd36f",
+              "09c548cc1146708d",
+              "01abf27ad1463b6b"
             ],
             "C": [
-              "1a55b8dac3bef3f1",
-              "115604c9a8f8c12d",
-              "1a47f35682db290d",
-              "115c080a35eb5631"
+              "1fd43c161eabc55d",
+              "0ef7d47dc4cadc9c",
+              "06425814e475bec2",
+              "177065b6dbb06cec"
             ]
           },
           "opened_square_mask": [
-            "0b76ca00dd30b233",
-            "0bdd874f1f21f11e",
-            "1c8fa3ec14498c5a",
-            "02a4c54456419cf3"
+            "07ed0d743867b630",
+            "12b8f3f9af0f6954",
+            "1f56fd2b091d3a3a",
+            "12261075194db2e5"
           ]
         }
       },
@@ -122,36 +122,36 @@
         "char": "i",
         "view": {
           "device_sends": [
-            "06ce67b5a907bb29",
-            "12b78692809792c8",
-            "15d4e424befa3b92",
-            "140c1811e8f08a51"
+            "1af439d2e1f1b1cf",
+            "05460f6ca2238d26",
+            "08a9165bd535d37c",
+            "192994a1e91a0690"
           ],
           "node_shares": {
             "A": [
-              "1a3ca0bd07527fc8",
-              "149242c7dfa6db10",
-              "0ddcf18c654140ea",
-              "00f4759c2811f9ac"
+              "147493a2478f4c9a",
+              "034ea016797f65af",
+              "14f6ac8fee3b1abb",
+              "0e85d9942d0ef215"
             ],
             "B": [
-              "17868656163f6d25",
-              "04973c983e1a49e9",
-              "0d5a139258da84ed",
-              "03e704f0c76d7725"
+              "10818237300ee824",
+              "06f7476e34ac5a19",
+              "1693ed9f76cf5018",
+              "1abe9719ebc5f659"
             ],
             "C": [
-              "0e3cd8ece26e131d",
-              "06d6809fe23edb01",
-              "04c8fae141e43a37",
-              "1b24857310808ef3"
+              "1b09ea268861cb4c",
+              "15ba187b51d44032",
+              "147565d09af5953a",
+              "16bb8f51e72b1755"
             ]
           },
           "opened_square_mask": [
-            "053cf40aa13c9b92",
-            "0239f5f190666790",
-            "1eaf6f78948c4b7b",
-            "0e0ab793b6a9f815"
+            "0d282813eb7d66d5",
+            "068f5eab88aa4145",
+            "09ce45ae81d213de",
+            "18bbf8fdbd53edd2"
           ]
         }
       },
@@ -159,36 +159,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "1023b517aff46410",
-            "1d7b4954c25f7754",
-            "04dabb4985036d5a",
-            "19a81f8d3aa239cb"
+            "05bd8c8e811588e4",
+            "0dec29ff9be474e3",
+            "1febcc261632460f",
+            "0657bc419c11463c"
           ],
           "node_shares": {
             "A": [
-              "0b71a5be8fb54b03",
-              "0d18886fdda34e0f",
-              "0a75c029d2aefa0c",
-              "1623e4d25b6ff794"
+              "1c5cfc9bf021791f",
+              "09ec3ab016cf0969",
+              "15786cd8644ceb8e",
+              "0441950335d3eb1c"
             ],
             "B": [
-              "025f4fbfd1ca11e3",
-              "153cd5000eec2506",
-              "032d01e51b1b444a",
-              "0c7e8957a9c755a2"
+              "1565d8f0bdb68ce1",
+              "1d38accab9d4ba12",
+              "04807c01453751df",
+              "0edec77cfb05d26b"
             ],
             "C": [
-              "122f0a819e80a2fe",
-              "1daaa29013708ce1",
-              "125d3df11235c1a1",
-              "1d5d91d5fac8b2e0"
+              "0e3d2a735227f9e3",
+              "18db18852f5c3c7b",
+              "06071726567bc28a",
+              "0cdfa37fcf264290"
             ]
           },
           "opened_square_mask": [
-            "0be7b35d51c83641",
-            "1a23714e51c09816",
-            "06263fceadde834c",
-            "1ea4e0a4a2ccb8de"
+            "09485ca2cd2b3c8f",
+            "030af2b85011e5b9",
+            "00dd568e9d70c80b",
+            "0b6bff461f337d42"
           ]
         }
       },
@@ -196,36 +196,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "04979dedc87e0744",
-            "03cf332fc8581725",
-            "14c6f181a979d2c8",
-            "1d96681db787185c"
+            "09700d6e2bc4707d",
+            "0914d3c3be5bd9b1",
+            "12f3292743ffe860",
+            "126ab5938d2674c1"
           ],
           "node_shares": {
             "A": [
-              "1303991ed7698e15",
-              "167618225bad977f",
-              "0d33e41dc3b5b806",
-              "0079dced835c8023"
+              "0c6fcf84c47b67a8",
+              "1665b7ee24e91979",
+              "04fbc19990fb60d8",
+              "0ee2bf5b79be2c46"
             ],
             "B": [
-              "0773eb0f7cf8bf49",
-              "0d7a58a44923b4ed",
-              "06c268759f4e6393",
-              "1ae87e511fc38e0e"
+              "0f5d1b622fbde6ec",
+              "1a71074d8175d77b",
+              "03d2e0c0432145d8",
+              "0d382ee20e6be03f"
             ],
             "C": [
-              "05887bd1ab9db28e",
-              "1c0f8f395b2eb3b5",
-              "0c09b36c9cfbe47c",
-              "049da4c15cdff1fe"
+              "043315190bc6b158",
+              "0f2940c459a10f2d",
+              "17315da62be35965",
+              "03e511c277d5f3aa"
             ]
           },
           "opened_square_mask": [
-            "00912a9facdcea7f",
-            "1e794fd92f7a7e7e",
-            "019aa795b081c2ee",
-            "0fef8f4524d28c5c"
+            "1aa6d66c49fca2ed",
+            "038adcc83ae8bb75",
+            "02fd5d2e8aa979cb",
+            "14497d4cad496cee"
           ]
         }
       },
@@ -233,36 +233,36 @@
         "char": "s",
         "view": {
           "device_sends": [
-            "09a508e7998a648b",
-            "0544b32b95106404",
-            "0386eedf949ef7e0",
-            "08f7df203c6aa95b"
+            "1a36218e396ab33c",
+            "1f5dbbe716968a66",
+            "0497d904bd81a849",
+            "05f8a72c6d60db4b"
           ],
           "node_shares": {
             "A": [
-              "1f9a8aa1802d4596",
-              "04654833254200cf",
-              "1cac5e56368b84bf",
-              "17e5add1d9669a0e"
+              "1d0add5acb9ffa57",
+              "170c0b488aeace7f",
+              "1db9266262a69082",
+              "06673da7409f1193"
             ],
             "B": [
-              "01afa41d5ed2b3f0",
-              "1b690409e4406130",
-              "0bef41eba7297374",
-              "022a31e64ad31975"
+              "1c63f164b593cf77",
+              "1c3182cd74ce6025",
+              "0aa85052023989ac",
+              "1586d45f3b38fe96"
             ],
             "C": [
-              "1eb5d1412100066a",
-              "0031b3c2f67d9e17",
-              "17645fbe224b07c6",
-              "05f02047dbc64c49"
+              "069131407ecc3622",
+              "0cc271ea0046d171",
+              "179e894b9b1fe5cb",
+              "0411edf98427efa3"
             ]
           },
           "opened_square_mask": [
-            "0938cc1a935d413b",
-            "1a7c321564b41e05",
-            "03c2bf8d3f3476db",
-            "0b208554e31659be"
+            "1eb2fedf8b47f260",
+            "01c9f77265b4d74a",
+            "042a70254d1342f0",
+            "11164ee8b43c682f"
           ]
         }
       },
@@ -270,36 +270,36 @@
         "char": "i",
         "view": {
           "device_sends": [
-            "098ee204c9eb2d4f",
-            "04e7a210edec7266",
-            "1b117521b0c11552",
-            "042ba1b5296fc7c0"
+            "036e3afb58b11023",
+            "08e95820f141b788",
+            "0722001321a4abb5",
+            "1c167dc44435ff1c"
           ],
           "node_shares": {
             "A": [
-              "164da45bed7f334f",
-              "06a9a717da560ca3",
-              "00040aa4b3e60778",
-              "0962f913e128deef"
+              "062c5994fc9f6c11",
+              "077e2cb89310c17c",
+              "1fa4946f11fee5f0",
+              "05f2ce389e9106e2"
             ],
             "B": [
-              "0a6a0e1ba5a63d99",
-              "1c816e00cbab8755",
-              "0ae91e0a70534599",
-              "0ee9056c7be71221"
+              "0e7a918901e5ac8a",
+              "18aa3675061eeb6b",
+              "021728e1d86eec77",
+              "01f5f9325e893bba"
             ],
             "C": [
-              "1f484d886cda8f15",
-              "1cd4eae759fe6c01",
-              "1512d750dbc6b2b8",
-              "07b4017fa2f00efa"
+              "0b5914e2017ae763",
+              "1fd79cd266d05312",
+              "1e4442af15922d61",
+              "1817389502e5bd6e"
             ]
           },
           "opened_square_mask": [
-            "0144b5ba48428e75",
-            "0e3597328f1a2ee5",
-            "0f6fea662837ffca",
-            "034b4f3d5f3f0e0c"
+            "0c5aa1386ff250a8",
+            "0a18dbad4defcfa1",
+            "1057e23c304aaaf5",
+            "14ba9c3c5dedbcb7"
           ]
         }
       },
@@ -307,36 +307,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "0cc464e1e30b6300",
-            "0014f3146d25be28",
-            "10f812155823d177",
-            "063b47a5eee5969b"
+            "000e791ae770f14d",
+            "0adb5a351c5a58a1",
+            "133bbc425b8c7fb6",
+            "16dc6de899ee027b"
           ],
           "node_shares": {
             "A": [
-              "0fe159253c295cc6",
-              "1f8c0cc06a7ac76a",
-              "151f93c656b55bab",
-              "16aa69c75c192193"
+              "1a272886cf3a0ea5",
+              "056f43aa3e559f11",
+              "134f83aa12c7a820",
+              "13d6c3730f0efadf"
             ],
             "B": [
-              "1dd64be9ca670e0e",
-              "105b4d9021548f1b",
-              "19dc4bff247a50f9",
-              "1444a605d0ddc9ec"
+              "1f83271c34bab2cf",
+              "1ab092954aa32734",
+              "16b84861257c3c6f",
+              "18fac605ab9d9406"
             ],
             "C": [
-              "12485af0f96f9536",
-              "1018a5af7430a974",
-              "1104203a84d05369",
-              "1510f032d3091444"
+              "0655b05cfc0b3e96",
+              "1fe029c0770739b4",
+              "15f833f4c7bc1b7e",
+              "132e7687455370de"
             ]
           },
           "opened_square_mask": [
-            "092c9c8ff0deb667",
-            "197a55812ce88bdd",
-            "0be2088ba5d0f679",
-            "115d6b05e81b44bf"
+            "08fbd4211f26845b",
+            "1a1802ddda14e10d",
+            "1da855fdc081669a",
+            "0b65ee54918c2830"
           ]
         }
       },
@@ -344,36 +344,36 @@
         "char": "c",
         "view": {
           "device_sends": [
-            "08988442c7a5f63b",
-            "0f503b234071c331",
-            "19dca0537cac7aa3",
-            "0542bbff2c0141dc"
+            "0068f59c3b03d962",
+            "0b751ef14d89280d",
+            "0866fe734e94b0da",
+            "02bf2002fd8cd2a0"
           ],
           "node_shares": {
             "A": [
-              "01a60c4ce62047a7",
-              "0d3347888505316f",
-              "03da22abbe640b94",
-              "056c37d5655d6883"
+              "1387b795a7438ffe",
+              "1ae07c8c0e8cce86",
+              "046a6b822d2b6795",
+              "1b5d1526cf5b2ed1"
             ],
             "B": [
-              "1f9bc73488012629",
-              "034531bc4df9f64f",
-              "1afdd006fc38a01b",
-              "0f313e2967850518"
+              "0bad00da7cba34c1",
+              "0facb32bf0ac414f",
+              "1340d161bcadf4fb",
+              "1e857f982965c7be"
             ],
             "C": [
-              "1ebe2c7e91de923c",
-              "0f8786bb2d00d81c",
-              "01280d4d45635478",
-              "0b628a01331d924f"
+              "00cb478fdc023b4e",
+              "1572d04800c6f004",
+              "0854c31c1626a397",
+              "061d6b41073f095a"
             ]
           },
           "opened_square_mask": [
-            "0ea7ee20fc660aa6",
-            "1c9f4d6d6f8e4f30",
-            "1b672f4c2a2f8289",
-            "021cb00c7bce0ff8"
+            "1164fcdd21ae4bbe",
+            "10c5baebfb981455",
+            "00d82867300ce3af",
+            "023274fa7f6d597d"
           ]
         }
       },
@@ -381,36 +381,36 @@
         "char": "e",
         "view": {
           "device_sends": [
-            "1ad15dc02847f347",
-            "13964d136d718360",
-            "14417b016028ea60",
-            "030778db4363a52b"
+            "1ee752d3ff3ef3bd",
+            "17be719533bb4fa2",
+            "1f4389496b4f5b6e",
+            "0b83d023c4fc060f"
           ],
           "node_shares": {
             "A": [
-              "04d6aa51647f241f",
-              "1b941395acf93b8a",
-              "114df93cf0d62e3c",
-              "0043c61820660aba"
+              "10eb54b6dfcec23b",
+              "194844bdd98ff419",
+              "1b2c7a60bee0feb6",
+              "144b3ff245feebc2"
             ],
             "B": [
-              "14e8a1bf6159e5c8",
-              "032994c21647da70",
-              "0e8f3c54dbed6827",
-              "1df3917365d71fd5"
+              "16add8770e634f81",
+              "0b21196d0e14e9c5",
+              "0da7267625cf1350",
+              "1bc9263fa833e25b"
             ],
             "C": [
-              "0640b3ef3a26f5fd",
-              "014257a83cbee9fd",
-              "0022ca6e333c6994",
-              "01c8a87479c2d588"
+              "1866d2d211cdee27",
+              "1b96a1d5185b2218",
+              "172c5f291b4fedf0",
+              "0feb99ce11cd31f9"
             ]
           },
           "opened_square_mask": [
-            "1e9135ad1f1adfb7",
-            "01146bad87fc283d",
-            "1d89abc575dda50d",
-            "0e93daa54352bf1d"
+            "1f5fa08bca292ca0",
+            "08e556a605b6bd56",
+            "09dd2494d2474ae6",
+            "038cc93fb8ba3031"
           ]
         }
       },
@@ -418,36 +418,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "1a384255ddc36fb2",
-            "1d74fa5c44bde26e",
-            "1b53ad42a245cdb7",
-            "01bbd00208f8919b"
+            "0373fbb98560659e",
+            "03a9d1c3d6aa8a3f",
+            "06d1a994728e2cea",
+            "04ae4adcd96a650f"
           ],
           "node_shares": {
             "A": [
-              "1deb39b7cf517a91",
-              "19e9acd8a8e142ab",
-              "185c9bb65b6abb47",
-              "024902b50fe653dd"
+              "1278cf60d393a00e",
+              "0fc3e2fba022a5f1",
+              "145f6e1e0bdc076d",
+              "0f073348e836839b"
             ],
             "B": [
-              "01c2d1064fa74c36",
-              "177d8e12ddf8500d",
-              "0e62710799b1eb46",
-              "0754fb51adf4be2f"
+              "1723fb461edebcdd",
+              "0c40033ac7aec808",
+              "1e25e929b3728af2",
+              "027898530b3b14da"
             ],
             "C": [
-              "0051f541e107391c",
-              "0e98c51479266d4c",
-              "1940f3420ae35963",
-              "166201f94224ede4"
+              "166335590d8da2f7",
+              "03fc19c9982e920c",
+              "0d7aa8b840b16d91",
+              "0e8034640c8e677b"
             ]
           },
           "opened_square_mask": [
-            "00619a9205ceb157",
-            "068f90c4f2ef1016",
-            "0f52f6fc62d05898",
-            "0caf89327b5ec427"
+            "1d910d2188700513",
+            "116ea4f6afa323ba",
+            "1de67bc5fbeaf161",
+            "03b04a23159e8a93"
           ]
         }
       },
@@ -455,36 +455,36 @@
         "char": "l",
         "view": {
           "device_sends": [
-            "096515c7970d96b4",
-            "12791d1d16af5495",
-            "0b4b1dce479b7bfe",
-            "0c1f652246319070"
+            "02fe0c087e741bdc",
+            "083cf2c0dbbad128",
+            "07fe58328d51edc1",
+            "0933832c42a9a00b"
           ],
           "node_shares": {
             "A": [
-              "020cb9524ac11288",
-              "041ba268df0f2945",
-              "04504222274baa4c",
-              "1e99a063cbe74cfb"
+              "08d695cf7d5c5839",
+              "024619cd87df5172",
+              "0cdf20ba833d5137",
+              "0983d8b315bfff28"
             ],
             "B": [
-              "1d6f01ed9314f03f",
-              "0bc79069a66c89fc",
-              "150b0032072ac033",
-              "11b89d194e13142a"
+              "14761427d30a964f",
+              "1450478fc5f1487c",
+              "1c36223322a37945",
+              "09ce0004f0894d43"
             ],
             "C": [
-              "008444c02229fd48",
-              "101ccd2d7a844ce9",
-              "06a4bdabd189957f",
-              "0fadc282e6059eb5"
+              "02b35608af991187",
+              "09699ea2b22f663c",
+              "16eabd125a1f3581",
+              "0cae2747f9b6b370"
             ]
           },
           "opened_square_mask": [
-            "11cd91cb5ae858c2",
-            "067a54f0789891e2",
-            "0a82c7dfff58dc08",
-            "0cbf235a35eebe51"
+            "1be1ab236e240e96",
+            "132a061a28dc84eb",
+            "1271411fcef59cee",
+            "022395e0f5094809"
           ]
         }
       },
@@ -492,36 +492,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "04f52ed0d5c2693b",
-            "0c5d016ac2e5763f",
-            "1906229c4614eed9",
-            "10e1d925fd10b64e"
+            "11cfc27e3cd3811e",
+            "17433c325a4f7200",
+            "07472abd8c774238",
+            "0a1ee45e044b4bea"
           ],
           "node_shares": {
             "A": [
-              "1cd005ae7f9062f8",
-              "0568ae3fd367b849",
-              "1c46e65025e83912",
-              "153a5fe8993f715f"
+              "1407ffc33df53dea",
+              "03aab2b4616885d3",
+              "166248445f961377",
+              "06a3c07090cbc7cf"
             ],
             "B": [
-              "0656a566a2747993",
-              "1ce81f88d372bb0e",
-              "0100b92384c79233",
-              "14c6f267be06f865"
+              "1d4c2500f411cd81",
+              "11a3b39472d1f332",
+              "0b443092776c83b2",
+              "1a993d65a9d34d5e"
             ],
             "C": [
-              "1cd954eaddfb2390",
-              "1daf323759258c8b",
-              "02b8608c555034a6",
-              "15feadafa8b9964f"
+              "0eabdb3bcdf8f4b0",
+              "0ab199b72bc586de",
+              "1e59872928fd68c1",
+              "1ec30229c560eae6"
             ]
           },
           "opened_square_mask": [
-            "1fbf7e0e8df6f783",
-            "0eb0781a344edf94",
-            "0f8298c838805e2a",
-            "03ea0f5eb74a6e31"
+            "1e30b4571cc26fd3",
+            "146328723ab70edc",
+            "1b8e3abf24c38306",
+            "1eabcd77b1b7836b"
           ]
         }
       },
@@ -529,36 +529,36 @@
         "char": "s",
         "view": {
           "device_sends": [
-            "1ee99fd9ec3aadd6",
-            "15ca83dc9ca71a3f",
-            "0c6c56d71a49b205",
-            "190b8689b832acc3"
+            "01c27b5f91cae550",
+            "15aaa9cd60c1d080",
+            "1483bad564a31908",
+            "044bf561d50afa17"
           ],
           "node_shares": {
             "A": [
-              "004e03217b2f73fa",
-              "0a70ec833f3e753b",
-              "1b3c262c2ff023bc",
-              "0779ccf216f6314a"
+              "155927160da6c2ce",
+              "1ffe81b0ae8afa5a",
+              "06ceb94d39bf7e62",
+              "1f55c8c8411fe6d0"
             ],
             "B": [
-              "09adf30c1ea7a9fe",
-              "179d2b759add9484",
-              "17eb5774eb470078",
-              "1b509845c7b40368"
+              "195c86a2a340166e",
+              "09c6b5e661641e8a",
+              "1490828e470180e5",
+              "1731e039bad3cb7c"
             ],
             "C": [
-              "160409d26628e22a",
-              "1df1e80725e3f5e7",
-              "0cd8825ee4c8dbcb",
-              "1d359ac82155cb1d"
+              "114a52474f1926e5",
+              "163ac868f010e6c2",
+              "04a0c4247f3f00b9",
+              "097856fe040c4d83"
             ]
           },
           "opened_square_mask": [
-            "0004c6e2b2aa4af7",
-            "1334085778e02bdb",
-            "0ce25bd5c5b8e801",
-            "0969ca304ecac15a"
+            "17116e7e60431551",
+            "1aa425d35e1ca667",
+            "13ea78d04b6772b0",
+            "18bb4540d37a3d30"
           ]
         }
       },
@@ -566,36 +566,36 @@
         "char": "t",
         "view": {
           "device_sends": [
-            "1f238cb9c7b07443",
-            "0e691ace55c43afe",
-            "14cd8b2d404ce28a",
-            "1ba5cc20e9a38b71"
+            "0e38132f37ac7709",
+            "1d8abe3c6c786442",
+            "0b5698ec0efa39e4",
+            "14897427c13c078c"
           ],
           "node_shares": {
             "A": [
-              "1ba56ac6a31c3598",
-              "149894c346ad5471",
-              "14cf709c451613d5",
-              "129ef532f6eb2668"
+              "103d4d2076a9f5fc",
+              "07cea61aef5b3c9e",
+              "19f1c967b4b95417",
+              "1c37dda102fbd80f"
             ],
             "B": [
-              "0100e9e57c54f4cc",
-              "003846d8b339e95c",
-              "1bc85e014d5af970",
-              "18465a82c6568455"
+              "196354cb9118d9e6",
+              "080676bcc25cf32c",
+              "0df99843278de488",
+              "035bc44b4e11eebb"
             ],
             "C": [
-              "0359ab53e08ed580",
-              "0b2f24640618c22a",
-              "0f6831626d8ef2b1",
-              "151ab04a42be5559"
+              "165f5e13f83d3001",
+              "102ae3284e47d02d",
+              "18149e5523b8c757",
+              "006c5e13aef2394d"
             ]
           },
           "opened_square_mask": [
-            "03743ba3d35bafd5",
-            "1aa22150ebdc328a",
-            "02288c5a1d2ba998",
-            "160d08d7f2e579ae"
+            "10c1fbbdee41ea0c",
+            "0e1682fff05d17b8",
+            "1f4d4cfcacd4a5f0",
+            "1813750dfface8b5"
           ]
         }
       },
@@ -603,36 +603,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "002c4e1330067e7f",
-            "047f19bcf70c5a74",
-            "1be4db06c00cdaa4",
-            "1ec70168128a85f4"
+            "0ffef02649d123c6",
+            "127421719f894ece",
+            "06901c2117200d5b",
+            "0c94af13a8277164"
           ],
           "node_shares": {
             "A": [
-              "0ae8c4170f90f631",
-              "10e8ca010839f27f",
-              "15c74033cafbd4f6",
-              "0e36be7605143954"
+              "0df903ed2275cbdf",
+              "0c66f922d2064ba6",
+              "1fca5d7597bbdd2f",
+              "1d4386db258dd0a1"
             ],
             "B": [
-              "157834d6c33b4858",
-              "0b93d8d0de1d6924",
-              "1b1da53b68e77a4b",
-              "055e19dc6d8d7319"
+              "1eb740a0ebdcff0a",
+              "1bc5d988f410faea",
+              "1a36fab0d10a3db7",
+              "0d27de29dc64625c"
             ],
             "C": [
-              "1f9f07122d33c181",
-              "03835d2e19a8a457",
-              "0f1b1a90cc1cb0cc",
-              "0c6b27ad8d5e5357"
+              "134fbb71f1ad3521",
+              "17d32d5439e8b969",
+              "05fea7d99739e527",
+              "15949afafe0dccc6"
             ]
           },
           "opened_square_mask": [
-            "16377687a9ee28a2",
-            "161d5dbd6ca2680d",
-            "16530b5f4e2cf0c7",
-            "08fc28793f5fcee8"
+            "19f8d52fd0f3d84c",
+            "1142452cc6b0eee2",
+            "077d997b6e3531b3",
+            "0fdbe66927186e7f"
           ]
         }
       },
@@ -640,36 +640,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "048bfa5533fccbe2",
-            "07af1c8118f3f43e",
-            "0dff112f73fa4d33",
-            "0992c4bd97dfa32b"
+            "10ea817973bbf36e",
+            "0ca1fece0abc3ecc",
+            "17fafe2138d75c35",
+            "1f93abb2f0be66fc"
           ],
           "node_shares": {
             "A": [
-              "19d804ebc09170bd",
-              "08e1794eff19a990",
-              "0c80947da87c859d",
-              "06e47421c0cb573a"
+              "00871c30e623a1fa",
+              "10ed0a2407484947",
+              "0a13a00716c8c356",
+              "0320340bdfa3d729"
             ],
             "B": [
-              "186bdc6de3c52e77",
-              "08529e9fe860d25b",
-              "104dce0aac75ca04",
-              "0d7a79e6b1455982"
+              "0aace9c0706bc414",
+              "0c57027b5876752c",
+              "1eb7cdfdc1021048",
+              "1a51c6d063bd5f98"
             ],
             "C": [
-              "0dbc1ea65ba960e7",
-              "0ecbe811188583f8",
-              "03319d77ab0db04a",
-              "0ba111f78def4f58"
+              "14cbfa0ea9709a0e",
+              "02bbf360a0414170",
+              "173491fb28352c4c",
+              "028e0523bc9ec953"
             ]
           },
           "opened_square_mask": [
-            "199d20bf0f9301d9",
-            "0ed991f5923ac393",
-            "1c8be12d17e28f36",
-            "0e9a419c7d38949e"
+            "0d8c5f1e11cc880d",
+            "05202cd0f4042f5e",
+            "07a6c02b1a8cfa2e",
+            "126390e92b862d54"
           ]
         }
       },
@@ -677,36 +677,36 @@
         "char": "i",
         "view": {
           "device_sends": [
-            "07fd6ea6b6f7b7d2",
-            "15015f1070828453",
-            "11be2174c4958cb4",
-            "1c6dc5f6c689f10e"
+            "0b3275be64220f54",
+            "1278cc2e4b33b6e0",
+            "0836660df39b6bce",
+            "0036618286bb9f28"
           ],
           "node_shares": {
             "A": [
-              "0a1b35a12c62b726",
-              "1afb5a83d44b85fd",
-              "069b81d933efcd3f",
-              "16e6c92cd8a04ea5"
+              "1f69678bcf7dc13b",
+              "17fa2f163f09535e",
+              "0a41d2e3246a52bc",
+              "0e85d433623863db"
             ],
             "B": [
-              "18929771707ddd75",
-              "056f506dab26ee65",
-              "0db5daf8434ba68d",
-              "16967595780a94af"
+              "13dd77ba3f6ffebd",
+              "0c3d705810b11855",
+              "14fb07ace2948d1e",
+              "0899d180874350e0"
             ],
             "C": [
-              "1d5232ed631f6b86",
-              "1f95550e808d8b44",
-              "0baea32e88c48c34",
-              "1282c13daf551c7b"
+              "0cb920b9f1124029",
+              "1bc86091b04593f3",
+              "00c3256ff9012026",
+              "08e05a4c16844b15"
             ]
           },
           "opened_square_mask": [
-            "0993c9f0b16988ea",
-            "0bbd788fea37b080",
-            "1aa4acee09687bd8",
-            "078b915afa59e12b"
+            "065fb36f28809994",
+            "16274101b3305821",
+            "034cfa4c4c476c0b",
+            "148a07c1bee8a4b6"
           ]
         }
       },
@@ -714,36 +714,36 @@
         "char": "g",
         "view": {
           "device_sends": [
-            "199f50df0142f094",
-            "01e1d8c06c6ed003",
-            "15cd697468bf7b2c",
-            "0a7dc2f685890b41"
+            "08252177b0c165c7",
+            "0aa517d24d23798b",
+            "14192667ba7b9960",
+            "0afa8a21211031ec"
           ],
           "node_shares": {
             "A": [
-              "0e03cfbb479c24d3",
-              "1facbe938b626ea8",
-              "1f085542ec22f952",
-              "0c8c7a6a3c8dbcef"
+              "0abf226d6cbdc2e4",
+              "16aaf4d076a48232",
+              "01e1c98d462bf8ab",
+              "0badd5fe9c0016f4"
             ],
             "B": [
-              "11f5660f74d90488",
-              "1c1ba913702fcd34",
-              "18ba0386887f8c80",
-              "04e55862f4e4d0a7"
+              "033c14e3a83b7142",
+              "029df16fc4d51ab6",
+              "12915957e6601489",
+              "00e8f84e4fdaeb30"
             ],
             "C": [
-              "0006ca35438ad691",
-              "04379859046dc445",
-              "083da7368b5d7a42",
-              "0e8e2d32ce8d7299"
+              "1204c8aeeb06cbc6",
+              "06b719bfc486633a",
+              "0b8cdd1ad373f2e1",
+              "136931b31424fe0b"
             ]
           },
           "opened_square_mask": [
-            "1b85c837cd28b340",
-            "080950466c9417d1",
-            "049aa00c9cfab3a4",
-            "0d841ab3f7464e5f"
+            "1863b208c70b8bea",
+            "1426b889864977ae",
+            "1b9b412bcb3e9bc3",
+            "0abe61bcabf25873"
           ]
         }
       },
@@ -751,36 +751,36 @@
         "char": "h",
         "view": {
           "device_sends": [
-            "14e18faca607ed62",
-            "0f618d22957e3c02",
-            "1b5817d1986d7ee9",
-            "08da669a9646c3cf"
+            "0ebad61a4067a9d4",
+            "06701e56ffd09c2f",
+            "17c53f5b02406953",
+            "182cb87b00f3d1ae"
           ],
           "node_shares": {
             "A": [
-              "1d27ee09b3ae21c5",
-              "01130d5afe27186a",
-              "0cb27425ecc57e3a",
-              "1753fb8617f7c00b"
+              "1ed8c2279e6e495a",
+              "08ef2c94487aee89",
+              "085dbbf0db2ff736",
+              "1fbf9b4d35bc548e"
             ],
             "B": [
-              "04f061ba0dafb697",
-              "02667e12a5ae3946",
-              "03b3302a68beb4d2",
-              "16046180856f1956"
+              "09e89f6e3ff75f62",
+              "063e3429ac8c6536",
+              "02e888fd110bd5e2",
+              "158e74eea035a369"
             ],
             "C": [
-              "1de7b03c3ea227a1",
-              "1c8674925c2aae4a",
-              "0f9a5bafaa7bccbd",
-              "12a7a2f9629926a8"
+              "173e9e6a219a5741",
+              "10d29f420af8ac3b",
+              "14b9bb1213c432b1",
+              "0ab1efc42a0e0812"
             ]
           },
           "opened_square_mask": [
-            "180ff23847d67fe2",
-            "1aa79895fd43e684",
-            "1ecabbed4f6df9df",
-            "1310b7f7251133b8"
+            "190d72ad52275b29",
+            "1e51eb60434cf21f",
+            "1aedabe80d0697ac",
+            "0bd40960b9c9fbc3"
           ]
         }
       },
@@ -788,36 +788,36 @@
         "char": "t",
         "view": {
           "device_sends": [
-            "0e7ad0e0b0efcf72",
-            "0ba8bef046014fbf",
-            "0666a53957f14037",
-            "1f64f632406e711e"
+            "102d4444285b8b03",
+            "07a7b9126e389064",
+            "1409c51cedd5bd95",
+            "01fab765388c5da8"
           ],
           "node_shares": {
             "A": [
-              "1ecd0215e2d10c86",
-              "153a01525a7b59ef",
-              "1fc88f6fca86fd24",
-              "19754f97cdeb83e2"
+              "0247e4ae398d0c2b",
+              "1957187ec19f3a1f",
+              "0382f6596d95c48e",
+              "1f2fb96c362994e3"
             ],
             "B": [
-              "088a624a7e38125a",
-              "08aad6a3fdbf0861",
-              "1348e4409d5daace",
-              "14c7d89509ec328b"
+              "16440dc64a33f1de",
+              "0d580405cbf96dcf",
+              "19ee2c23cd9b1f35",
+              "12b242c12f6e1e66"
             ],
             "C": [
-              "18a89b9f9ef6e103",
-              "021b2809a7c59da7",
-              "0cee8c4f981b5804",
-              "11c2d7d3282849a9"
+              "07740d8b7c3f01db",
+              "1950e37b72675808",
+              "028edd82c4cf1c34",
+              "0e1e03d29a684ccd"
             ]
           },
           "opened_square_mask": [
-            "07aa7d8a44a2d210",
-            "005a0f105e2c32be",
-            "084b79b7f5697205",
-            "09f72ef88a2e6614"
+            "0f7bf6940a32ba24",
+            "129548024e87e608",
+            "0548d1460bbd9e88",
+            "15c6b964bc5a582a"
           ]
         }
       },
@@ -825,36 +825,36 @@
         "char": ".",
         "view": {
           "device_sends": [
-            "008033cacef0ddbd",
-            "165dfcefbc0e2b8b",
-            "1c70a0d4b9ba3572",
-            "1358d35e7e89de49"
+            "116756451a8bcbf8",
+            "1dc6678d7314b819",
+            "158367ce9c5e4020",
+            "0c67e103ac50f81e"
           ],
           "node_shares": {
             "A": [
-              "15467e111dff0aaa",
-              "03dbdde48ee9408a",
-              "049b0293827d361c",
-              "10a7c1aca72f0d99"
+              "072db65d7a6196b7",
+              "1d3d1d4ed91ddd51",
+              "18edf4c2d9105c62",
+              "01441e407293b82b"
             ],
             "B": [
-              "11845305d53704ef",
-              "11aba88dbc49a383",
-              "120959fef8ba4f25",
-              "12aa929e73d8256b"
+              "0c2c18bc2d9dfb12",
+              "1763190714936194",
+              "023f4dbb8c46fc9f",
+              "1364f90b221e6f44"
             ],
             "C": [
-              "19352ee90cc9f042",
-              "0a78798db4cd1beb",
-              "095ba36d84c87ab8",
-              "1cadabb4e4f8cd02"
+              "0ca630e658006e13",
+              "0b5fc9aa124ec112",
+              "04d2bd819aa8a6f8",
+              "0b56e8b46b4dd898"
             ]
           },
           "opened_square_mask": [
-            "133d820c65b8cf30",
-            "15f3e78751801a43",
-            "15ec094a66c15405",
-            "1600700891aad35e"
+            "031b99e23403fdfb",
+            "0caf3290b24b32aa",
+            "07d88b3d9293c6b5",
+            "1ce3c6f6a9429773"
           ]
         }
       },
@@ -862,36 +862,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "1464568956ec87fa",
-            "1b9ef1544166c5a1",
-            "0d69bfb8fd6854ba",
-            "179c8ce23c9f8ae0"
+            "1bf00786d36ae942",
+            "1e4de480a9592a7d",
+            "193a8656ce74fce8",
+            "021f41cbe1192d7e"
           ],
           "node_shares": {
             "A": [
-              "17a5ed7f4b361448",
-              "067e9b81262b6936",
-              "175291399a8677fd",
-              "0883ad7081f6d690"
+              "0872130a6bcdbdd7",
+              "1a6ed5314fb9c770",
+              "082ff8211be379a7",
+              "19bec3df33fe64e5"
             ],
             "B": [
-              "0a28dfbaa8d336d4",
-              "10a03077a84222cd",
-              "16cef8fc7ec2f3ca",
-              "0610282bea9ee7cb"
+              "14b6ed7042f7bf65",
+              "0ebdcf0ff13eabcd",
+              "15b54ac6c12cd8a0",
+              "080f1a86730d6c1e"
             ],
             "C": [
-              "1e3132c60bf6b4f2",
-              "08e1340731927427",
-              "11de75c9e6b69436",
-              "116c2a63936a4180"
+              "02d6ff85513a82d3",
+              "16d35bbebf078cec",
+              "021abd1822efadb7",
+              "1e32219a58f42ed7"
             ]
           },
           "opened_square_mask": [
-            "095201f0c72456d5",
-            "1addd813ad097a4f",
-            "08007df61794e7e6",
-            "0845efa8663e0bac"
+            "1279d94846bd12f1",
+            "080ee9df993b8c89",
+            "025b18f4f80f9199",
+            "18060374daf51387"
           ]
         }
       },
@@ -899,36 +899,36 @@
         "char": "h",
         "view": {
           "device_sends": [
-            "197d429d9370f894",
-            "1aac3112fe946c27",
-            "18d0eaf2429b27d4",
-            "0e93f779c8d1a4da"
+            "05a271a6d421eb72",
+            "05ab8a8a254be0fd",
+            "1c9076a3a6bec3ac",
+            "0494f9911f51f5c5"
           ],
           "node_shares": {
             "A": [
-              "04b9286f96b2bf4f",
-              "04865606eacde113",
-              "1c96a4ab5b3ef6e2",
-              "0d45695490b599fe"
+              "0d4ac25938ecc2fd",
+              "0ed3c460f1646d49",
+              "062fa537ec62fa97",
+              "1d431c83449f3eba"
             ],
             "B": [
-              "16c6e7486fe156c5",
-              "0dbe99c0ed4db2aa",
-              "11de474c9f8e87e7",
-              "14b32a0a043455d9"
+              "10e08579b9e53b2c",
+              "0736397e50787db6",
+              "14366fae5cbbd8b3",
+              "10b0eef86584ddc5"
             ],
             "C": [
-              "047ff047f96be9f7",
-              "0dbb103827e46c3d",
-              "118b140805328144",
-              "1e076ca16b160fec"
+              "01d4b82d0d2e01e2",
+              "09f60220be2314fb",
+              "0599eb19b6e12cc4",
+              "120bf48455dbe344"
             ]
           },
           "opened_square_mask": [
-            "0e5acf11b32fbfb1",
-            "0e7910a21b55161c",
-            "0d4643b7be766c27",
-            "0accef58feecc499"
+            "08622d96143ac84d",
+            "19ce06a3771bf99b",
+            "1cdef21dbcda149e",
+            "1d6086388e50c1cc"
           ]
         }
       },
@@ -936,36 +936,36 @@
         "char": "e",
         "view": {
           "device_sends": [
-            "08e240f9aa2b393c",
-            "0ec17afa567e070d",
-            "1612516c068b4088",
-            "06263be9d366730c"
+            "1b8ea2992c1108cf",
+            "0c0f8d52c9e01a2d",
+            "1a75e9529688575f",
+            "17b27c632a4a9760"
           ],
           "node_shares": {
             "A": [
-              "0f28683b4babb9ef",
-              "0f5bb68ab9e6fbac",
-              "1300e27522d80574",
-              "0bdfeb4e053bb9f0"
+              "100621f5a981e124",
+              "0bf703f028fa5191",
+              "09634e4ff853d8e1",
+              "1a7ba0751420d1bd"
             ],
             "B": [
-              "02058370d83308ba",
-              "1fd908fc82182c27",
-              "1e2a2dd693e7e470",
-              "065eed751f36cf93"
+              "10a90147c52c86f5",
+              "176d29c09cb9bc44",
+              "1e154b4c0bffbb86",
+              "0c73debd38dff633"
             ],
             "C": [
-              "0ed21453dc213d64",
-              "10cb4078c400d806",
-              "0ed4efb449401642",
-              "0dc1273cdb8d7667"
+              "1f50dcc2915197f3",
+              "1c9bd24f3a4bf204",
+              "18876663fbac6bbf",
+              "191080cdb2ff37f9"
             ]
           },
           "opened_square_mask": [
-            "1db06103d9149561",
-            "0fe63cbb06d66ea9",
-            "0d64bdc039c26650",
-            "1fdbcbe52b3a5982"
+            "10dc40be26fc705e",
+            "1f6d3f120aa658eb",
+            "04806df9112ec1dd",
+            "053b1eec8a5b87bf"
           ]
         }
       },
@@ -973,36 +973,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "048a0d29d97cc145",
-            "10476a6adb1bcbcf",
-            "1345ce43cb05b6f4",
-            "122cf56413cd5409"
+            "19d79f1110dcd9fe",
+            "1ad5cee7f110dde3",
+            "0f72e7abe418a530",
+            "167e48356163bf8c"
           ],
           "node_shares": {
             "A": [
-              "0a195209850a62a0",
-              "159269cd0c49eaa2",
-              "0b51488d9ab63192",
-              "1b2735ca6c735899"
+              "15edf0868d25a20a",
+              "1527ae23332efc30",
+              "07d0f5e068241a4a",
+              "1fb7d11983db3383"
             ],
             "B": [
-              "04b8524d0d64e985",
-              "07dfbefd84a7ac9a",
-              "0fc4b37e730662f6",
-              "143b3688b28611bf"
+              "1764035461b55cad",
+              "17a7d7ccfb864bb0",
+              "09c2413a6311e7c8",
+              "1ed03b3016b69d9c"
             ],
             "C": [
-              "112e5ba96d90b3bf",
-              "028dd7356f0e68bb",
-              "04ea03f3f2436b6f",
-              "109d93ace10695be"
+              "12ae0c251125012c",
+              "13307a0fd14ab816",
+              "0e6cc8e534c9fde5",
+              "0177f3b6656e2ef7"
             ]
           },
           "opened_square_mask": [
-            "1096cf884b34254b",
-            "10dfb000e59ec8f7",
-            "15dc1f4810c1aa48",
-            "0de67b6e29a10224"
+            "124ba2a3576e9559",
+            "0912b72a6ef44975",
+            "187bb44417a85ad4",
+            "040a91c979bc5c61"
           ]
         }
       },
@@ -1010,36 +1010,36 @@
         "char": "r",
         "view": {
           "device_sends": [
-            "136d49fb9c1a1e70",
-            "1bdae50e357b44fd",
-            "010c2ba2b595c31b",
-            "13d625ca0f18d422"
+            "14caf9d000bfd151",
+            "03d6339e43b4dd7a",
+            "0ae9ecaefb9335d8",
+            "1bf12edd538f0fd0"
           ],
           "node_shares": {
             "A": [
-              "0583007428baffaa",
-              "067d0b8495986ec2",
-              "0063b54b36e1fd00",
-              "0173de1b562beb94"
+              "12213fc86d2fb0dd",
+              "10e163cd6ae382b2",
+              "1f7899b11a6d4e3e",
+              "0fbd39f2da164bbd"
             ],
             "B": [
-              "1eb40b8b5c84dc2d",
-              "06790745aceb25c6",
-              "0a9adf37e5c58e62",
-              "1c083795908c91cd"
+              "14e81dfb99ac2a9d",
+              "1533323bd3192203",
+              "03099da89769ca27",
+              "18b6eb95f663f9b2"
             ],
             "C": [
-              "1bc8f4007ac0244a",
-              "1309ed35bd7c6b1f",
-              "15016b7ce358749e",
-              "0283ea4f1947826f"
+              "18f6a23bf92424a7",
+              "19eb69f6c2035af1",
+              "1d7dc8a64e28e79a",
+              "178bda772f85ba60"
             ]
           },
           "opened_square_mask": [
-            "00d9f0e521d44fb2",
-            "111ad02848826eda",
-            "120d058765b1046b",
-            "12cc9a98abc3ca5d"
+            "0503bcd844c93c4e",
+            "03846c91e783b711",
+            "136c7d49a5dbede0",
+            "1719eee71fb3f570"
           ]
         }
       },
@@ -1047,36 +1047,36 @@
         "char": "t",
         "view": {
           "device_sends": [
-            "02aa587d7bc007f6",
-            "0125e4f3f1d637fb",
-            "0ef613ce7a002923",
-            "18fc8ac8d2ffc60d"
+            "17393e84dbd1f23b",
+            "07b67ec960be38c8",
+            "052e7730df43724c",
+            "0783540f63318287"
           ],
           "node_shares": {
             "A": [
-              "0554ddb81cb6ec68",
-              "1096c8eba5a28116",
-              "16abb9594986617e",
-              "1320f4c8a0f3730e"
+              "0530decebd03948e",
+              "1163a33728f3aff0",
+              "1314ffb8309add01",
+              "1d79883f2045a25b"
             ],
             "B": [
-              "193d26a6bf40a8ce",
-              "1b6f66333d47c6cd",
-              "11c1061293369076",
-              "1bd6251490cf1411"
+              "15fb0565dd86722e",
+              "0114f44b10f8cf44",
+              "19e15d89725b58a9",
+              "11a8dcde07ce7a59"
             ],
             "C": [
-              "016dfba124086ae6",
-              "13f9d0e11d15b7ff",
-              "1793409423430df6",
-              "1108e622ce3d78f4"
+              "04d41bcb6575f960",
+              "0d87687dc61380af",
+              "1309a2be5d09ca40",
+              "10dd9ae2d7ebe35f"
             ]
           },
           "opened_square_mask": [
-            "1cfacd9ec552478e",
-            "1fd1f4abc4ba048c",
-            "0265633f721356ee",
-            "08a1bd5ca9ef25b4"
+            "1e58e6ba5ef9f855",
+            "0245a5d8310b8afb",
+            "1c564c5e3398f86e",
+            "14dec77359cbe98d"
           ]
         }
       },
@@ -1084,36 +1084,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "1d944de773fd723c",
-            "1af1d49226b46230",
-            "0efe0daacdcb7d73",
-            "0185b446a8ceaf07"
+            "1791c92293a76db1",
+            "16cb624bdc4d7707",
+            "1e5049c066389512",
+            "091ba5c5d13e12d9"
           ],
           "node_shares": {
             "A": [
-              "009264a11f176f70",
-              "0746ad670fe619eb",
-              "170f0d7bcc5e6e7d",
-              "0a7cdf6c0679299f"
+              "076b5f482d3e450d",
+              "0865e898f94af386",
+              "1eb9a8782d7a94bc",
+              "176fe912ec541d06"
             ],
             "B": [
-              "0c3fff93ac7b40ed",
-              "0d072280e2f4342a",
-              "1b815be9910fb732",
-              "0e2fdf54c19a9d82"
+              "04430141869061c1",
+              "001a56fcb59c392f",
+              "0d4f8d4f583c3ce0",
+              "1ee834062ec31e68"
             ],
             "C": [
-              "132d9bcb346d4fd6",
-              "0bb230180d25b1bd",
-              "0d6f969aa291d9fe",
-              "0753413f37ec38ec"
+              "14519f764c315965",
+              "177fc06a5118d31d",
+              "13f6ca387a492e11",
+              "09a7e2e6e4e8c49e"
             ]
           },
           "opened_square_mask": [
-            "13d9c46f85b40611",
-            "0c6d5480e0b102b2",
-            "1b19dd6abab808c5",
-            "0d4df8d16c39dde4"
+            "1226b45fe5685120",
+            "17d0fa0c51f70399",
+            "1cd49153c8e8c2ea",
+            "1b8aad738c95465c"
           ]
         }
       },
@@ -1121,36 +1121,36 @@
         "char": "r",
         "view": {
           "device_sends": [
-            "1d2d8c0c81ae209f",
-            "061685f8d653375d",
-            "1d7cb5ab494ef90b",
-            "1839c6561b10d8a8"
+            "0eec1726b9a31001",
+            "0369adf90b4b408d",
+            "19c4b4f679952d11",
+            "09eaf649adc763fc"
           ],
           "node_shares": {
             "A": [
-              "1184197f50ff52b1",
-              "0419bc65c0782beb",
-              "1d3256b0e894ef84",
-              "09435bd1919b645d"
+              "00b2e25a1add55fb",
+              "15d553c092fddc62",
+              "0eb814c85b16c658",
+              "143b01aa3b5bebf3"
             ],
             "B": [
-              "10046d56a58eea7b",
-              "1894476e7a107d83",
-              "1618eca51dc32669",
-              "09e3aa28cea81aa8"
+              "0baaab6648ee0d5f",
+              "1d41ab5785fb508b",
+              "1502048e953e44d1",
+              "0250763ae3191651"
             ],
             "C": [
-              "1e77792a0971c2c4",
-              "0351fc2bc57756a8",
-              "0cb4bca9f9a7ea0c",
-              "0cd8fa059fbc80c7"
+              "13a2723f9c349c97",
+              "0ce900e7e706d328",
+              "1c45e6a90faaf4d0",
+              "0974881ae18afd88"
             ]
           },
           "opened_square_mask": [
-            "1d6eff8d43f10356",
-            "17b44b623fb605d4",
-            "07710f81a46f8a80",
-            "0b0efab04003a71f"
+            "1abac14856af3a82",
+            "0a3078ddfe1e49fa",
+            "0fa3aec90f10353e",
+            "09cb2169ebdb50a4"
           ]
         }
       },
@@ -1158,36 +1158,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "156f3e426279faca",
-            "02e205af51777222",
-            "037a062d641a8296",
-            "1ab316892175142b"
+            "08858a24ebc7e4df",
+            "0e7f57963af57f91",
+            "15375c7ac2d23f84",
+            "00e6c0d0e06dcb70"
           ],
           "node_shares": {
             "A": [
-              "1755dc947552ce29",
-              "036d02c995be602c",
-              "1aca2e8e485d128c",
-              "1c93efdd9862ecca"
+              "11e67a2915970096",
+              "1a4f98851ee1e311",
+              "0a3290019490600c",
+              "0f6e76ddb24f99a2"
             ],
             "B": [
-              "05f21616860a046b",
-              "029794fb8a321df6",
-              "16356c32c22539e6",
-              "03aeddebf0cb23b3"
+              "183f1cdabbb7f70f",
+              "1cfc768b8255b477",
+              "05fb1fc93bd30da2",
+              "0a280eec8e49a2a2"
             ],
             "C": [
-              "02b80d5504a32d79",
-              "19fb683ae00f81b8",
-              "0f00653ef57db3b4",
-              "1fbd323676d1ef6c"
+              "15da68fc2eb10867",
+              "08b3f0ef5ec86851",
+              "0fd250352f9c9279",
+              "06697a35bf66c3a6"
             ]
           },
           "opened_square_mask": [
-            "078d3e6c91032c38",
-            "135e9cc1c09f2139",
-            "05768fe3d30c9249",
-            "0a75ca862c9cd891"
+            "003b07047244c736",
+            "0268e66c7812c3d9",
+            "0f1a022f0d4c3361",
+            "1667e09dfcd8a4d8"
           ]
         }
       },
@@ -1195,36 +1195,36 @@
         "char": "t",
         "view": {
           "device_sends": [
-            "1595aeaf303344a1",
-            "1e656a24182d18bc",
-            "0f0064209708800e",
-            "147849a87c7d5f51"
+            "0f81638fb3a40a52",
+            "0b97626d5c466cc9",
+            "010803c3c7a0596e",
+            "10ea2d820a3add40"
           ],
           "node_shares": {
             "A": [
-              "06dbc9de65e4e329",
-              "0b057511d5957ea3",
-              "045b9f620c92c6e9",
-              "08be8a76c9167c6d"
+              "0aa3747629d2bb87",
+              "041e311e1277d5b7",
+              "1512dc8ee421a703",
+              "0f408c5c27d5f7ca"
             ],
             "B": [
-              "05b78c7f14580ebe",
-              "1641bfce8e678ed7",
-              "05930f1a3466216e",
-              "1e3c1d7ea6077589"
+              "05d972ab84033bc2",
+              "1741057ff178eb98",
+              "0460400e36a8fead",
+              "171f1fc77b7dc070"
             ],
             "C": [
-              "136ca9a285c30db3",
-              "1eb8cb1f9c02f23e",
-              "16115183bf07179b",
-              "1905580a90e20def"
+              "0f8318de522a0851",
+              "04a0c961fc0f3e6a",
+              "068ce362e5355a42",
+              "19a053dc5cac47ab"
             ]
           },
           "opened_square_mask": [
-            "0fa7ea5f1030a055",
-            "059b970878c6e1c1",
-            "0236fc6a1db7454d",
-            "0a63a1d074f5aca4"
+            "10be4a283e12b477",
+            "1a847e780ddda663",
+            "1a8b4fefa1d4e81d",
+            "06377649e0d1800d"
           ]
         }
       },
@@ -1232,36 +1232,36 @@
         "char": "e",
         "view": {
           "device_sends": [
-            "12553f0e12e5703c",
-            "184879bbdd86b545",
-            "0ffb3f6a9f27862a",
-            "018556b5da5de06f"
+            "16d482b59acaa5b3",
+            "03c72ee69b2069b8",
+            "1b68665dddf511aa",
+            "0f56c5463242b58a"
           ],
           "node_shares": {
             "A": [
-              "02ae228ee3c03316",
-              "1cc1093ce5c43c3e",
-              "1b6aa91b8e461764",
-              "1de596e64b1f0c72"
+              "05f8efbd33bc264c",
+              "0c0af1f29113da44",
+              "059e1d8217bf20e8",
+              "011e1e85184ccca8"
             ],
             "B": [
-              "15ca71b4a340ebf3",
-              "08975b95d38f0c6f",
-              "07ea91d482fc372b",
-              "0079a7a833214ba2"
+              "0b8ecda1060b6ad5",
+              "1e34b46a9b8e4dfe",
+              "0a177d9747578623",
+              "1c08737e5913adbc"
             ],
             "C": [
-              "07876bbc78fee0db",
-              "1aa79b2d46acb749",
-              "1caac50feebdb167",
-              "01a0c17181bfa803"
+              "0e7842a1c6386ec3",
+              "15c059a2d35dd7b4",
+              "104a64e6a0e958ec",
+              "02d96dfc8e9f85b3"
             ]
           },
           "opened_square_mask": [
-            "019bac2d96c74d75",
-            "1f9add93c540a5d2",
-            "0b78c125b66244ac",
-            "1678d7def9cd2f44"
+            "0a03d985fb48f7e3",
+            "07178127e6d6c921",
+            "1bf826574dd9ecdc",
+            "02a3ce4142a59b1d"
           ]
         }
       },
@@ -1269,36 +1269,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "1491c498cb728f1f",
-            "0d42b10ff276857a",
-            "04a082502916cb27",
-            "039daae9fcca7d2b"
+            "025d804668a862c8",
+            "040ed8e32d2b4a2f",
+            "0ff28b3b574b8c80",
+            "07cef4d1e66734a8"
           ],
           "node_shares": {
             "A": [
-              "0df7710aae70bc65",
-              "0e4b69dbbdf0795b",
-              "07a6248a14e871de",
-              "0bbf7004cc0a7980"
+              "0db88efb9c1b3e54",
+              "111798c070202b1f",
+              "18c60b9b252fed63",
+              "0d80b697ffef0ee3"
             ],
             "B": [
-              "162af7ec14369277",
-              "02bc4caa1342b872",
-              "1476bffa4a566e69",
-              "03b012449f57f023"
+              "1ad428f060a45e6f",
+              "07f23f72be9c048f",
+              "08b389d8f01a61ee",
+              "0a352b5d0b4e00b1"
             ],
             "C": [
-              "1bdd97093d58b114",
-              "0ef8497a2eccce49",
-              "03e31b7ba0c11fb3",
-              "10907db6949d9629"
+              "177348140340632d",
+              "06f627ccd143d068",
+              "1e866a8beab5b0a8",
+              "084a1e0af4c2f038"
             ]
           },
           "opened_square_mask": [
-            "0d1ab3ae5916f5ed",
-            "1f53059f50abe4fd",
-            "0d5f48cd330c0af3",
-            "08fba821dc332572"
+            "0e0d0888b01cb5f7",
+            "1cbdb9aa5cdd3ebb",
+            "0587c59ab95187f5",
+            "026e05167db8c1f1"
           ]
         }
       },
@@ -1306,36 +1306,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "15818ffc83dd5592",
-            "0ab0cb343f70fcc4",
-            "08463d3925edf639",
-            "1803a2f5f61e96f9"
+            "077ec2cbb31ee659",
+            "11953d9eb9621958",
+            "03da9a7be9fc417f",
+            "09e9d661480b81e2"
           ],
           "node_shares": {
             "A": [
-              "066a2bcea8536f26",
-              "04c96b0b368ab794",
-              "1b8cd6a464e6709a",
-              "161d1fea6a39cd5f"
+              "0f23f2d420580a57",
+              "02d166700fae62c3",
+              "145efc3c65e30c09",
+              "1e83625c092b7e88"
             ],
             "B": [
-              "1ed9a4268cd96e5c",
-              "117cd2fed2325d19",
-              "0b2d378f4d800969",
-              "18b17de082aa0d84"
+              "10bf7711357293f1",
+              "03a475b276cec894",
+              "00482a471862db60",
+              "00d076595b88b873"
             ],
             "C": [
-              "1abc300acad3227b",
-              "09b9c1f5f742eb4d",
-              "1945f1cc4d9985c5",
-              "11316235131c2526"
+              "001c961aaa3561b6",
+              "198a23dd7982d4a3",
+              "0b58d97c81ba1860",
+              "00ac274a9b4bc90f"
             ]
           },
           "opened_square_mask": [
-            "04dceee45ae8d4a1",
-            "0a437cb934205a91",
-            "131f14befa3e0630",
-            "070c1777c7e45a06"
+            "19b1c2937ce135b4",
+            "1c9ae37e74343b81",
+            "04b4df0cda0a8eee",
+            "0596b97aa163eb1e"
           ]
         }
       },
@@ -1343,36 +1343,36 @@
         "char": "o",
         "view": {
           "device_sends": [
-            "1dd156065f1b3474",
-            "17b5c91f3a0e188d",
-            "1ce688741cedd914",
-            "115f1311e001d313"
+            "0bae5b4c53e49836",
+            "1e0ab52cf2025f36",
+            "01a8baa3589e5982",
+            "18f57539f272dd9e"
           ],
           "node_shares": {
             "A": [
-              "08c3467a12285a9b",
-              "089a798e30d005e3",
-              "15688f2502181550",
-              "0f9f58131e38502a"
+              "1676764b6a83d7dc",
+              "0c58999f768052fe",
+              "181857a87a6c0ec2",
+              "041a8b5ae71c9884"
             ],
             "B": [
-              "0b7436c4b4d8741b",
-              "14d824bb3f4fd9e5",
-              "1a93800d90081444",
-              "14203d4a840c732b"
+              "1ccba3b11383c8dd",
+              "01361849baa79770",
+              "0c82a26796661938",
+              "1c0d5cd0b8f31cd9"
             ],
             "C": [
-              "0bc882c138ff3159",
-              "028d61b68fe02062",
-              "1003f0cd6ddfd669",
-              "1c406aa25dbb3c85"
+              "0cbde60381f85f55",
+              "12714e16ced815bc",
+              "1b6505efef2dd803",
+              "1fd817d45ff04a7d"
             ]
           },
           "opened_square_mask": [
-            "1216eeb759031c29",
-            "0716f087c727c0dc",
-            "0d192f55e932a2b9",
-            "06c129f144755640"
+            "0b7ae085b3baa12e",
+            "13db5080709b6ae7",
+            "160615efc31f31b1",
+            "1f404aac93a6adc6"
           ]
         }
       },
@@ -1380,36 +1380,36 @@
         "char": "r",
         "view": {
           "device_sends": [
-            "06c675fc02e02124",
-            "06d09d9df9530830",
-            "0c3fbe22d5e67b05",
-            "01f7c8a99d578e80"
+            "0c21eb37badc17ca",
+            "1d7b0c5de0cccc87",
+            "11930d0761900efa",
+            "039e58ecefef0d25"
           ],
           "node_shares": {
             "A": [
-              "0bffdc1acac50203",
-              "16e48f6472141581",
-              "07491f03476805b3",
-              "179f45361abf0595"
+              "08d6b03a1a092398",
+              "0399c3f6c6cd5526",
+              "0f179be6cd0c9655",
+              "0413968d12d9d2df"
             ],
             "B": [
-              "084f88582d4bf1d8",
-              "10d36013c38e7d9e",
-              "060ba487b3a223c0",
-              "07e88b8671b3305a"
+              "07196636d53e9368",
+              "1b620664b62748d8",
+              "0c0b3f66fbcbaef5",
+              "1cc7f6f3d93cb086"
             ],
             "C": [
-              "0bb09b8d07ef0bf7",
-              "18481087ca5d6cbe",
-              "12ab3c7504f5d69e",
-              "00782f43738dca24"
+              "100fe98f10b848d2",
+              "010435a4830b61e0",
+              "04dd24b23727bac7",
+              "1f24727f13e97cad"
             ]
           },
           "opened_square_mask": [
-            "183cb15161954126",
-            "160a6eaccd6658b8",
-            "03f2f5d94729f176",
-            "01998f8fecf0880c"
+            "17dd06600a70b94a",
+            "1b4836d24e9b8970",
+            "136f7e7a127b2ed2",
+            "0fec6d86c639e4b1"
           ]
         }
       },
@@ -1417,36 +1417,36 @@
         "char": "m",
         "view": {
           "device_sends": [
-            "15c5752052de9e9d",
-            "11c1f04cdbd339ba",
-            "0c7f66340b23ded5",
-            "1d0d7655b7920c9b"
+            "0bbfd91359eb8f41",
+            "0d6cd3d5c2c770a3",
+            "0a5f0c1d687261ec",
+            "12810f02da2bc6d0"
           ],
           "node_shares": {
             "A": [
-              "19054273ad93d1c4",
-              "0ea4d7c9325767bc",
-              "0fbd40266327683a",
-              "12e8d75c7de2c23f"
+              "0f29ddccf9fb062f",
+              "1f8bb8e43df414b7",
+              "05ffdd0f51bf26d8",
+              "1a8208bf13f31e5f"
             ],
             "B": [
-              "00d04ffb23cd5515",
-              "1ac512b23963d59e",
-              "01f22d764ae7d8d7",
-              "1efd97b8c0c2d6c7"
+              "18b475d21b6666ec",
+              "120f64196e7aadc5",
+              "09b1fba4b4a5ffbe",
+              "100dd366eff94232"
             ],
             "C": [
-              "062a6d912e9ed934",
-              "169615849444c27f",
-              "0e50926351f0bf16",
-              "0e1990eac15a66e3"
+              "1821ac60ea9e92f1",
+              "0e64e30253913d5d",
+              "104e274bf99ad991",
+              "157023d9fc139f58"
             ]
           },
           "opened_square_mask": [
-            "0173c0b2ef4246e5",
-            "084c36ef67ae8660",
-            "02bb199c93030352",
-            "13352305565cd282"
+            "0f3bb8c69a69a0ec",
+            "132c98542a5c6c77",
+            "1385d63513e5c290",
+            "092754232d69422f"
           ]
         }
       },
@@ -1454,36 +1454,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "04c73f73313a45d3",
-            "15fd25bae24d96fd",
-            "0bbf68ae970ba76a",
-            "1f80948b79b26790"
+            "167448da527fbdac",
+            "02a2f78c060bce7f",
+            "0d7af6e91447aea8",
+            "0027f3b892acac3a"
           ],
           "node_shares": {
             "A": [
-              "019d034085d1efa3",
-              "14fc092d6aa47af9",
-              "0214ad0609746db0",
-              "05471104196577d0"
+              "136761702635ef03",
+              "092356adaf0b560a",
+              "01d48c2aaa197287",
+              "0c3f1e02e61664bf"
             ],
             "B": [
-              "0d4994d8183b5e9c",
-              "0534c9c7bdb045ee",
-              "0bd0a11b7dcf0ec8",
-              "1f6c6fa3836a17e5"
+              "1858f81676abfa59",
+              "16d4bf0788e52b2b",
+              "0c7369ec5596343b",
+              "0ef87d67af2708ab"
             ],
             "C": [
-              "111967e761f2b1a5",
-              "05cf2d0ad7ab3f10",
-              "121ab1de78bc837f",
-              "1b4c7f5863307061"
+              "143fa679631e1687",
+              "0007ea4ac80f7ec2",
+              "11b809e900505935",
+              "04c864956ac292ad"
             ]
           },
           "opened_square_mask": [
-            "1944425d108768a5",
-            "1041f97fb1647637",
-            "1c544c91660d3783",
-            "074021e34422eb3d"
+            "1692bf578efc64f3",
+            "1f6eaf29ac239315",
+            "1e375ce5bcc3b35d",
+            "16eb0ee8808ef042"
           ]
         }
       },
@@ -1491,36 +1491,36 @@
         "char": "l",
         "view": {
           "device_sends": [
-            "01102ac770f0ae61",
-            "1b7ef5a7c4d4001c",
-            "101edafcec8f51bd",
-            "08cbc67267aa6b07"
+            "0640473e212932a7",
+            "14146dd1e2d16960",
+            "0be2aee64c58ba5c",
+            "042bd3c665d70fed"
           ],
           "node_shares": {
             "A": [
-              "0d5f3e7bed7057cc",
-              "1279d5c706a60175",
-              "08152f6ebbc09b85",
-              "187eba38ec086825"
+              "0a8f766438839802",
+              "0f8330997f816dd0",
+              "014103eb57db74e3",
+              "00b7b63803e3073f"
             ],
             "B": [
-              "1e8b483136ff7133",
-              "138ca7e9d7edff9a",
-              "1770a996c897b8dd",
-              "096de99018d180b6"
+              "07067189b7d2e1b9",
+              "018c49cdad3b2910",
+              "014e2f12db7726be",
+              "1201adfe90e84e02"
             ],
             "C": [
-              "14157952db9036d2",
-              "19f9824f216bfece",
-              "007a26fa7ba7abaf",
-              "1e135c36fb261737"
+              "0e6a18120fa98617",
+              "0ef08598d34368fe",
+              "1d70cd01ccad6470",
+              "0d469bc96b34aad2"
             ]
           },
           "opened_square_mask": [
-            "153428c38693b8f2",
-            "070506f271e0ce4c",
-            "04d0b12d406217ee",
-            "040d64e226676fa6"
+            "07fac907a1a05626",
+            "05bf4ee7dafeb781",
+            "17e0fd2d694e6e01",
+            "19ffb24330ae54ad"
           ]
         }
       },
@@ -1528,36 +1528,36 @@
         "char": ".",
         "view": {
           "device_sends": [
-            "1cac6afcc1a034dd",
-            "130243328965c7c8",
-            "1c06963f2418b104",
-            "1a0023e7d4dbfd73"
+            "1dc056951d7fbc03",
+            "1483f9cc25aa61e3",
+            "0f3647da576127f1",
+            "168a57c8b29f697d"
           ],
           "node_shares": {
             "A": [
-              "01d868c3ceb196e8",
-              "09bbaafad073f4b0",
-              "04827981b57d8cda",
-              "128f7232874d0444"
+              "1fcd8dfd2fb84d6d",
+              "1a3d8775f7877741",
+              "117638d4a38e98b2",
+              "06e4ae58806555e4"
             ],
             "B": [
-              "0135112625770fa3",
-              "0ebea9b90c26a92f",
-              "16e3317a1ee21091",
-              "175892b377b22c85"
+              "11cb8a5bf68e06ed",
+              "08dbed647be3cad1",
+              "1f2d025a390d38a1",
+              "012209ccf9625674"
             ],
             "C": [
-              "1cf286160bd75984",
-              "0785ab4c2365624b",
-              "049a55042ba06293",
-              "1617fb1a0100cf11"
+              "0e66e7a6d9b9abb4",
+              "1ce68b258c94be17",
+              "0f5cc4d123642eaa",
+              "17f947da86385383"
             ]
           },
           "opened_square_mask": [
-            "16587119a52a5a8e",
-            "163ba2fa21ed4fd4",
-            "0d57095ca8623de3",
-            "1a4f8c864caf482f"
+            "1c54fe9b4afb099a",
+            "0cacc3d806f4b4b7",
+            "0b105ad8ea67cc8d",
+            "054f5b38e982be16"
           ]
         }
       },
@@ -1565,36 +1565,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "0064b2c31b8c21ab",
-            "0440a71f109d5f7f",
-            "0dc3c77febc23b84",
-            "0415b639a7ab60ae"
+            "135bf3d93f56b073",
+            "091ce2cc85ee426a",
+            "1ef1ff9a649c77fc",
+            "0b5c7c29acad16b5"
           ],
           "node_shares": {
             "A": [
-              "06c75dbb6a5cd627",
-              "0d047dfc5f37f8b2",
-              "01fd728fe0fffc47",
-              "0a44b729f1f7d47a"
+              "0bfab8b0959abc93",
+              "17f943b463cea279",
+              "1ab08621c57dd4b1",
+              "0ff81be29bd76ee6"
             ],
             "B": [
-              "0e13def902633ea1",
-              "00507722742b16e6",
-              "03e21b6e478b8086",
-              "0638ce6d3b517035"
+              "089e80c78c5f98a4",
+              "063731c156399e86",
+              "15916d2616eb200a",
+              "01f9aac6f807d4c4"
             ],
             "C": [
-              "0b24c34b933feb45",
-              "12ab0ae12c9cf042",
-              "1a207201d774835a",
-              "0f827a68d2b6bb3b"
+              "0b66c687de05aad6",
+              "01cf8a8a45f7bedb",
+              "0fbe0cb823970b6b",
+              "0e0e39566c20bc40"
             ]
           },
           "opened_square_mask": [
-            "1c0c8c41c0b90356",
-            "126c3b2bba0eb266",
-            "0a74d5ee3249c2d2",
-            "0e02eb81f8b81745"
+            "09c3fb81ce01bd67",
+            "0c7e787b4686e1d5",
+            "0bc761c383687b69",
+            "168a58187b727323"
           ]
         }
       },
@@ -1602,36 +1602,36 @@
         "char": "p",
         "view": {
           "device_sends": [
-            "07ccfd385048df07",
-            "1432607478ddc72d",
-            "1333911e3e0b23e1",
-            "0dc37fefc82622e0"
+            "1ccd1180a30a20f0",
+            "04de335670095c4c",
+            "0c31cde5da323eb7",
+            "1be5662e265dfe5b"
           ],
           "node_shares": {
             "A": [
-              "1053cf4fdab1993a",
-              "14c0e45c702e4982",
-              "14b04d6433024934",
-              "089cfa170575f5b2"
+              "1dc71e1acec8039f",
+              "1cd629d7b6aac42c",
+              "1740188577a40131",
+              "0d62a7a0f89a827d"
             ],
             "B": [
-              "064384a4f6989498",
-              "0d25be3bcbe32240",
-              "0e4017f3f10013af",
-              "15c43d413c69e1cb"
+              "16457555e6ecf351",
+              "189c57161542c181",
+              "15751838af58ce42",
+              "1ffc074d07647620"
             ],
             "C": [
-              "0968ac0b2eb5d22c",
-              "1e195d67c3ee9437",
-              "1d0f9aa7dbfda2e5",
-              "019ec8a7be20288d"
+              "0bf36c8f4a4b090d",
+              "0a8d7f1234127a4c",
+              "134acf41d9033055",
+              "12a151120001076c"
             ]
           },
           "opened_square_mask": [
-            "0fee5441b2d6c1ba",
-            "020204d2f515a177",
-            "1b087d7b2ddab135",
-            "17e49e7c1dc07b65"
+            "1108a1131d4440e0",
+            "04360fd9e4e51830",
+            "184cb0cc7dd2d2bf",
+            "1cac5c3801f0ec92"
           ]
         }
       },
@@ -1639,36 +1639,36 @@
         "char": "l",
         "view": {
           "device_sends": [
-            "122c785781c1f52a",
-            "0880eaf1feadcfc4",
-            "112ff3d6f760eb1a",
-            "028ea8867beac3dd"
+            "158985d7b11ea9bc",
+            "0c17df53ba372a35",
+            "08f69bdf314b37f3",
+            "1955772f44a88df4"
           ],
           "node_shares": {
             "A": [
-              "0d126196d2ac29a0",
-              "01b33285804f174e",
-              "07b7fb9a537e30ec",
-              "13d23a415d84ed97"
+              "1ad6cf98d1f7e641",
+              "15518869dc4c7baf",
+              "14f9180cc121486f",
+              "1062c2772549726a"
             ],
             "B": [
-              "0675c7d4a6648e40",
-              "12b2c86d80e33998",
-              "0317c88fda5e2ecc",
-              "0268f6354372ec03"
+              "1fa16e6a79a68112",
+              "1c4185502ccbada9",
+              "036735815e8e97e5",
+              "1d5ca53882828a62"
             ],
             "C": [
-              "0c77d69486ef4804",
-              "0b9a050cfecdaf11",
-              "15303bd5d223a03f",
-              "09c4cf895f08267d"
+              "0587c1fcb4619890",
+              "0e6cf245f6e7d69e",
+              "079fb271e0501fa3",
+              "124098505834034a"
             ]
           },
           "opened_square_mask": [
-            "02da6aa68c526b81",
-            "04f48f9a212a360c",
-            "0ad33ad4f34c95a0",
-            "1c84db99852c6f8b"
+            "1b42c70bb9ea404e",
+            "00f0a8b9495b861e",
+            "135046729d8799cf",
+            "0aea5bdc1f92bf4e"
           ]
         }
       },
@@ -1676,36 +1676,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "0d710890b073cfb8",
-            "1e338af03b5f26d1",
-            "06f02a66d40c28a4",
-            "1c105f98dc6fc089"
+            "1fcf58c651a16019",
+            "1470bc6b6726f866",
+            "127cfc7328bcce31",
+            "1de97b906497c59a"
           ],
           "node_shares": {
             "A": [
-              "167c822c4eb958f8",
-              "0d5be8726d479b2d",
-              "01f6b55922d7fd55",
-              "1415671c425f3046"
+              "0010cb58c3901606",
+              "00ad64087546c61c",
+              "0e9040dc1d6486b4",
+              "0cce4a22adb9e8c5"
             ],
             "B": [
-              "072ba43ec0c9163a",
-              "152408d31bf520ca",
-              "1c2b8d81530955c3",
-              "06900978e3017a98"
+              "037f280c2fa80b2c",
+              "156a4280956b5e2b",
+              "1699f0334b31574c",
+              "078df8e5bae63095"
             ],
             "C": [
-              "0257d994f07d90f0",
-              "1d800eba76c343af",
-              "01ddbd258a1eace8",
-              "055a8f6ada9f54f2"
+              "1c700c9b0cc7def0",
+              "09e85976f54ddb60",
+              "1ad5cef0976a21ff",
+              "0ba3bcf7975fe676"
             ]
           },
           "opened_square_mask": [
-            "1b930771d67e966b",
-            "022c76a0025fd5be",
-            "1a5cd103a0a6b63c",
-            "09b236f4a33a7330"
+            "0f8ce108155964a3",
+            "16aa67d1906d0b5c",
+            "08a8c3ab7151b312",
+            "14a532d2e811e611"
           ]
         }
       },
@@ -1713,36 +1713,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "13ce45311f041120",
-            "18981f6f958d8b9a",
-            "0f35a9ec40bc0b5d",
-            "173d1ff5154f9e38"
+            "1213208527cd0190",
+            "1c7e0fcc1ab21af0",
+            "0a2d549627045d5a",
+            "0a63dced0dc4dcf1"
           ],
           "node_shares": {
             "A": [
-              "1454ab229f1dff1e",
-              "1f7dc10e9c5f5941",
-              "1b53817ef790b267",
-              "1b190a856a8a5326"
+              "0694e102a6912379",
+              "083fbdb47213a290",
+              "146304d25ba67716",
+              "1fbf65baa15e72f0"
             ],
             "B": [
-              "15691354e6e3d40e",
-              "0fc74e0c4a9fa3fb",
-              "025420d864293254",
-              "0c7914230855a129"
+              "1e0614f45d09c63b",
+              "0b0a36329ce44650",
+              "198c01ebdf0af204",
+              "15891ee278395185"
             ],
             "C": [
-              "1642418879fe2cc3",
-              "10baf0e5190102c4",
-              "02585da8a4461b0e",
-              "186de1578d200bf8"
+              "1b650a08fc65163b",
+              "0cb60c18f1081721",
+              "1210f941c54e96ae",
+              "0ab77b62e6683bd2"
             ]
           },
           "opened_square_mask": [
-            "189b61d31ef704aa",
-            "12b5875a4488a61b",
-            "0cb39ad9bbd47d32",
-            "16d706abde4127d8"
+            "13f4d009931b489e",
+            "1fed84abab276c4f",
+            "1274cd98d25e1159",
+            "1a8a786a1e208bd5"
           ]
         }
       },
@@ -1750,36 +1750,36 @@
         "char": ":",
         "view": {
           "device_sends": [
-            "0fa30396af4b752c",
-            "01acf7ecefc020a0",
-            "025087365f083e2c",
-            "0450e0f1fd35fd01"
+            "0021eaa452062cab",
+            "0d1318e7a17c561f",
+            "1017af8e4636e327",
+            "0150f6e278d61619"
           ],
           "node_shares": {
             "A": [
-              "0f2a52cdc4b206a6",
-              "13a22285031d7ae1",
-              "05c32339ceb3f44e",
-              "1ae42fff74255c77"
+              "033ffbf08ecb68dc",
+              "09143b949bfddc89",
+              "1664d4681dc6714f",
+              "07c760983c7a4aa6"
             ],
             "B": [
-              "166530ada921c8c3",
-              "14b23c5f75ba02d0",
-              "146d588f8e8b0bb0",
-              "175892eacd6c15f7"
+              "0531a085ab4752d1",
+              "09172b786a93094b",
+              "179a71540e485d07",
+              "12a103f634c564de"
             ],
             "C": [
-              "1a707c84922c3068",
-              "17aba11b8728822c",
-              "05cf8436a2c10013",
-              "0dc33d15be6e8da4"
+              "178e6389c5ed4425",
+              "0dd498f2f96f1a0a",
+              "1200ba43d3f131ba",
+              "05979b718ec0508f"
             ]
           },
           "opened_square_mask": [
-            "06ef70ae9f29ba8e",
-            "1c8e0c263bde45a7",
-            "1fa78b5835f65b9c",
-            "1d023d56ed6dc16a"
+            "030631e22a6f8231",
+            "1f81fb6939ec31b3",
+            "0d0b3afaf00829d4",
+            "0391cee81b9e5768"
           ]
         }
       },
@@ -1787,36 +1787,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "16f5cff4f726191a",
-            "0eae74fd0dbafe33",
-            "02112717e9854349",
-            "02ab35593ecf2421"
+            "1e38aa4e4b7d67d9",
+            "0deb12c7879334b7",
+            "0b4d24ec9bc5308a",
+            "1f9683ac8df12c87"
           ],
           "node_shares": {
             "A": [
-              "1ca7f2ffbfb9d812",
-              "1a6613ce778ba28f",
-              "001f165938b77a7e",
-              "0fac2ff743fc0151"
+              "0fce3f1e888e8e54",
+              "10238c2e2db60b30",
+              "0718f31d694ad8f8",
+              "1170b719ce44735c"
             ],
             "B": [
-              "1b172bc1fcf833ca",
-              "142bad195a2596a6",
-              "096d4e4080d72fdd",
-              "11f85f7789d3d9c0"
+              "1ce8c85cfc1ad31b",
+              "036c0991378d7177",
+              "1f565da1415d3c06",
+              "06082b660153f7a4"
             ],
             "C": [
-              "0840e13e434df453",
-              "116e3f182e4ec6e4",
-              "16739b6646715570",
-              "1e5b70913230256c"
+              "1348f8847b569ec0",
+              "0c706a409abc8373",
+              "1990af415557eacc",
+              "08871d803067957e"
             ]
           },
           "opened_square_mask": [
-            "1dfece87e794e563",
-            "0338690b868c1d61",
-            "16260f5218dc450f",
-            "1b03b2b5d7b8bc7d"
+            "05d73f63e0196151",
+            "02ba57e371ba858d",
+            "0b4f0b7ed7b4b2ca",
+            "0b4eaf72e3e887fb"
           ]
         }
       },
@@ -1824,36 +1824,36 @@
         "char": "r",
         "view": {
           "device_sends": [
-            "0524004efaa4a62e",
-            "12f253560c347cea",
-            "1f9d9b5c51a9de2d",
-            "1b3c0ce407c65359"
+            "1f3879eefbd617fc",
+            "18dc335387605e45",
+            "0816a66e26d1f345",
+            "13910e89db7e59c8"
           ],
           "node_shares": {
             "A": [
-              "01fffebe8a969e20",
-              "06adc3a430716ea3",
-              "1c3f2a415d4e025c",
-              "1a3bccaf18302d66"
+              "14b31b5150404134",
+              "021d7d54557b9d8d",
+              "1bdad5ffadf7e44c",
+              "0f714fa82bedd117"
             ],
             "B": [
-              "126f1840eb4da307",
-              "1c62a7adfe49aad1",
-              "0cd6a6f4687aefa0",
-              "0f446dee3e7faed1"
+              "1502e1a230a08cb2",
+              "079d79ea08936fa6",
+              "1f3034e2217031ed",
+              "12f39e25fd2f3f39"
             ],
             "C": [
-              "0b90e9008a1bbee8",
-              "1cef94add144e6b5",
-              "16ea2eca3a370e01",
-              "167fc562a95023a3"
+              "164a030c7f1f3228",
+              "164508c1a1f0f2f7",
+              "04f4f51e3097e9c4",
+              "1d9b1231d6e2ef8a"
             ]
           },
           "opened_square_mask": [
-            "1d56b978f2b807ff",
-            "11bf8a5159eddd06",
-            "0ac48a078f3f3fe9",
-            "151ca2abab864373"
+            "0b495eb751a4ca03",
+            "06b5e8ea08d038d6",
+            "0153052e87aba79b",
+            "074bab986dd6208b"
           ]
         }
       },
@@ -1861,36 +1861,36 @@
         "char": "e",
         "view": {
           "device_sends": [
-            "1611b835ffc9f5b5",
-            "1e8752b5aec9f3ab",
-            "127b1a3f4631dfd3",
-            "1dfecbd07a6e841d"
+            "0812599464113afe",
+            "182e63f584b8545c",
+            "149667ba94e4ead3",
+            "071fec1dfb54c6d5"
           ],
           "node_shares": {
             "A": [
-              "1bd733136b300c56",
-              "1a754cc6475e4539",
-              "14c6cf184e9154fd",
-              "146d029c6cc24d79"
+              "02c5dd2e9fb19604",
+              "154ea0878b993a9f",
+              "1af6fad0ae11897e",
+              "19d7f06c3305ce66"
             ],
             "B": [
-              "1c7207d44f81f02b",
-              "176a74365e1de4dc",
-              "1c4df44273ea996e",
-              "05cee4a533e3d82b"
+              "00362dbb4bb1e118",
+              "14562abb0f96e753",
+              "175aa541921072b2",
+              "145429399596ba1a"
             ],
             "C": [
-              "07b6c518454e035a",
-              "0e203f035a83d5e2",
-              "0eeb3ca53d84118d",
-              "05c418be5f59da63"
+              "1d03f516149c88c0",
+              "165b34bd64cfde05",
+              "0dae5fedbfde03c8",
+              "11d3e65a37637786"
             ]
           },
           "opened_square_mask": [
-            "1be05ffc47528455",
-            "0dc6e9df75a69501",
-            "0f36c09ce72d38aa",
-            "1605302459f01661"
+            "1f9d51a8b630435e",
+            "1eef1069c8d9faa7",
+            "1e2c4adf5e62c2a9",
+            "00ddb8fe6baa679d"
           ]
         }
       },
@@ -1898,36 +1898,36 @@
         "char": "s",
         "view": {
           "device_sends": [
-            "1bfeb98dd169b68f",
-            "0dcaab173441d1eb",
-            "1cb08c0522ce65ae",
-            "0dc3d51feb511e9d"
+            "0c9fc4ddbc5b2fad",
+            "0224577c02e96e71",
+            "0c1d931f96128f2e",
+            "0c7c169f999777e0"
           ],
           "node_shares": {
             "A": [
-              "04b8ab73db30e973",
-              "05f82fe1dd9a2d4e",
-              "0379f2d66ca0f2d4",
-              "09e2a47aef2521c5"
+              "15d0fbd4dcf473f1",
+              "03d7926e89590bac",
+              "134550efcad4e172",
+              "1298fbef8c8056fe"
             ],
             "B": [
-              "021a54c0b111762a",
-              "1e031ec88c88a585",
-              "0258c49756076821",
-              "0d843ea8a4de8443"
+              "0e1a833ff2822e86",
+              "0e9bca18bc163a50",
+              "0ec82048c51863ae",
+              "1dbbf07d696e68e1"
             ],
             "C": [
-              "192cffcb73bd9ffd",
-              "1c04b15595dd2ce5",
-              "1a2d48923d57a4fd",
-              "08991cdc6bfc59de"
+              "1c1480eb30895d22",
+              "0d8ca378ba90b9bd",
+              "1df28ec77012bad1",
+              "0fab13930a114006"
             ]
           },
           "opened_square_mask": [
-            "172348d6df32c019",
-            "1383b1b5beea93ea",
-            "133c280bbcc74dd4",
-            "1fee9b93e49df439"
+            "1adf4cbd92b5285a",
+            "1ef78f9e1084bf64",
+            "10e41d316a8b6c49",
+            "12db79f87d56b90f"
           ]
         }
       },
@@ -1935,36 +1935,36 @@
         "char": "t",
         "view": {
           "device_sends": [
-            "0ba152aa654c5299",
-            "07abcd83c012cf14",
-            "195f381252b8bfc8",
-            "1412e738967a2a49"
+            "0cc6fa72687e1722",
+            "12df90a8eec6f74b",
+            "103ea6d8ccd57ae1",
+            "134a02a1637d8ecd"
           ],
           "node_shares": {
             "A": [
-              "196fc8b6a8577c51",
-              "0ff94a1f837382d0",
-              "16ee2a5cccac58a0",
-              "08e034057ee951b3"
+              "105605aaf9991a8d",
+              "01e2f132896bc8e5",
+              "12831f0f186d292e",
+              "1fa24444c145bb93"
             ],
             "B": [
-              "04cf42740257a495",
-              "16f3bcb6ed84c71e",
-              "078dba529e94690c",
-              "1649083004a0ccca"
+              "086815bb432f1f8d",
+              "137913fc1f558dda",
+              "123855c72e55da69",
+              "15768be310824226"
             ],
             "C": [
-              "01c0f4d55550defe",
-              "1912f9298f07b608",
-              "01841b5094bf3e4b",
-              "00d6c3ca7c75e19a"
+              "0741e499c337c5ca",
+              "0aa3fad1573ea938",
+              "1b448b29b93cfc5f",
+              "0ae72fd82e38025d"
             ]
           },
           "opened_square_mask": [
-            "1424d0f8711e12cc",
-            "11e3001020af5328",
-            "1d2634cc393d055f",
-            "1a7f56c295c72e90"
+            "094615ef6794eb9f",
+            "07ed78bc5e4f515a",
+            "1031836a623bd4e1",
+            "162df985a3835330"
           ]
         }
       },
@@ -1972,36 +1972,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "09482cf484dc0af0",
-            "19227e9b95ef4c97",
-            "011c032c97b9b94e",
-            "1bc516a92aa6a77f"
+            "0a964e1efc214685",
+            "0be162bd2c95024b",
+            "0430c683bccdf128",
+            "1b2d751e5ec5866c"
           ],
           "node_shares": {
             "A": [
-              "02579c44cb6d1a7e",
-              "09123a00384b3ee8",
-              "13e486c2d11b6cb6",
-              "01ce2462b7eb4b1a"
+              "193de12de592c673",
+              "0c2579c1cc9dfd92",
+              "185098104f751f7f",
+              "0d1c26778821900e"
             ],
             "B": [
-              "0e93a8c2f4303bb2",
-              "1a4e0e27f920e1e3",
-              "147205e6b4280213",
-              "0ca8b01b8cf45118"
+              "1571e57fec703272",
+              "0e2cb56901fa4a76",
+              "1ed2686ea5cbc54e",
+              "157e36ee3b86c5e6"
             ],
             "C": [
-              "0f14baf84062a9b3",
-              "1c9fb7d7ce93df39",
-              "17a973567abc9127",
-              "11892b81bb2063be"
+              "115039522dfd06fd",
+              "05add0d53167b7fd",
+              "08dcff810abf1b23",
+              "1d65a29a3c57a9fb"
             ]
           },
           "opened_square_mask": [
-            "00b4b99b348e26d1",
-            "0625d99dff6b702f",
-            "1f1fba4bbd193a44",
-            "094c4791039e3dbc"
+            "0f43d07fd22377f6",
+            "0e5e6fe2b6445328",
+            "016b4b3621a2237c",
+            "0167e811503515f4"
           ]
         }
       },
@@ -2009,36 +2009,36 @@
         "char": "a",
         "view": {
           "device_sends": [
-            "0da3db5df2e5cb46",
-            "0570e002af49359e",
-            "0d087d0b2baa7555",
-            "13597956d75fa046"
+            "09569b20f5b0827f",
+            "0c2745e3e28dc1fd",
+            "1d91a0b0183b8ed3",
+            "06f8da8fdd961f3d"
           ],
           "node_shares": {
             "A": [
-              "03985cf3601990d3",
-              "0d3e0ca80083deee",
-              "15f12496afd0e62c",
-              "00c3e45a9451c100"
+              "13fbcd0c5737f29e",
+              "1202b01a584f174b",
+              "14607975ba9ba177",
+              "199bc9cbf1251e48"
             ],
             "B": [
-              "1b7e2c56fc05a5ab",
-              "1f27623529e1e929",
-              "1717b7698a9f2289",
-              "15638c9f36c458b8"
+              "1a5a99e36edc1a77",
+              "027120cef35c0d0b",
+              "026b8caddbda9c3b",
+              "18add5220118b9eb"
             ],
             "C": [
-              "00e976b5a3e0c95e",
-              "139a9122d59a37e0",
-              "12f723ffc58ff743",
-              "09d88f0634e9e64f"
+              "11a9991039ebf2c6",
+              "0b8c2f16b454dba2",
+              "0933f9dc6989c247",
+              "0db661120dc227d3"
             ]
           },
           "opened_square_mask": [
-            "17bfdcb9f864fa0a",
-            "1b54536f2b151483",
-            "10b134cc7f974d25",
-            "08164b66e8b56112"
+            "007aa4c377f0301c",
+            "050be99c2e5bea12",
+            "1ec45cae57f96245",
+            "082e469ad4823753"
           ]
         }
       },
@@ -2046,36 +2046,36 @@
         "char": "n",
         "view": {
           "device_sends": [
-            "1a0e6953765b1f11",
-            "09c35bf54959215e",
-            "0fadac2dab3d9b89",
-            "0a852c3eeecc771a"
+            "0c51ab78458286d2",
+            "1f613f713a1b87e5",
+            "189c5205911b05dd",
+            "18e1279cc8330f6c"
           ],
           "node_shares": {
             "A": [
-              "055b03b797fa0516",
-              "04d943f6be7734a5",
-              "0a3f2c5c6b3c4039",
-              "119c0571838fc76b"
+              "09733472805a7f4c",
+              "0c78141c5b62da6e",
+              "02bd5a0d24870c50",
+              "1fe36c0b0fedcd01"
             ],
             "B": [
-              "06d4d21edd9d6982",
-              "03c3516c27e92512",
-              "1dbb3ea9b8b5090d",
-              "017d4594489785ee"
+              "0f7235c2d6927572",
+              "10cc94e8792e1c81",
+              "12bff218548bd4ff",
+              "0d4695e1702d23f3"
             ],
             "C": [
-              "13d02a298a689177",
-              "17636a9d199fa673",
-              "180594f9dc0eb6b7",
-              "0ce6b4fa33d8b282"
+              "071a95caa9130b51",
+              "02bb56fb2b6f093b",
+              "0a82b3da86ed1eaf",
+              "12d5fe137fe50ee6"
             ]
           },
           "opened_square_mask": [
-            "120a2b7c381c7c44",
-            "014e4b69e23a451d",
-            "0e712b8c16ae2496",
-            "13f44f5c1c9a4ba6"
+            "03bb0c8a5f5149a0",
+            "0ad232fa57ee1d9e",
+            "1ae18fd27e79fb49",
+            "00edff46571baa08"
           ]
         }
       },
@@ -2083,36 +2083,36 @@
         "char": "d",
         "view": {
           "device_sends": [
-            "0455b1b87c06232e",
-            "138a3081b70f0079",
-            "0f759c1eaa6eee01",
-            "15a7400602503bb9"
+            "0e7bbfad7eb7e82f",
+            "15add1ee8291dba2",
+            "07abcc4b7ce14585",
+            "047fbdbc3c1ac03b"
           ],
           "node_shares": {
             "A": [
-              "06b077cb90eb45de",
-              "1cf0466d93be2886",
-              "072a4d1b6bdd462f",
-              "021cf06101a9981d"
+              "09c095e3b6abade1",
+              "091cc699e2bba643",
+              "0f05ba8308d5b89d",
+              "0213737c56780068"
             ],
             "B": [
-              "0362a8edb28fd241",
-              "1013c22ec1f113f3",
-              "17aa8507c60e0341",
-              "195af30cf731eeb4"
+              "05b0794ca1baa967",
+              "04b4e4c6f97fd0c8",
+              "1932796649ba0449",
+              "1d0ade4529dd1e6a"
             ],
             "C": [
-              "15ecdf46bc84e803",
-              "12fbf763aa50c32d",
-              "012b2ddcce14b690",
-              "04881c92072478ff"
+              "108ef0cfa799a8da",
+              "122e549f23c4889c",
+              "17c7cc16ad704319",
+              "00e1ae3e7faae0fe"
             ]
           },
           "opened_square_mask": [
-            "04b69277aa226092",
-            "04f1a4b42c3c7af7",
-            "03e76106b7e8a936",
-            "049729ca3c7961a4"
+            "14afbee97602a519",
+            "185ed98a93d5ddea",
+            "1a2c442cc7087908",
+            "01d94c38aeef4c51"
           ]
         }
       },
@@ -2120,36 +2120,36 @@
         "char": " ",
         "view": {
           "device_sends": [
-            "02ac84cee03a51d0",
-            "1fd8c9509982875c",
-            "08828c628665aac9",
-            "13bac4c6d115df22"
+            "1cf3f9861b3f3f0f",
+            "10c856248fb26047",
+            "13ce41635f30028f",
+            "1f4a26cc7f05ba7a"
           ],
           "node_shares": {
             "A": [
-              "126f83e70c34116e",
-              "12107d2124b5d65c",
-              "1b179056d98865a4",
-              "141954ac537fe670"
+              "18fffa1167d65620",
+              "0f840029fff59fa3",
+              "1a35663c93d5ce16",
+              "0f29f533306f41f2"
             ],
             "B": [
-              "032c710bab486c51",
-              "04e3f2095e658cf9",
-              "06b5b086ad1f18c2",
-              "0cc68b04bde39709"
+              "100bd341e2d5388b",
+              "14d49d9c40901723",
+              "18d814e24a57989c",
+              "1714a73a135f7118"
             ],
             "C": [
-              "0a640b0d4883822e",
-              "090b90d57ce49c76",
-              "1e32bf22795881a9",
-              "1f20204eee9c827e"
+              "16f432acb5547141",
+              "1ba76239bf7a4904",
+              "0cf284e121d2995d",
+              "19c16392bc314ced"
             ]
           },
           "opened_square_mask": [
-            "172180460dbfbe1c",
-            "07cb7fb009825c20",
-            "06a08d59c2276ed0",
-            "13ae01fd0ab1a0fe"
+            "1611fe32597e80c0",
+            "08ccaed0b108c260",
+            "11bd10309eed1cc0",
+            "0e249007a3ca0db6"
           ]
         }
       },
@@ -2157,36 +2157,36 @@
         "char": "f",
         "view": {
           "device_sends": [
-            "1be6d63a8ff14cd0",
-            "198a713a0dadd09a",
-            "09b8cf9deca53965",
-            "101cb13d2383ff8c"
+            "07ad021e6f205b35",
+            "04f16166023589a5",
+            "0d4e1fd05c4a2d42",
+            "0281143d5e1168ad"
           ],
           "node_shares": {
             "A": [
-              "07d9a01591900b42",
-              "13cdead88ada615a",
-              "08730d272921f075",
-              "1e6f7f9b52f19f6a"
+              "1317044872c5fc64",
+              "0da535db443d9805",
+              "103da0678ad9bc81",
+              "069bbecd5985aa18"
             ],
             "B": [
-              "19baf31756cec8e0",
-              "0830fe45e6a61893",
-              "0f7808675e6d39d5",
-              "1f996902299b40e7"
+              "171c7862a1915f9b",
+              "15b2e6593950a802",
+              "1d245a7222eceee7",
+              "0395326e2b2ac60a"
             ],
             "C": [
-              "1e6b6cd317a12bc1",
-              "040116e18e7f860a",
-              "0814ea717870d5ad",
-              "01f7176283731fc5"
+              "15cc8354eba8a3e4",
+              "1ca7e3cb8271bfef",
+              "129e05265239548e",
+              "15cf0ec47b4f8ff5"
             ]
           },
           "opened_square_mask": [
-            "1256b2dbda8e7e61",
-            "1c011b785eb795dd",
-            "005072fa46dbfe1e",
-            "17fadcb02c301b97"
+            "0a96ca70e043e5c4",
+            "1a4ce14e133b6059",
+            "1d9365ac3c4dec51",
+            "1a0b5e6e4a67d85d"
           ]
         }
       },
@@ -2194,36 +2194,36 @@
         "char": "l",
         "view": {
           "device_sends": [
-            "1bf52bc6380c6d3d",
-            "0f2654d7b8c208d7",
-            "0a956c4a2aad2634",
-            "06ce8563038ee2d7"
+            "1b009bf8a327f436",
+            "0a6b4722aa3bb761",
+            "19a2a44582f1ee38",
+            "15ef5d13c09fe09f"
           ],
           "node_shares": {
             "A": [
-              "096904e6e7abaf1b",
-              "145e877f05fbdf71",
-              "04eceafe0a9b224e",
-              "1e8f49511ab5e34a"
+              "0079066ed9a501de",
+              "079fe8efe4ce1404",
+              "0272b707ac5bb13d",
+              "0291faf18f4be035"
             ],
             "B": [
-              "1a71c7b3612f6f18",
-              "115771782b9acb10",
-              "17dcf79b5c2fd353",
-              "0a8ef681330f1fa8"
+              "1908948bec549b2c",
+              "1737d0890168eea3",
+              "076be3d8a94bfa28",
+              "09a72603c3c6dac7"
             ],
             "C": [
-              "1c253365b724e19e",
-              "1a4a0708ce69555c",
-              "03361d6699350a70",
-              "16e1c02db23afd20"
+              "067e65053a0662c8",
+              "0128468719c8fd37",
+              "1621651faa5854ac",
+              "13c6df0aaced4517"
             ]
           },
           "opened_square_mask": [
-            "0324fec4b17745a4",
-            "110818821197d50f",
-            "1601708ba1f15e0c",
-            "193ed03efb3126af"
+            "0d2e68f38cdc3e1d",
+            "02fef05b446436b8",
+            "0c50f3c0ce0ab657",
+            "1d9a75e6e79ecd06"
           ]
         }
       },
@@ -2231,36 +2231,36 @@
         "char": "u",
         "view": {
           "device_sends": [
-            "076d6e2d5fb7b3d6",
-            "1d563d109f0cd33d",
-            "0ab11fbf4947a57d",
-            "1c930a154cfa2feb"
+            "0a2923251bc71d86",
+            "006af7d4309b911d",
+            "133af786a8d905af",
+            "1d6c3d2dbfe0cced"
           ],
           "node_shares": {
             "A": [
-              "0f985402fe322221",
-              "0589c289447cfce4",
-              "0bdfd28c4b646207",
-              "132eb096025ac8e3"
+              "1b283c207c6c6a4e",
+              "1d9f94bb681b9568",
+              "16e67c803ef51cb1",
+              "09058c86e3219815"
             ],
             "B": [
-              "04cb69960a0bec8b",
-              "1f983cb1cc15925c",
-              "1dd23a836f6dad91",
-              "0b8e8f15c74cfe76"
+              "0e5f003fd4cbc795",
+              "16e35f9f02e3bbf9",
+              "11782350ac14996f",
+              "079b8a345ceeadcb"
             ],
             "C": [
-              "0b9c4266f7c1f152",
-              "1ade00c4ef6d70b9",
-              "164df2f0452df030",
-              "0142c054365838b1"
+              "1678c39faec7ce1a",
+              "0b7d0ba59500ae98",
+              "17a1602f14f649a8",
+              "0f5ee944bfefba2a"
             ]
           },
           "opened_square_mask": [
-            "11915c732a2a5e7c",
-            "03c0636af77e034d",
-            "17a550ed825477ca",
-            "0b684e7730eb7379"
+            "190a5044de77fc8f",
+            "1b37be3612f39b17",
+            "12bffc6bf6553fb4",
+            "07a30ee40577c5f4"
           ]
         }
       },
@@ -2268,36 +2268,36 @@
         "char": "i",
         "view": {
           "device_sends": [
-            "12c68eb44ab32ecb",
-            "119fbdb558beefd7",
-            "01cc62fdfd36677c",
-            "01373e856083e8ed"
+            "012f514d947a9bd3",
+            "0b5f4727e9c96100",
+            "1999a0385abb1e58",
+            "0c8b7a825552e0c8"
           ],
           "node_shares": {
             "A": [
-              "0e24fc5552d0bef9",
-              "1ad7ef94251740f9",
-              "0b9fb15c7819a458",
-              "1b3316a2b5e2c314"
+              "135ae93c23c0f0de",
+              "128437c070c37093",
+              "1d205eeba2f2e7b3",
+              "00b10d3c1be3fc18"
             ],
             "B": [
-              "172db316a7377333",
-              "0d8595f892c4468a",
-              "059ab5aca074854e",
-              "1eb680b58a781cd2"
+              "04071ea3c1538447",
+              "1d488286f71d675e",
+              "158bba5649f85ffc",
+              "1d5fc507ef86b04d"
             ],
             "C": [
-              "1aad509405f7cdde",
-              "17a27a7348247876",
-              "0ec598f6e771d668",
-              "061668a7bfa51fdd"
+              "089df8201aeb8ae6",
+              "103345b8981f2808",
+              "0d53e6be1314b85e",
+              "01ef2dbbf495535f"
             ]
           },
           "opened_square_mask": [
-            "1bf21320dd9e527e",
-            "114c69ce35457228",
-            "1498b525eb10f308",
-            "159921758e48fc98"
+            "1849c7689eac7a53",
+            "15718b9de177955f",
+            "0f71ad0b6feeab5e",
+            "0fafc53b79ac85b2"
           ]
         }
       },
@@ -2305,36 +2305,36 @@
         "char": "d",
         "view": {
           "device_sends": [
-            "0d91d1407344fedd",
-            "1479df635bf4df56",
-            "19087024219ce051",
-            "14504282bbc4f33b"
+            "05adcaf8bf1a895c",
+            "17fea518f42cf36e",
+            "1baeded047ce65fc",
+            "1eb5e4fd6dc6a9b7"
           ],
           "node_shares": {
             "A": [
-              "1548115bedb79278",
-              "13d63244e6be407e",
-              "0fe3c42efc148156",
-              "1075cbed4e9d584f"
+              "03a4530e690f60a9",
+              "0344a3d1bf3bf091",
+              "1f03a525309e5416",
+              "1ded45c522b70b10"
             ],
             "B": [
-              "1eb77ec12470cc63",
-              "0b66bc6f877b5d40",
-              "171d1e93851aa3e2",
-              "0df9e97e252dacf7"
+              "00d6c2f587597903",
+              "1c5273e6bad365a1",
+              "004d42495c7779c0",
+              "121fad800220b7d0"
             ],
             "C": [
-              "0c006fe2edd7a131",
-              "00c3114b91c6621c",
-              "18ff1d3d7ed0daee",
-              "01904a948c34faa4"
+              "1b84e9fc0f972661",
+              "0068e84785f0a9a8",
+              "00af189172ea3251",
+              "0ff30cbadb283d09"
             ]
           },
           "opened_square_mask": [
-            "1ada6238718eb5a2",
-            "0777be75cc932c3a",
-            "004ff8b2e3775abc",
-            "06262ad0156bf911"
+            "03731475091eba92",
+            "0ba378995f8b24f7",
+            "134a0e02e34b2c7c",
+            "1003d74e83ffa905"
           ]
         }
       },
@@ -2342,36 +2342,36 @@
         "char": "s",
         "view": {
           "device_sends": [
-            "0cce21d7fa7fbf86",
-            "00b8f6b7eeb099bc",
-            "170502aa5ad7cb9b",
-            "0c1e8c1c9792a018"
+            "156a7dea97f06fdd",
+            "1ec932f8130e8b2d",
+            "1e8ada952384f9a2",
+            "0e4995b8b71ea5ff"
           ],
           "node_shares": {
             "A": [
-              "0d351431c69748c1",
-              "00c227dfae52ddf7",
-              "0fdecccf77332e59",
-              "1cef625d5ed73138"
+              "0f9becd3d39d8f15",
+              "10b72a09ccba404f",
+              "14e1c4c20b37ab77",
+              "1cb4d9ef2e441ad8"
             ],
             "B": [
-              "0f33fa10d5ab5ea1",
-              "10a8ae8c1996b668",
-              "0e2930dbc149a0e8",
-              "17b5a4f3e01ec0f0"
+              "1b57bb79c49d52e1",
+              "0b5b5288661bfbe7",
+              "19d70f43b978505c",
+              "1d73d3059b475a98"
             ],
             "C": [
-              "0396f1bd63bd5882",
-              "0e95299438166b98",
-              "01f80254c78330b6",
-              "0b5af8aec10a0dee"
+              "150c57b267c51ded",
+              "03ed836dcd29c3c1",
+              "11472bfa3b500423",
+              "05d7530b36748aa6"
             ]
           },
           "opened_square_mask": [
-            "0e4e6d9bfed02b4c",
-            "165a119bb597782d",
-            "0cab28c3605349de",
-            "1253ea9750668f77"
+            "08ceea87478d8531",
+            "058261d9a1ae32e3",
+            "1c85ae713529ec06",
+            "1163d3cac4519486"
           ]
         }
       },
@@ -2379,36 +2379,36 @@
         "char": ".",
         "view": {
           "device_sends": [
-            "0ed682427f27f235",
-            "09739025c069b588",
-            "00bdad632f5c3903",
-            "0ec0e7fa91c657a8"
+            "05f874fdd89b4e91",
+            "05c8e0a77dc8a224",
+            "0d98da80c5af8cf9",
+            "0f5a939a122ac29a"
           ],
           "node_shares": {
             "A": [
-              "02796b226993689d",
-              "179e5f762c77986b",
-              "1e4ce3c34ea93a1f",
-              "164304b668a5b347"
+              "168250d1baf10ec2",
+              "19a9b774d1b2f4bc",
+              "0952be1070f1a9bf",
+              "11ffa70b3061cdea"
             ],
             "B": [
-              "1348374089a04fe0",
-              "0dad80cd9df7d5d8",
-              "1a7d6aeebe400cd3",
-              "12b7426c6962e678"
+              "02630b8c0bfd1a47",
+              "1201f0a618afd32f",
+              "19e8828060d3c18c",
+              "037c1cfd43adcf5f"
             ],
             "C": [
-              "0a3e5d9d0ccc4792",
-              "1ab41fbc359091e6",
-              "0735b14df316b90b",
-              "1705b8dd2df7661b"
+              "071aa3a23911d706",
+              "145457e5159d383e",
+              "1cc4bf6f2e3a94b2",
+              "0a843bf78bf06292"
             ]
           },
           "opened_square_mask": [
-            "1e4f2624a09998cf",
-            "128049b47febf369",
-            "19761f27d9103d00",
-            "11a6698492f10525"
+            "1e5ae4aab46668fa",
+            "17e76ff0e41bcc22",
+            "133021c91929cb9f",
+            "1d29cfca02ce5dbd"
           ]
         }
       },
@@ -2416,36 +2416,36 @@
         "char": "\n",
         "view": {
           "device_sends": [
-            "095ac580d5784322",
-            "1e040c0c534fddfd",
-            "1ea304fa5cc8bd45",
-            "19da4b4707dce607"
+            "06ee05f645745d53",
+            "094010f7608b3ebd",
+            "09f0479bff56f823",
+            "16e9e80721a0efab"
           ],
           "node_shares": {
             "A": [
-              "1d2d5cb57ee467d4",
-              "0fbd29de9d8bc656",
-              "03bcc565babcc2e8",
-              "148e56289d5bbf3f"
+              "0d4cd2fd9cfe504a",
+              "1ea4dc6ec68c261f",
+              "0313f1e4445d43cc",
+              "0f4b2d77f098d4db"
             ],
             "B": [
-              "08bfc62e37bf5bef",
-              "0b820774f4272928",
-              "1a480b5a81f999ed",
-              "0094664705120225"
+              "096b4af8cf682609",
+              "16c09eb25d07117a",
+              "194cf54782d3f2d2",
+              "0ef4239a2b38c6e0"
             ],
             "C": [
-              "1a12dd1c495c3c5e",
-              "04c0ceac6e4d1029",
-              "01fb2f3fc349a32b",
-              "0add43905d923e6c"
+              "0947e209939989cf",
+              "0a9a84dedc6cc80d",
+              "039f18d438cec962",
+              "01c0aeede42e6415"
             ]
           },
           "opened_square_mask": [
-            "121809d537e599a5",
-            "0d1ca0503b147e18",
-            "037fb9276c759d1a",
-            "13cac2e12c52045a"
+            "082daff217df44cf",
+            "03ba6364b7cebd45",
+            "10d248e123cbb1fe",
+            "1e494f5d26480859"
           ]
         }
       }
@@ -2456,7 +2456,7 @@
     "rejected_view": null,
     "failed_phase": null,
     "client_exchange_phases": 132,
-    "elapsed_seconds": 0.4553,
+    "elapsed_seconds": 0.4533,
     "timing_scope": "Private generation including client reference checks; not a serving benchmark",
     "mode": "recorded",
     "live": false,
@@ -2470,50 +2470,495 @@
   },
   "tampered": {
     "prompt": "patient reports chest",
-    "private_text": "patient reports chest",
+    "private_text": "patient reports chest pain since ",
     "normal_text": null,
     "bit_exact": null,
-    "steps": [],
+    "steps": [
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "17f94b008bc45373",
+            "0e3bcce85bcd2951",
+            "07ffbcad32337b23",
+            "118bbf01ba41d772"
+          ],
+          "node_shares": {
+            "A": [
+              "148da39b34a998a4",
+              "023283cd76b43c3f",
+              "1c0f0de872eb4802",
+              "00ed1dc51f64d4fe"
+            ],
+            "B": [
+              "0be643da62726f30",
+              "0ddc44cb6327f378",
+              "0d694e697f6c803b",
+              "12d0fe33fab53b6f"
+            ],
+            "C": [
+              "1f8c188a68e3f81b",
+              "0ff137672623d04a",
+              "1687a3ae0da8378b",
+              "0c41e406e5e5efdb"
+            ]
+          },
+          "opened_square_mask": [
+            "06e98dcc5048a2b2",
+            "0440dbcc0ccda81d",
+            "1980d882a5f927e6",
+            "15841d8c29e63941"
+          ]
+        }
+      },
+      {
+        "char": "p",
+        "view": {
+          "device_sends": [
+            "1ca7167d3a73f777",
+            "1462833ae1ac7691",
+            "050b0fc1fc35750d",
+            "1c466f4a569f57c6"
+          ],
+          "node_shares": {
+            "A": [
+              "0a7664d0928283e9",
+              "0c3ae85634575514",
+              "1556aa118f057649",
+              "03db600e9857cb37"
+            ],
+            "B": [
+              "0612d9479b1c1f57",
+              "16c9ed3ba31d28b9",
+              "1b915a0e992e7854",
+              "1bb7ab7a9dcbe302"
+            ],
+            "C": [
+              "0f76c1e7d2615c92",
+              "1cfb2a6e288b8210",
+              "0f17fbdfd7cc1173",
+              "006cf476c9dc51da"
+            ]
+          },
+          "opened_square_mask": [
+            "0104b73180b9f4b9",
+            "1171a3afeb5b7994",
+            "1f323f6cebc89a14",
+            "0b1b83edbf549265"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "116d9cbf21916fa8",
+            "133a7fa7a5e259f7",
+            "1847bd47a2e0b8b2",
+            "19113a15e5037cce"
+          ],
+          "node_shares": {
+            "A": [
+              "17bb38ed6d570838",
+              "0b85ce13094ba82e",
+              "0d21d809589c80ed",
+              "174cfe1fb0f52341"
+            ],
+            "B": [
+              "0455ef6cabd84dd0",
+              "1eee9b69e9f60438",
+              "15bae7ac905e7198",
+              "00c66cd3fd68c6c3"
+            ],
+            "C": [
+              "03eed7a5e6d0aa05",
+              "158b96830cbe5373",
+              "1d23404a17050da1",
+              "07ec950c51a215e6"
+            ]
+          },
+          "opened_square_mask": [
+            "1f186cf6795afd13",
+            "13b1e64d5e01a1fe",
+            "195b2b932e5c0a08",
+            "0947e7ba2484e7c2"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "180b566c6230c841",
+            "15fe6d9fdcaf6264",
+            "0263ba5c250d1259",
+            "003da2f1e2011d26"
+          ],
+          "node_shares": {
+            "A": [
+              "1e2c9a3901799aa1",
+              "195b416e7ac01805",
+              "17e5cf83e5d01d71",
+              "0115975f889c1c87"
+            ],
+            "B": [
+              "0d4eadc52d9272e4",
+              "1e4960619f65ba5a",
+              "1573c376094c14e2",
+              "13bbed9885b000c3"
+            ],
+            "C": [
+              "1484b801d0f3f285",
+              "085b5e2fe5da2d9a",
+              "12a66d0610e3cdba",
+              "0b2e7b07f1b3e27a"
+            ]
+          },
+          "opened_square_mask": [
+            "1176463349914fdf",
+            "091eed11ad4463f3",
+            "10f21bbf45e44bbd",
+            "0f232de00b6aecbe"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "1cbc20219be3da09",
+            "125644496491ca15",
+            "0c2a5f6ed30c449d",
+            "1f87c7cd226247c3"
+          ],
+          "node_shares": {
+            "A": [
+              "039f53d1e079770e",
+              "1e78b304ca40093f",
+              "1a03db1f23b933a9",
+              "05dc9363831488ef"
+            ],
+            "B": [
+              "02bd3d003067e61a",
+              "043ebcc289d3f198",
+              "12d490a14ae3893c",
+              "0553781769b32c28"
+            ],
+            "C": [
+              "19a36f2def1ea2bc",
+              "1d489038abec051f",
+              "1327943f91634311",
+              "14cff48513384b00"
+            ]
+          },
+          "opened_square_mask": [
+            "011347b53f326bc8",
+            "17f06b91432518b4",
+            "150280b323199bb7",
+            "0b89a381ec89933a"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "0549a910dd9e61a4",
+            "1c3c88a6867c19d9",
+            "0e2ba1918f4b8ac8",
+            "0fc94b02ae199ebc"
+          ],
+          "node_shares": {
+            "A": [
+              "115a4cf8e321ba16",
+              "01ee8c3a8bff1a37",
+              "12fa5dad6c062ea6",
+              "15c5c7ef4053b92c"
+            ],
+            "B": [
+              "042425d5f3f3e57e",
+              "0adb1d8a3e79a486",
+              "0dd4b4689693c588",
+              "1cdd345925f287d9"
+            ],
+            "C": [
+              "0a818d3128ea6058",
+              "1336563b35874165",
+              "1f30ede9fd660be6",
+              "0d5d03b799b9bf29"
+            ]
+          },
+          "opened_square_mask": [
+            "1196683d7e93ef02",
+            "0ab453ba7049e991",
+            "05ee1babf196ac9b",
+            "0ff6c14876fc7674"
+          ]
+        }
+      },
+      {
+        "char": "s",
+        "view": {
+          "device_sends": [
+            "10165982cc664a79",
+            "058df5566f2deaf4",
+            "05087eb785970a8a",
+            "0333a84bb72b2acf"
+          ],
+          "node_shares": {
+            "A": [
+              "0b9e0b85f7e74e62",
+              "1f16cc8c51eb8a84",
+              "060d6380dad210b9",
+              "1f29d48a03f18cb6"
+            ],
+            "B": [
+              "1447d6f24e766b12",
+              "0b197e1552462b76",
+              "17a8853610534f5a",
+              "1061596fb507e3ed"
+            ],
+            "C": [
+              "001a1d87b9a2467d",
+              "15cfb55e5bce4a1b",
+              "024a174914da9fe7",
+              "1074d20647068f28"
+            ]
+          },
+          "opened_square_mask": [
+            "02d4ad01422e8fa1",
+            "05db259843553c0a",
+            "11572ae6113f4b0f",
+            "020d5284cf348acb"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "104a4b25702383b6",
+            "121c8876366b8f8c",
+            "14f9ee3fe2d7dc33",
+            "194dde18ff6576f3"
+          ],
+          "node_shares": {
+            "A": [
+              "0d39f246dc59f520",
+              "0e6656eb5fa39ff5",
+              "0d9ab02470e0abe2",
+              "0a8de41cde9052ba"
+            ],
+            "B": [
+              "086a3c86be08d912",
+              "0d92ad9f4792ed6f",
+              "1fede3c323f051b4",
+              "13fae341d5be5478"
+            ],
+            "C": [
+              "0a5bd132659d31cc",
+              "0406fb7558c97296",
+              "12776c186b2f0232",
+              "017738a14bb158d8"
+            ]
+          },
+          "opened_square_mask": [
+            "0f6336a3e1ce0fac",
+            "0f489a8ad679ea11",
+            "05f1859fd157f0af",
+            "157bcaebb8a00a62"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "16bf2be6ca139379",
+            "199209891a175f2d",
+            "0cd25632a93d2c78",
+            "0ae11d98cbb8fd36"
+          ],
+          "node_shares": {
+            "A": [
+              "1934a474392a0bdf",
+              "18c60ee1f0fc3ad6",
+              "02def10de7fa6d80",
+              "008d3aef57cc303d"
+            ],
+            "B": [
+              "01a2edb81c3f55c4",
+              "099331e834e4f242",
+              "12c82ae013adf0c6",
+              "0e840e000daa74a6"
+            ],
+            "C": [
+              "05286dd3aa969e68",
+              "1da6bf35da1ed2e1",
+              "0a58e4120457a1c8",
+              "10eeb7109a895ae1"
+            ]
+          },
+          "opened_square_mask": [
+            "1e7642249507d426",
+            "1dd8b11d46f3b210",
+            "065fe35e5743efba",
+            "109771f3f211d481"
+          ]
+        }
+      },
+      {
+        "char": "c",
+        "view": {
+          "device_sends": [
+            "05503d6bb8f3058c",
+            "005f41b38e3e3a15",
+            "10a1fc25ab5cc3e1",
+            "061a93171a8fae52"
+          ],
+          "node_shares": {
+            "A": [
+              "1ba644b13c4236cf",
+              "04309abb61999a05",
+              "11cea06f811f2cd1",
+              "098f16134777586c"
+            ],
+            "B": [
+              "01e5a710a38c82d6",
+              "126ccac7ec6c007a",
+              "00bd43cb6a04cb9e",
+              "1d7490bfff0710e9"
+            ],
+            "C": [
+              "0274143e20314668",
+              "09629a7cb1fa655b",
+              "0d741bc514dc07b8",
+              "18fc592cb9819694"
+            ]
+          },
+          "opened_square_mask": [
+            "0807fa99d5632c7b",
+            "0f16d0d99b8ed56a",
+            "1d1932329b6c4017",
+            "069f17fa40277154"
+          ]
+        }
+      },
+      {
+        "char": "e",
+        "view": {
+          "device_sends": [
+            "129c9ccc6fa3321e",
+            "0c98e5d5b0267e2c",
+            "1337c4a700bf635a",
+            "1cb1811dea8ef219"
+          ],
+          "node_shares": {
+            "A": [
+              "1cc6f060522eadfa",
+              "1d52429e6ed5a0dd",
+              "1d2dff3fde7f9fb0",
+              "1ddbb02e2b32506e"
+            ],
+            "B": [
+              "008cb4d39e135c4e",
+              "0427c69dd0839205",
+              "1740b1243d20ca8a",
+              "0a3c849c3ba1c1ed"
+            ],
+            "C": [
+              "02ac5acc0fbdf59c",
+              "1e85f6c3c0a6cd14",
+              "0b914f9be45f95bc",
+              "17e7cb35992bedbb"
+            ]
+          },
+          "opened_square_mask": [
+            "1a836c309491bc15",
+            "13b79b2ce572069f",
+            "1f786108cdebedff",
+            "1fac7b11665736a3"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "192d67145f04265b",
+            "1b68d10d1837a7fa",
+            "1c4d2400117d67ab",
+            "132a20e3728adf85"
+          ],
+          "node_shares": {
+            "A": [
+              "1a6d4655e30e5e1e",
+              "098fea9bc20f9f31",
+              "00b522c46ac049e4",
+              "0c61a8ebe7f45116"
+            ],
+            "B": [
+              "05e4f385f57557bc",
+              "19aae0c3ad482c7b",
+              "118ac31c5eb7d9c2",
+              "1bcc865bc1f8db6a"
+            ],
+            "C": [
+              "1fadc624277c4a08",
+              "1cc534a090a83458",
+              "0dc01a1f3687dc4b",
+              "17d1d0b85612d36f"
+            ]
+          },
+          "opened_square_mask": [
+            "0e03444b6df391d2",
+            "0829a477463c87a3",
+            "17d761fcafc53f8f",
+            "1fda66e5cbeb182e"
+          ]
+        }
+      }
+    ],
     "caught": true,
     "attack_node": "B",
-    "rejected_character": 0,
+    "rejected_character": 12,
     "rejected_view": {
       "device_sends": [
-        "14b5502aa667f00d",
-        "12b06393a27809cd",
-        "1c247b5d2ab5444a",
-        "127809ecac8c9447"
+        "021b04d438dfb4ae",
+        "0b6c821dd64def98",
+        "0505cc085929c463",
+        "19d83998aefef4f5"
       ],
       "node_shares": {
         "A": [
-          "1d81793b05bf14ec",
-          "0aaf1fe58bae8537",
-          "03353ca7d16e64e7",
-          "070295884d2cc8df"
+          "02ad926bc571e5f6",
+          "15e5642ec511f4ca",
+          "02d8186d02a223ef",
+          "1f76735b136e76e9"
         ],
         "B": [
-          "005f2631bbc65dd9",
-          "1896f87e1f5b9fba",
-          "08e38015b78788bb",
-          "0ed225acb50615f8"
+          "18c778c0082c6154",
+          "1a9e8deb50515504",
+          "1b715e50442af2f1",
+          "1570d7e366e7131b"
         ],
         "C": [
-          "021f60933e7a8d2b",
-          "1cb9e79c54f5db0f",
-          "13e74342770a1227",
-          "0a2b44cafdcd2171"
+          "048af4d43261b8c5",
+          "0f7c0de5ea9cb65b",
+          "01b68942b932e91e",
+          "0b18b4c185aa75d6"
         ]
       },
       "opened_square_mask": [
-        "0baed05ff4a9246c",
-        "17d6f7e756456287",
-        "1edb2760310c7e80",
-        "0a2c774e89defd7d"
+        "19349b0331b8a93a",
+        "0ef89d2ad05c8d7e",
+        "10b918a27166c4a3",
+        "006170764719eb3a"
       ]
     },
     "failed_phase": "output",
-    "client_exchange_phases": 2,
-    "elapsed_seconds": 0.0064,
+    "client_exchange_phases": 26,
+    "elapsed_seconds": 0.0888,
     "timing_scope": "Private generation including client reference checks; not a serving benchmark",
     "mode": "recorded",
     "live": false,

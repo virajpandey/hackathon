@@ -48,11 +48,15 @@ class ServerTests(unittest.TestCase):
             self.assertEqual(status, 200, body)
             self.assertEqual(result["caught"], lie is not None)
             if lie:
-                self.assertEqual(result["steps"], [])
-                self.assertEqual(result["client_exchange_phases"], 2)
+                accepted = len(result["steps"])
+                self.assertEqual(accepted, result["rejected_character"])
+                self.assertGreater(accepted, 0)
+                self.assertTrue(honest_text.startswith(result["private_text"]))
+                self.assertIn(result["client_exchange_phases"], (accepted * 2 + 1, accepted * 2 + 2))
             else:
                 self.assertTrue(result["bit_exact"])
                 self.assertEqual(result["client_exchange_phases"], len(result["steps"]) * 2)
+                honest_text = result["private_text"]
 
     def test_bad_requests_do_not_run(self):
         for data in [None, [], {"prompt": ""}, {"prompt": 12}, {"prompt": "x" * 121},

@@ -8,6 +8,8 @@ from pathlib import Path
 
 from .device import Device, Link
 
+LIE_AFTER = 12  # characters accepted before an injected change
+
 HERE = Path(__file__).resolve().parent
 MODEL = json.loads((HERE / "private_lm_model.json").read_text())
 PARAMETERS = sum(len(row) if isinstance(row, list) else 1
@@ -77,10 +79,14 @@ class Session:
         if lie not in (None, "A", "B", "C"):
             raise ValueError("Choose node A, B, or C")
         with self.lock:
+            normal = self.device.plain_text(prompt)
+            # Let some honest text through first so the stop is visible mid-sentence.
+            lie_at = max(0, min(LIE_AFTER, len(normal) - len(prompt) - 1))
             start = time.perf_counter()
-            result = self.device.run(prompt, lie=f"{lie}@0" if lie else None, echo=False)
+            result = self.device.run(prompt, lie=f"{lie}@{lie_at}" if lie else None, echo=False)
             elapsed = time.perf_counter() - start
-            normal = self.device.plain_text(prompt) if not lie else None
+            if lie:
+                normal = None
         return {
             "prompt": prompt, "private_text": result["text"], "normal_text": normal,
             "bit_exact": result["exact"] and result["text"] == normal if not lie else None,
