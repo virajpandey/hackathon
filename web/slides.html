@@ -7,19 +7,19 @@
 <main class="stage" id="stage">
  <section class="slide active" data-note="If you run AI on someone else's computer, they can read what you send. Blindfold splits your input into pieces so no single server can read it, and checks every answer. Draw the whiteboard first; use these slides only if they help.">
   <header><h1>Blindfold</h1><span class="eyebrow">01 / what it is</span></header>
-  <div class="content"><p class="statement" style="font-size:68px;max-width:1200px;margin-bottom:64px">Run AI on someone else’s computer without them seeing your input</p>
+  <div class="content"><p class="statement" style="font-size:64px;max-width:1250px;margin-bottom:64px">Blindfold runs an AI model on three servers without any of them seeing your input.</p>
    <table><thead><tr><th>Stays on your computer</th><th>Goes to each server</th></tr></thead><tbody>
    <tr><td>Your actual text</td><td>A random-looking piece of it</td></tr>
    <tr><td>The final answer</td><td>The public model + random masks</td></tr></tbody></table></div>
-  <footer><span>HACK1984 · Viraj Pandey + Apollo-1955</span><span>Input split into pieces · every answer checked</span></footer>
+  <footer><span>HACK1984 · Viraj Pandey + Apollo-1955</span><span></span></footer>
  </section>
  <section class="slide" data-note="One or two servers' pieces can't rebuild your input. All three together can. If one of the servers is yours, nobody else has all three. In the demo, all three servers run on our desk, not on separate people's machines.">
-  <header><h1>One server you control is enough</h1><span class="eyebrow">02 / trust</span></header>
+  <header><h1>Who can read your input</h1><span class="eyebrow">02 / trust</span></header>
   <div class="content"><table><thead><tr><th>If these servers’ pieces are combined</th><th>Can your input be read?</th></tr></thead><tbody>
    <tr><td>Any one server</td><td>No</td></tr><tr><td>Any two servers</td><td>No</td></tr>
    <tr class="alarm"><td>All three servers</td><td>Yes</td></tr>
    <tr class="total"><td>One of the three is yours</td><td>No</td></tr></tbody></table>
-   <p class="statement" style="margin-top:24px;font-size:36px">If all three are combined in secret, you can’t detect it. So run one yourself.</p></div>
+   <p class="statement" style="margin-top:24px;font-size:36px">Anyone with all three pieces can read the input, and that can’t be detected.</p></div>
   <footer><span>Assumes the servers are run by different people</span><span>In the demo, all three run on our desk</span></footer>
  </section>
  <section class="slide" data-note="This is a separate experiment, not the demo model. We trained a normal model and a private-friendly one the same way. The private-friendly one was about two and a half percent worse on perplexity. That's a quality result at small scale, not a speed result.">
@@ -38,17 +38,16 @@
    <tr><td>Square</td><td>Servers, through your computer</td><td>Checked before it’s used</td></tr>
    <tr><td>Multiply again, then check</td><td>Servers, then your computer</td><td>Answer pieces come back</td></tr>
    <tr class="total"><td>Per character</td><td></td><td>2 round trips</td></tr></tbody></table></div>
-  <footer><span>From engine/device.py and engine/node.py</span><span>Privacy costs extra compute and messages</span></footer>
+  <footer><span>From engine/device.py and engine/node.py</span><span></span></footer>
  </section>
  <section class="slide" data-note="Today: a tiny model running privately on three servers, output identical to the normal model, and a tampered server caught live. Next: real-size models, servers run by different people, and servers that talk to each other directly.">
-  <header><h1>What works now, and what’s next</h1><span class="eyebrow">05 / scope</span></header>
-  <div class="content"><table><thead><tr><th>Works now</th><th>Next</th></tr></thead><tbody>
+  <header><h1>Built vs. not built yet</h1><span class="eyebrow">05 / scope</span></header>
+  <div class="content"><table><thead><tr><th>Built</th><th>Not built yet</th></tr></thead><tbody>
    <tr><td>A <span data-number="demo_parameters">…</span>-parameter note model</td><td>Real-size language models</td></tr>
    <tr><td>Three servers, over the network or USB</td><td>Servers run by different people</td></tr>
    <tr><td>Same output as the normal model</td><td>A full security review</td></tr>
-   <tr><td>Your computer makes the random masks</td><td>Servers make them and talk directly</td></tr></tbody></table>
-   <p class="statement" style="margin-top:30px;font-size:38px">Run one server yourself. Use other people’s for the rest.</p></div>
-  <footer><span>The demo is a tiny model, not a chatbot</span><span>Blindfold</span></footer>
+   <tr><td>Your computer makes the random masks</td><td>Servers make them and talk directly</td></tr></tbody></table></div>
+  <footer><span>The demo model is trained on made-up notes, not a general chatbot</span><span>Blindfold</span></footer>
  </section>
 </main>
 <div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="demo.html">Demo</a></nav><span id="position"></span><nav><button id="prev">Back</button><button id="next">Next</button><span>F / fullscreen · N / notes</span></nav></div>

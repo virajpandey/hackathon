@@ -7,7 +7,7 @@
 <rect width="1600" height="900" fill="white"/>
 <g fill="#191918" font-family="Arial, sans-serif">
  <text x="65" y="85" font-size="48">Blindfold</text>
- <text x="65" y="132" font-size="24">Run AI on someone else’s computer without them seeing your input</text>
+ <text x="65" y="132" font-size="24">An AI model running on three servers without any of them seeing the input</text>
  <text x="65" y="250" font-size="23">1. SPLIT</text>
  <text x="620" y="170" font-size="23">2. COMPUTE ON PIECES</text>
  <text x="1110" y="310" font-size="23">3. CHECK</text>
@@ -48,7 +48,7 @@
  <text x="945" y="210" font-size="21">answer pieces</text>
  <text x="945" y="235" font-size="21">+ checksums</text>
  <text x="290" y="703" font-size="22">Squaring step: checked, goes through your computer</text>
- <text x="65" y="805" font-size="25">Run one server yourself: the other two can’t read the input</text>
+ <text x="65" y="805" font-size="25">If one of the three servers is yours, nobody else can get all three pieces</text>
  <text x="65" y="850" font-size="19" fill="#62625c">Now: 2 round trips per character. In the demo, all three servers run on our desk.</text>
 </g>
 </svg>

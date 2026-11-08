@@ -50,7 +50,7 @@ function compare() {
     $("#evidence").querySelectorAll(".text").forEach(el => { el.style.fontSize = `${size}px`; });
     $("#evidence").querySelectorAll("td").forEach(el => { el.style.paddingBlock = "4px"; });
   }
-  $("#status").textContent = match ? "Bit-exact: every output logit matched the reference." : "Mismatch: the private result did not match the reference.";
+  $("#status").textContent = match ? "Exact match with the normal model." : "Mismatch: the private result did not match the reference.";
   $("#status").classList.toggle("alarm", !match);
 }
 async function request(prompt, lie = null) {
@@ -83,7 +83,7 @@ async function display(data) {
   }
   note(data.prompt, data.private_text);
   $("#status").textContent = `${data.steps.length} characters accepted · ${data.client_exchange_phases} round trips`;
-  $("#evidence").innerHTML = `<p class="serif">${data.bit_exact ? "Same answer. Every output logit matched." : "Output mismatch."}</p>`;
+  $("#evidence").innerHTML = `<p class="serif">${data.bit_exact ? "Output matches the normal model exactly." : "Output mismatch."}</p>`;
 }
 async function run(recorded = false) {
   if (busy) return;
