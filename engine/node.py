@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One Blindfold node: computes its share of the tiny note model and never sees the note.
+"""One Blindfold node: computes its share of the tiny test model and never sees the input.
 
     python3 node.py 9101                 # listen on port 9101 (any computer with Python 3; no installs)
     python3 node.py 9101 --lie-at 6      # this node lies on character 6 (the device must catch it)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The patient's device: holds the note, talks to any number of nodes (2 or more) it doesn't trust, and checks every answer.
+"""The user's device: holds the input, talks to any number of nodes (2 or more) it doesn't trust, and checks every answer.
 
     python3 device.py tcp:127.0.0.1:9101 tcp:127.0.0.1:9102 serial:/dev/cu.usbmodem101 "patient reports chest"
     ... --lie=C@5            node C lies on character 5 (the device must catch it)
@@ -228,9 +228,9 @@ def main():
         model=dict(params=sum(len(m[k]) * (len(m[k][0]) if isinstance(m[k][0], list) else 1)
                               for k in ("E", "W1", "b1", "W2", "b2")),
                    architecture="last 10 chars -> embed -> linear -> square -> linear",
-                   corpus="synthetic patient notes from templates (no real data)"),
+                   corpus="made-up test sentences from templates (no real data)"),
         label=(f"{len(specs)} node programs over TCP or USB. The client creates fresh helper values and relays the masked "
-               "square opening; two client exchange phases per character. A tiny synthetic-note model, not an LLM."),
+               "square opening; two client exchange phases per character. A tiny test model, not an LLM."),
     )
     Path(opt["trace"]).write_text(json.dumps(trace, indent=1))
     print(f"honest: {honest['text'].strip()}\nbit-exact: {exact}   lie by {lie}: caught={lying['caught']}\nwrote {opt['trace']}")

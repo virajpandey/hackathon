@@ -77,7 +77,7 @@ class Session:
             raise ValueError("Use a prompt of at most 120 characters")
         prompt = "".join(c for c in prompt.lower() if c in self.device.idx and c != "\n").strip()
         if not prompt:
-            raise ValueError("Enter a short note in English")
+            raise ValueError("Enter a short test input")
         if lie is not None and lie not in NAMES[:len(self.specs)]:
             raise ValueError("Choose one of the servers")
         with self.lock:
