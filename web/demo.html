@@ -7,7 +7,7 @@
 <main class="stage demo-stage" id="stage">
  <header class="demo-header"><div><span class="eyebrow">Blindfold / private computation</span><h1>Live demo</h1></div><div id="mode" class="mode">Connecting to the engine…</div></header>
  <form id="form" class="demo-controls">
-  <label for="prompt">Start a synthetic note</label><input id="prompt" value="patient reports chest" maxlength="120" autocomplete="off" spellcheck="false">
+  <label for="prompt">Start a doctor’s note (made up)</label><input id="prompt" value="patient reports chest" maxlength="120" autocomplete="off" spellcheck="false">
   <button class="primary" id="run" type="submit" disabled>Run live</button>
   <button id="replay" type="button">Play recorded</button>
  </form>
@@ -19,7 +19,7 @@
  <section class="evidence-panel"><nav class="tabs"><button id="compare" disabled>Compare output</button><label for="liar">Tamper with server</label><select id="liar"></select><button id="tamper" class="danger" disabled>Run with tampering</button></nav>
   <div id="evidence"><p class="serif">Run the model, compare the output, then tamper with one server.</p></div>
  </section>
- <footer class="demo-footer"><span>19,295 parameters · made-up note templates · random masks made on your computer<br>2 round trips per character · all servers run on our desk, not by separate people</span><span id="status" role="status">Preparing</span></footer>
+ <footer class="demo-footer"><span>19,295-parameter model trained on made-up doctor notes · random masks made on your computer<br>2 round trips per character · in real use, different people run the servers</span><span id="status" role="status">Preparing</span></footer>
 </main>
 <div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="slides.html">Slides</a></nav><span>Enter / run · C / compare · L / tamper · F / fullscreen</span></div>
 </body></html>

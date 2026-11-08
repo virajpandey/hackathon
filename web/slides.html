@@ -5,32 +5,31 @@
 <script src="assets/slides.js" defer></script></head>
 <body>
 <main class="stage" id="stage">
- <section class="slide active" data-note="If you run AI on someone else's computer, they can read what you send. Blindfold splits your input into pieces so no single server can read it, and checks every answer. Draw the whiteboard first; use these slides only if they help.">
+ <section class="slide active" data-note="Your doctor wants AI to summarize your chart, but the AI runs on someone else's GPU, and whoever owns it can read it. Blindfold splits the input into random-looking pieces, so no single server can read it, and checks every answer, so a server that cheats gets caught.">
   <header><h1>Blindfold</h1><span class="eyebrow">01 / what it is</span></header>
-  <div class="content"><p class="statement" style="font-size:64px;max-width:1250px;margin-bottom:64px">Blindfold runs an AI model on any number of servers without any of them seeing your input.</p>
+  <div class="content"><p class="statement" style="font-size:64px;max-width:1250px;margin-bottom:64px">Run AI on computers you don’t trust. They never see your input, and they get caught if they cheat.</p>
    <table><thead><tr><th>Stays on your computer</th><th>Goes to each server</th></tr></thead><tbody>
    <tr><td>Your actual text</td><td>A random-looking piece of it</td></tr>
    <tr><td>The final answer</td><td>The public model + random masks</td></tr></tbody></table></div>
   <footer><span>HACK1984 · Viraj Pandey + Apollo-1955</span><span></span></footer>
  </section>
- <section class="slide" data-note="No single server's piece, and no group missing even one piece, can rebuild your input. All the pieces together can. If one of the servers is yours, nobody else has every piece. In the demo, all of them run on our desk, not on separate people's machines.">
+ <section class="slide" data-note="No single server's piece, and no group missing even one piece, can rebuild your input. And every answer comes back with a checksum, so a server that changes even one number is caught before its answer is used.">
   <header><h1>Who can read your input</h1><span class="eyebrow">02 / trust</span></header>
   <div class="content"><table><thead><tr><th>If these servers’ pieces are combined</th><th>Can your input be read?</th></tr></thead><tbody>
    <tr><td>Any one server</td><td>No</td></tr><tr><td>All but one of the servers</td><td>No</td></tr>
-   <tr class="alarm"><td>All of the servers</td><td>Yes</td></tr>
-   <tr class="total"><td>One of them is yours</td><td>No</td></tr></tbody></table>
-   <p class="statement" style="margin-top:24px;font-size:36px">Anyone with every piece can read the input, and that can’t be detected.</p></div>
-  <footer><span>Assumes the servers are run by different people</span><span>In the demo, they all run on our desk</span></footer>
+   <tr class="alarm"><td>All of the servers</td><td>Yes</td></tr></tbody></table>
+   <p class="statement" style="margin-top:24px;font-size:36px">A server that changes one number is caught before its answer is used.</p></div>
+  <footer><span>Assumes the servers are run by different people</span><span></span></footer>
  </section>
- <section class="slide" data-note="This is a separate experiment, not the demo model. We trained a normal model and a private-friendly one the same way. The private-friendly one was about two and a half percent worse on perplexity. That's a quality result at small scale, not a speed result.">
-  <header><h1>In a separate test, the private-friendly model<br>was <span data-number="perplexity_increase_percent">…</span>% worse</h1><span class="eyebrow">03 / measured</span></header>
+ <section class="slide" data-note="Real AI models use math that doesn't work on pieces. We rebuilt a language model to use only add, multiply and square, trained it next to a normal one on the same 14 million tokens, and it came out only about two and a half percent worse. This is a separate 6-million-parameter model, not the demo.">
+  <header><h1>Real AI models can be rebuilt for this<br>at only <span data-number="perplexity_increase_percent">…</span>% quality cost</h1><span class="eyebrow">03 / measured</span></header>
   <div class="content"><img src="assets/quality.svg" width="1000" height="430" alt="Standard model perplexity 61.57; private-friendly model 63.10. Lower is better.">
    <aside class="side"><div class="big" data-number="research_parameters">…</div><p>parameters in each test model</p>
     <div style="font-size:32px" data-number="training_tokens">…</div><p>training tokens</p>
-    <p class="muted">Not the demo model.<br>About quality, not speed.</p></aside></div>
-  <footer><span>Measured: perplexity on held-out text · data/quality.json</span><span>Separate from the demo</span></footer>
+    <p class="muted">Rebuilt model uses only<br>add, multiply and square.</p></aside></div>
+  <footer><span>Measured: perplexity on held-out text · data/quality.json</span><span>Separate model from the demo</span></footer>
  </section>
- <section class="slide" data-note="The demo model only adds, multiplies and squares, because that's the math servers can do on pieces. Multiplying by the public weights needs no messages. The square needs one round trip through your computer. So it's two round trips per character. Privacy costs extra work; we don't claim it's faster.">
+ <section class="slide" data-note="The demo model only adds, multiplies and squares, because that's the math servers can do on pieces. Multiplying by the public weights needs no messages. The square needs one round trip through your computer. So it's two round trips per character.">
   <header><h1>The model only adds, multiplies<br>and squares</h1><span class="eyebrow">04 / how it runs</span></header>
   <div class="content"><table><thead><tr><th>Step</th><th>Who does it</th><th>Messages</th></tr></thead><tbody>
    <tr><td>Split the input into pieces</td><td>Your computer</td><td>Pieces go to the servers</td></tr>
@@ -40,14 +39,14 @@
    <tr class="total"><td>Per character</td><td></td><td>2 round trips</td></tr></tbody></table></div>
   <footer><span>From engine/device.py and engine/node.py</span><span></span></footer>
  </section>
- <section class="slide" data-note="Today: a tiny model running privately on any number of servers (we tested 2 to 7), output identical to the normal model, and a tampered server caught live. Next: real-size models, servers run by different people, and servers that talk to each other directly.">
-  <header><h1>Built vs. not built yet</h1><span class="eyebrow">05 / scope</span></header>
-  <div class="content"><table><thead><tr><th>Built</th><th>Not built yet</th></tr></thead><tbody>
-   <tr><td>A <span data-number="demo_parameters">…</span>-parameter note model</td><td>Real-size language models</td></tr>
+ <section class="slide" data-note="Today: a small model running privately on any number of servers (we tested 2 to 7, including chips), output identical to the normal model, and a tampered server caught live. Next: real-size models on rented GPUs run by different people, with the servers talking to each other directly. The goal: anyone can rent out a GPU for AI without ever being able to read what it computes.">
+  <header><h1>Built today, and where it goes</h1><span class="eyebrow">05 / scope</span></header>
+  <div class="content"><table><thead><tr><th>Built today</th><th>Next</th></tr></thead><tbody>
+   <tr><td>A <span data-number="demo_parameters">…</span>-parameter note model</td><td>Real-size models on rented GPUs</td></tr>
    <tr><td>Any number of servers (tested 2–7), over the network or USB</td><td>Servers run by different people</td></tr>
-   <tr><td>Same output as the normal model</td><td>A full security review</td></tr>
+   <tr><td>Same output as the normal model; cheating caught live</td><td>A full security review</td></tr>
    <tr><td>Your computer makes the random masks</td><td>Servers make them and talk directly</td></tr></tbody></table></div>
-  <footer><span>The demo model is trained on made-up notes, not a general chatbot</span><span>Blindfold</span></footer>
+  <footer><span>Demo model trained on made-up doctor notes</span><span>Blindfold</span></footer>
  </section>
 </main>
 <div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="demo.html">Demo</a></nav><span id="position"></span><nav><button id="prev">Back</button><button id="next">Next</button><span>F / fullscreen · N / notes</span></nav></div>

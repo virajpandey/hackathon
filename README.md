@@ -1,6 +1,7 @@
 # Blindfold
 
-Private, checked inference on computers you do not have to trust with your input.
+Run AI on computers you don’t trust: they never see your input, and they get caught if they cheat.
+Example: a doctor’s note processed on rented servers without any of them reading it.
 Built for HACK1984 by Viraj Pandey and Apollo-1955.
 
 ## Run
