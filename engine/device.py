@@ -1,30 +1,22 @@
 #!/usr/bin/env python3
 """The patient's device: holds the note, talks to any number of nodes (2 or more) it doesn't trust, and checks every answer.
 
-    python3 device.py tcp:127.0.0.1:9101 tcp:127.0.0.1:9102 serial:/dev/cu.usbmodem101 "patient reports chest"
-    ... --lie=C@5            node C lies on character 5 (the device must catch it)
-    ... --pace=0.15          seconds per character, for filming
-    ... --trace=FILE         honest run + lying run, written in the demo page's trace format (private_lm_trace.json)
-
 The device makes the helper numbers itself (random masks, square pairs, MAC key), so no third party is trusted.
 Each node gets only its share of each value. The device sends masked input once per character and checks the MAC
 tags on everything the nodes send back. Any change to a share is caught except with probability 1/P.
 """
-import json
 import os
 import secrets
 import select
 import socket
 import sys
 import time
-from pathlib import Path
 
 if __package__:
     from .node import P, frame, read_frame
 else:
     from node import P, frame, read_frame
 
-HERE = Path(__file__).resolve().parent
 NAMES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 HEX = lambda vals: [f"{v:016x}" for v in vals[:4]]
 
@@ -193,48 +185,3 @@ class Device:
                 break
         return dict(text=text, steps=steps, exact=exact, caught=False, at=None,
                     client_exchange_phases=phases)
-
-
-def main():
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    opt = {a.split("=")[0][2:]: a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--") and "=" in a}
-    specs = [a for a in args if a.startswith(("tcp:", "serial:"))]  # 2 or more nodes
-    rest = [a for a in args if a not in specs]
-    m = json.loads((HERE / "private_lm_model.json").read_text())
-    dev = Device([Link(s) for s in specs], m)
-    prompt = "".join(c for c in (rest[0] if rest else "patient reports ").lower() if c in dev.idx)
-    pace = float(opt.get("pace", 0))
-    print(f"connected to {len(specs)} nodes: " + ", ".join(f"{NAMES[i]}={s}" for i, s in enumerate(specs)))
-    if "trace" not in opt:
-        t0 = time.time()
-        res = dev.run(prompt, lie=opt.get("lie"), pace=pace)
-        if not res["caught"]:
-            n, secs = len(res["text"]) - len(prompt), time.time() - t0
-            print(f"bit-exact with the normal model: {res['exact']}   every answer checked: True   "
-                  f"{n} chars in {secs:.2f}s ({n / secs:.0f} chars/s), 2 client exchange phases per char")
-        return
-    lie = opt.get("lie", f"{NAMES[len(specs) - 1]}@5")
-    honest = dev.run(prompt, pace=pace, echo=False)
-    lying = dev.run(prompt, lie=lie, pace=pace, echo=False)
-    normal = dev.plain_text(prompt)
-    exact = honest["exact"] and honest["text"] == normal
-    trace = dict(
-        prompt=prompt, normal_text=normal, private_text=honest["text"], bit_exact=exact,
-        device_trips_per_char=2, node_exchanges_per_char=0, nodes=list(NAMES[:len(specs)]), prime="2^61-1",
-        hardware={NAMES[i]: s for i, s in enumerate(specs)},
-        steps=honest["steps"],
-        cheat=dict(node=lie.split("@")[0], at_char=int(lie.split("@")[1]), caught=lying["caught"],
-                   stopped_text=lying["text"], miss_probability="1 in 2,305,843,009,213,693,951"),
-        model=dict(params=sum(len(m[k]) * (len(m[k][0]) if isinstance(m[k][0], list) else 1)
-                              for k in ("E", "W1", "b1", "W2", "b2")),
-                   architecture="last 10 chars -> embed -> linear -> square -> linear",
-                   corpus="synthetic patient notes from templates (no real data)"),
-        label=(f"{len(specs)} node programs over TCP or USB. The client creates fresh helper values and relays the masked "
-               "square opening; two client exchange phases per character. A tiny synthetic-note model, not an LLM."),
-    )
-    Path(opt["trace"]).write_text(json.dumps(trace, indent=1))
-    print(f"honest: {honest['text'].strip()}\nbit-exact: {exact}   lie by {lie}: caught={lying['caught']}\nwrote {opt['trace']}")
-
-
-if __name__ == "__main__":
-    main()

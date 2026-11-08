@@ -2,7 +2,6 @@
 """One Blindfold node: computes its share of the tiny note model and never sees the note.
 
     python3 node.py 9101                 # listen on port 9101 (any computer with Python 3; no installs)
-    python3 node.py 9101 --lie-at 6      # this node lies on character 6 (the device must catch it)
 
 Needs private_lm_model.json next to this file. Arithmetic is mod P = 2^61-1.
 Wire format (same for TCP and USB): 0xB1, type byte, uint32 count, count x uint64, little-endian.
@@ -91,7 +90,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("port", type=int, nargs="?", default=9101)
     parser.add_argument("--host", default="127.0.0.1")
-    parser.add_argument("--lie-at", type=int)
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
     model = json.loads((Path(__file__).resolve().parent / "private_lm_model.json").read_text())
@@ -116,8 +114,6 @@ def main():
         try:
             while True:
                 kind, v = read_frame(rd)
-                if kind == b"S" and args.lie_at is not None:
-                    v[2] = args.lie_at
                 f.write(node.handle(kind, v))
                 f.flush()
         except (EOFError, ConnectionError, ValueError, struct.error):

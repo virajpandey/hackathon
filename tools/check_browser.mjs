@@ -86,7 +86,6 @@ try {
   await open("/");
   await screenshot("desk");
   await open("/whiteboard.html");
-  await pdf("whiteboard.pdf");
   await open("/assets/whiteboard.svg");
   await screenshot("whiteboard");
   await open("/slides.html");
@@ -153,7 +152,7 @@ try {
   await screenshot("demo-failure");
   assert.deepEqual(errors, [], "Browser exceptions");
   assert.deepEqual([...external], [], "External page requests");
-  console.log(`Browser checks passed: five slides, PDFs, live output, tampering at each of ${servers.length} servers, replay, explicit failure, no external requests.`);
+  console.log(`Browser checks passed: five slides, slides PDF, live output, tampering at each of ${servers.length} servers, replay, explicit failure, no external requests.`);
 } finally {
   socket.close();
 }
