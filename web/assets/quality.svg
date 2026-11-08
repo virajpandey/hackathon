@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-labelledby="title">
+<title id="title">Held-out perplexity: standard 61.57, private-friendly 63.10. Lower is better.</title>
+<g font-family="monospace" fill="#191918" transform="translate(40 0)">
+<text x="0" y="30" font-size="23">HELD-OUT PERPLEXITY · LOWER IS BETTER</text>
+<text x="0" y="105" font-size="28">Standard model</text>
+<rect x="0" y="125" width="668.474" height="56" fill="#99988f"/>
+<text x="688.474" y="165" font-size="34">61.57</text>
+<text x="0" y="260" font-size="28">Private-friendly model</text>
+<rect x="0" y="280" width="685.086" height="56" fill="#191918"/>
+<text x="705.086" y="320" font-size="34">63.10</text>
+<path d="M0 360H760" stroke="#62625c"/>
+<path d="M0.000 360v8" stroke="#62625c"/>
+<text x="0.000" y="400" font-size="21" text-anchor="middle">0</text>
+<path d="M217.143 360v8" stroke="#62625c"/>
+<text x="217.143" y="400" font-size="21" text-anchor="middle">20</text>
+<path d="M434.286 360v8" stroke="#62625c"/>
+<text x="434.286" y="400" font-size="21" text-anchor="middle">40</text>
+<path d="M651.429 360v8" stroke="#62625c"/>
+<text x="651.429" y="400" font-size="21" text-anchor="middle">60</text>
+<path d="M760.000 360v8" stroke="#62625c"/>
+<text x="760.000" y="400" font-size="21" text-anchor="middle">70</text>
+</g></svg>

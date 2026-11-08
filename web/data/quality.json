@@ -1,0 +1,165 @@
+{
+  "experiment": "Size_M (6L x 256d, 6.17M params) 14.34M UNIQUE training tokens (0 repeats, 1.0 epoch)",
+  "unique_tokens_trained": 14336000,
+  "standard_final_val_loss": 4.1202,
+  "standard_final_val_ppl": 61.57,
+  "escape1_ours_final_val_loss": 4.1447,
+  "escape1_ours_final_val_ppl": 63.1,
+  "final_val_loss_gap_escape1_minus_standard_nats": 0.0245,
+  "standard": {
+    "variant": "standard",
+    "params": 6164096,
+    "steps": 1750,
+    "batch_size": 64,
+    "unique_tokens_trained": 14336000,
+    "final_train_loss_last50": 4.0864,
+    "final_val_loss": 4.1202,
+    "final_val_ppl": 61.57,
+    "max_grad_norm": 11.196,
+    "median_grad_norm": 0.221,
+    "spike_or_instability_events": 0,
+    "wall_time_s": 344.22,
+    "learning_curve": [
+      {
+        "step": 0,
+        "tokens": 0,
+        "val_loss": 8.7433,
+        "val_ppl": 6268.5
+      },
+      {
+        "step": 250,
+        "tokens": 2048000,
+        "train_loss": 4.5644,
+        "val_loss": 4.5597,
+        "val_ppl": 95.56,
+        "elapsed_s": 49.2
+      },
+      {
+        "step": 500,
+        "tokens": 4096000,
+        "train_loss": 4.3769,
+        "val_loss": 4.3871,
+        "val_ppl": 80.41,
+        "elapsed_s": 97.2
+      },
+      {
+        "step": 750,
+        "tokens": 6144000,
+        "train_loss": 4.2824,
+        "val_loss": 4.279,
+        "val_ppl": 72.17,
+        "elapsed_s": 145.4
+      },
+      {
+        "step": 1000,
+        "tokens": 8192000,
+        "train_loss": 4.2061,
+        "val_loss": 4.2066,
+        "val_ppl": 67.13,
+        "elapsed_s": 194.3
+      },
+      {
+        "step": 1250,
+        "tokens": 10240000,
+        "train_loss": 4.1356,
+        "val_loss": 4.1556,
+        "val_ppl": 63.79,
+        "elapsed_s": 243.9
+      },
+      {
+        "step": 1500,
+        "tokens": 12288000,
+        "train_loss": 4.1004,
+        "val_loss": 4.1265,
+        "val_ppl": 61.96,
+        "elapsed_s": 293.2
+      },
+      {
+        "step": 1750,
+        "tokens": 14336000,
+        "train_loss": 4.0864,
+        "val_loss": 4.1202,
+        "val_ppl": 61.57,
+        "elapsed_s": 344.2
+      }
+    ]
+  },
+  "escape1_ours": {
+    "variant": "escape1_ours",
+    "params": 6164096,
+    "steps": 1750,
+    "batch_size": 64,
+    "unique_tokens_trained": 14336000,
+    "final_train_loss_last50": 4.1099,
+    "final_val_loss": 4.1447,
+    "final_val_ppl": 63.1,
+    "max_grad_norm": 13.284,
+    "median_grad_norm": 0.199,
+    "spike_or_instability_events": 0,
+    "wall_time_s": 373.95,
+    "learning_curve": [
+      {
+        "step": 0,
+        "tokens": 0,
+        "val_loss": 8.6777,
+        "val_ppl": 5870.72
+      },
+      {
+        "step": 250,
+        "tokens": 2048000,
+        "train_loss": 4.6471,
+        "val_loss": 4.6346,
+        "val_ppl": 102.99,
+        "elapsed_s": 53.7
+      },
+      {
+        "step": 500,
+        "tokens": 4096000,
+        "train_loss": 4.4135,
+        "val_loss": 4.4221,
+        "val_ppl": 83.27,
+        "elapsed_s": 106.6
+      },
+      {
+        "step": 750,
+        "tokens": 6144000,
+        "train_loss": 4.3098,
+        "val_loss": 4.3055,
+        "val_ppl": 74.11,
+        "elapsed_s": 159.8
+      },
+      {
+        "step": 1000,
+        "tokens": 8192000,
+        "train_loss": 4.227,
+        "val_loss": 4.2334,
+        "val_ppl": 68.95,
+        "elapsed_s": 213.7
+      },
+      {
+        "step": 1250,
+        "tokens": 10240000,
+        "train_loss": 4.161,
+        "val_loss": 4.1805,
+        "val_ppl": 65.4,
+        "elapsed_s": 266.8
+      },
+      {
+        "step": 1500,
+        "tokens": 12288000,
+        "train_loss": 4.1234,
+        "val_loss": 4.1524,
+        "val_ppl": 63.58,
+        "elapsed_s": 321.6
+      },
+      {
+        "step": 1750,
+        "tokens": 14336000,
+        "train_loss": 4.1099,
+        "val_loss": 4.1447,
+        "val_ppl": 63.1,
+        "elapsed_s": 373.9
+      }
+    ]
+  }
+}

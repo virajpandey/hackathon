@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blindfold · Helper slides</title><link rel="stylesheet" href="assets/style.css">
+<script src="assets/slides.js" defer></script></head>
+<body>
+<main class="stage" id="stage">
+ <section class="slide active" data-note="Using someone else’s AI hardware should not mean handing them your private input. Blindfold runs a model on pieces of your input and checks the result. Draw the whiteboard now; use these slides only when they help.">
+  <header><h1>Blindfold</h1><span class="eyebrow">01 / private inference</span></header>
+  <div class="content"><p class="statement" style="font-size:76px;max-width:1100px;margin-bottom:64px">Use AI without trusting the computer running it</p>
+   <table><thead><tr><th>What stays with you</th><th>What goes to each worker</th></tr></thead><tbody>
+   <tr><td>The readable input</td><td>A different random-looking share</td></tr>
+   <tr><td>The reconstructed answer</td><td>The public model + fresh helper values</td></tr></tbody></table></div>
+  <footer><span>HACK1984 · Viraj Pandey + Apollo-1955</span><span>Privacy by splitting; integrity by checking</span></footer>
+ </section>
+ <section class="slide" data-note="Privacy depends on one worker not colluding. Any one or two input shares do not reconstruct the input. All three can. Owning one worker makes that assumption something you can control. The default demo uses three processes on this laptop, not independent operators.">
+  <header><h1>Privacy needs one honest worker<br>in the group</h1><span class="eyebrow">02 / trust</span></header>
+  <div class="content"><table><thead><tr><th>Who pools their input shares?</th><th>Can they reconstruct the input?</th></tr></thead><tbody>
+   <tr><td>Any one worker</td><td>No</td></tr><tr><td>Any two workers</td><td>No</td></tr>
+   <tr class="alarm"><td>All three workers</td><td>Yes</td></tr>
+   <tr class="total"><td>Keep one worker under your control</td><td>The other two are not enough</td></tr></tbody></table>
+   <p class="statement" style="margin-top:24px;font-size:36px">You cannot detect secret collusion. You can choose who holds a share.</p></div>
+  <footer><span>Additive sharing · fresh randomness · independent-worker assumption</span><span>Default demo: three local processes</span></footer>
+ </section>
+ <section class="slide" data-note="This is separate from the tiny private demo. In our saved training experiment, the private-friendly model’s held-out perplexity increased by about two and a half percent. It is evidence about a model architecture at this scale, not proof of large-model private inference.">
+  <header><h1>Our separate training test added<br><span data-number="perplexity_increase_percent">…</span>% perplexity</h1><span class="eyebrow">03 / measured</span></header>
+  <div class="content"><img src="assets/quality.svg" width="1000" height="430" alt="Standard model perplexity 61.57; private-friendly model 63.10. Lower is better.">
+   <aside class="side"><div class="big" data-number="research_parameters">…</div><p>parameters in each research model</p>
+    <div style="font-size:32px" data-number="training_tokens">…</div><p>unique training tokens</p>
+    <p class="muted">Not the model in the demo.<br>Not a private throughput result.</p></aside></div>
+  <footer><span>Saved training run · data/quality.json · percentage derived from validation-loss gap</span><span>Separate research model</span></footer>
+ </section>
+ <section class="slide" data-note="We designed the tiny model around arithmetic the workers can do on shares. Public-weight linear layers are local to each worker. Squaring needs a masked opening. In this prototype the client relays it, so there are two client exchange phases per character. This is a control and privacy tradeoff, not a free speedup.">
+  <header><h1>The model’s only nonlinear step<br>is a square</h1><span class="eyebrow">04 / implemented</span></header>
+  <div class="content"><table><thead><tr><th>Operation</th><th>Where it happens</th><th>Communication</th></tr></thead><tbody>
+   <tr><td>Embedding + fresh sharing</td><td>Your device</td><td>Shares sent to workers</td></tr>
+   <tr><td>Public-weight linear layer</td><td>Each worker, locally</td><td>No intermediate exchange</td></tr>
+   <tr><td>Private square</td><td>Workers + client relay</td><td>Masked opening is checked</td></tr>
+   <tr><td>Linear layer + output check</td><td>Workers, then your device</td><td>Checked answer shares return</td></tr>
+   <tr class="total"><td>This prototype</td><td>Fresh helpers + reference checks</td><td>2 client phases / character</td></tr></tbody></table></div>
+  <footer><span>Source: engine/device.py + engine/node.py · session setup is additional</span><span>Privacy adds computation and communication</span></footer>
+ </section>
+ <section class="slide" data-note="Today we have a tiny end-to-end private model, exact output, and a real injected failure caught by the checks. Separately we have a promising training result. The next step is joining useful-model quality and private execution in one measured system. Use AI without trusting the computer running it.">
+  <header><h1>A working mechanism today.<br>A useful private network next.</h1><span class="eyebrow">05 / scope</span></header>
+  <div class="content"><table><thead><tr><th>Working prototype</th><th>Next-stage work</th></tr></thead><tbody>
+   <tr><td><span data-number="demo_parameters">…</span>-parameter note model</td><td>Useful models running privately</td></tr>
+   <tr><td>Three workers over TCP or USB</td><td>Independent operators + secure transport</td></tr>
+   <tr><td>Checked output + exact reference match</td><td>End-to-end security review</td></tr>
+   <tr><td>Fresh client-generated helpers</td><td>Distributed helpers + direct worker links</td></tr></tbody></table>
+   <p class="statement" style="margin-top:30px;font-size:38px">Keep one worker yours. Use compute beyond your own machine.</p></div>
+  <footer><span>Tiny demo + separate research evidence; not a private frontier LLM</span><span>Blindfold</span></footer>
+ </section>
+</main>
+<div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="demo.html">Demo</a></nav><span id="position"></span><nav><button id="prev">Back</button><button id="next">Next</button><span>F / fullscreen · N / notes</span></nav></div>
+<aside class="notes" id="notes" hidden></aside>
+</body></html>

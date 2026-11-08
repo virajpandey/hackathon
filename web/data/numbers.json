@@ -1,0 +1,11 @@
+{
+  "demo_parameters": 19295,
+  "research_parameters": 6164096,
+  "training_tokens": 14336000,
+  "baseline_loss": 4.1202,
+  "private_friendly_loss": 4.1447,
+  "baseline_perplexity": 61.57,
+  "private_friendly_perplexity": 63.1,
+  "perplexity_increase_percent": 2.48,
+  "source": "web/data/quality.json; historical training result, not a private inference benchmark"
+}

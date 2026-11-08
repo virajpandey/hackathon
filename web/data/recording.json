@@ -1,0 +1,2528 @@
+{
+  "recorded_at": "2026-11-08 14:09 UTC",
+  "source": "Three local TCP worker processes; synthetic input; actual protocol execution",
+  "honest": {
+    "prompt": "patient reports chest",
+    "private_text": "patient reports chest pain since last night. heart rate normal. plan: rest and fluids.\n",
+    "normal_text": "patient reports chest pain since last night. heart rate normal. plan: rest and fluids.\n",
+    "bit_exact": true,
+    "steps": [
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "1de923caf2dc44c4",
+            "0e7ca2db62c8933f",
+            "1c001fbd9ac94d87",
+            "1e486163719f7439"
+          ],
+          "node_shares": {
+            "A": [
+              "16d0cb1c51bdbca6",
+              "012784cabd58c10f",
+              "11b1d08567c12413",
+              "1c5c4315e7987b40"
+            ],
+            "B": [
+              "010448fdd0c011ba",
+              "01d2c9fe38929ab0",
+              "07657de83ab49085",
+              "1fa2cbef1ddbcb83"
+            ],
+            "C": [
+              "082aebe5dd823190",
+              "1d05b1370a14a442",
+              "06e8b1925d8a4b31",
+              "0400f0fafa8bb984"
+            ]
+          },
+          "opened_square_mask": [
+            "038a50f2ecf076dc",
+            "18a61bb3b5e14e48",
+            "056991eacba027c2",
+            "1bacd965fcf0f5f7"
+          ]
+        }
+      },
+      {
+        "char": "p",
+        "view": {
+          "device_sends": [
+            "03c9a2039e9c212d",
+            "14f53624a909285a",
+            "15b1fb7acac3d957",
+            "134164ca6c96193a"
+          ],
+          "node_shares": {
+            "A": [
+              "0f432e74ffc2f56b",
+              "0418ffeb7a468f73",
+              "1f09fbfe97e80d6c",
+              "1ae565848083f5ef"
+            ],
+            "B": [
+              "0a2d080cc7948d0c",
+              "037d5c96353050f7",
+              "127392bc7b8cc977",
+              "151b7106afb90373"
+            ],
+            "C": [
+              "068fc97e38a87d5b",
+              "1869a37e50891f74",
+              "0e827144ec8b292d",
+              "0fff2974cfc306b0"
+            ]
+          },
+          "opened_square_mask": [
+            "065e582116e70618",
+            "06676314c7473f12",
+            "1c5f8352587b175e",
+            "0d0099d1c1f98324"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "049070816741f4b9",
+            "0650bf98a748d075",
+            "0cb84660c048a493",
+            "0db64c8ffffacddd"
+          ],
+          "node_shares": {
+            "A": [
+              "14e72cc88ebe243a",
+              "15d01433bf7f3df8",
+              "1e4d98a85cc21714",
+              "0d5099179726f478"
+            ],
+            "B": [
+              "10c31a5cad82e7e1",
+              "18d9e702978800b4",
+              "076a74012062c005",
+              "01535ede32edb541"
+            ],
+            "C": [
+              "1a55b8dac3bef3f1",
+              "115604c9a8f8c12d",
+              "1a47f35682db290d",
+              "115c080a35eb5631"
+            ]
+          },
+          "opened_square_mask": [
+            "0b76ca00dd30b233",
+            "0bdd874f1f21f11e",
+            "1c8fa3ec14498c5a",
+            "02a4c54456419cf3"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "06ce67b5a907bb29",
+            "12b78692809792c8",
+            "15d4e424befa3b92",
+            "140c1811e8f08a51"
+          ],
+          "node_shares": {
+            "A": [
+              "1a3ca0bd07527fc8",
+              "149242c7dfa6db10",
+              "0ddcf18c654140ea",
+              "00f4759c2811f9ac"
+            ],
+            "B": [
+              "17868656163f6d25",
+              "04973c983e1a49e9",
+              "0d5a139258da84ed",
+              "03e704f0c76d7725"
+            ],
+            "C": [
+              "0e3cd8ece26e131d",
+              "06d6809fe23edb01",
+              "04c8fae141e43a37",
+              "1b24857310808ef3"
+            ]
+          },
+          "opened_square_mask": [
+            "053cf40aa13c9b92",
+            "0239f5f190666790",
+            "1eaf6f78948c4b7b",
+            "0e0ab793b6a9f815"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "1023b517aff46410",
+            "1d7b4954c25f7754",
+            "04dabb4985036d5a",
+            "19a81f8d3aa239cb"
+          ],
+          "node_shares": {
+            "A": [
+              "0b71a5be8fb54b03",
+              "0d18886fdda34e0f",
+              "0a75c029d2aefa0c",
+              "1623e4d25b6ff794"
+            ],
+            "B": [
+              "025f4fbfd1ca11e3",
+              "153cd5000eec2506",
+              "032d01e51b1b444a",
+              "0c7e8957a9c755a2"
+            ],
+            "C": [
+              "122f0a819e80a2fe",
+              "1daaa29013708ce1",
+              "125d3df11235c1a1",
+              "1d5d91d5fac8b2e0"
+            ]
+          },
+          "opened_square_mask": [
+            "0be7b35d51c83641",
+            "1a23714e51c09816",
+            "06263fceadde834c",
+            "1ea4e0a4a2ccb8de"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "04979dedc87e0744",
+            "03cf332fc8581725",
+            "14c6f181a979d2c8",
+            "1d96681db787185c"
+          ],
+          "node_shares": {
+            "A": [
+              "1303991ed7698e15",
+              "167618225bad977f",
+              "0d33e41dc3b5b806",
+              "0079dced835c8023"
+            ],
+            "B": [
+              "0773eb0f7cf8bf49",
+              "0d7a58a44923b4ed",
+              "06c268759f4e6393",
+              "1ae87e511fc38e0e"
+            ],
+            "C": [
+              "05887bd1ab9db28e",
+              "1c0f8f395b2eb3b5",
+              "0c09b36c9cfbe47c",
+              "049da4c15cdff1fe"
+            ]
+          },
+          "opened_square_mask": [
+            "00912a9facdcea7f",
+            "1e794fd92f7a7e7e",
+            "019aa795b081c2ee",
+            "0fef8f4524d28c5c"
+          ]
+        }
+      },
+      {
+        "char": "s",
+        "view": {
+          "device_sends": [
+            "09a508e7998a648b",
+            "0544b32b95106404",
+            "0386eedf949ef7e0",
+            "08f7df203c6aa95b"
+          ],
+          "node_shares": {
+            "A": [
+              "1f9a8aa1802d4596",
+              "04654833254200cf",
+              "1cac5e56368b84bf",
+              "17e5add1d9669a0e"
+            ],
+            "B": [
+              "01afa41d5ed2b3f0",
+              "1b690409e4406130",
+              "0bef41eba7297374",
+              "022a31e64ad31975"
+            ],
+            "C": [
+              "1eb5d1412100066a",
+              "0031b3c2f67d9e17",
+              "17645fbe224b07c6",
+              "05f02047dbc64c49"
+            ]
+          },
+          "opened_square_mask": [
+            "0938cc1a935d413b",
+            "1a7c321564b41e05",
+            "03c2bf8d3f3476db",
+            "0b208554e31659be"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "098ee204c9eb2d4f",
+            "04e7a210edec7266",
+            "1b117521b0c11552",
+            "042ba1b5296fc7c0"
+          ],
+          "node_shares": {
+            "A": [
+              "164da45bed7f334f",
+              "06a9a717da560ca3",
+              "00040aa4b3e60778",
+              "0962f913e128deef"
+            ],
+            "B": [
+              "0a6a0e1ba5a63d99",
+              "1c816e00cbab8755",
+              "0ae91e0a70534599",
+              "0ee9056c7be71221"
+            ],
+            "C": [
+              "1f484d886cda8f15",
+              "1cd4eae759fe6c01",
+              "1512d750dbc6b2b8",
+              "07b4017fa2f00efa"
+            ]
+          },
+          "opened_square_mask": [
+            "0144b5ba48428e75",
+            "0e3597328f1a2ee5",
+            "0f6fea662837ffca",
+            "034b4f3d5f3f0e0c"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "0cc464e1e30b6300",
+            "0014f3146d25be28",
+            "10f812155823d177",
+            "063b47a5eee5969b"
+          ],
+          "node_shares": {
+            "A": [
+              "0fe159253c295cc6",
+              "1f8c0cc06a7ac76a",
+              "151f93c656b55bab",
+              "16aa69c75c192193"
+            ],
+            "B": [
+              "1dd64be9ca670e0e",
+              "105b4d9021548f1b",
+              "19dc4bff247a50f9",
+              "1444a605d0ddc9ec"
+            ],
+            "C": [
+              "12485af0f96f9536",
+              "1018a5af7430a974",
+              "1104203a84d05369",
+              "1510f032d3091444"
+            ]
+          },
+          "opened_square_mask": [
+            "092c9c8ff0deb667",
+            "197a55812ce88bdd",
+            "0be2088ba5d0f679",
+            "115d6b05e81b44bf"
+          ]
+        }
+      },
+      {
+        "char": "c",
+        "view": {
+          "device_sends": [
+            "08988442c7a5f63b",
+            "0f503b234071c331",
+            "19dca0537cac7aa3",
+            "0542bbff2c0141dc"
+          ],
+          "node_shares": {
+            "A": [
+              "01a60c4ce62047a7",
+              "0d3347888505316f",
+              "03da22abbe640b94",
+              "056c37d5655d6883"
+            ],
+            "B": [
+              "1f9bc73488012629",
+              "034531bc4df9f64f",
+              "1afdd006fc38a01b",
+              "0f313e2967850518"
+            ],
+            "C": [
+              "1ebe2c7e91de923c",
+              "0f8786bb2d00d81c",
+              "01280d4d45635478",
+              "0b628a01331d924f"
+            ]
+          },
+          "opened_square_mask": [
+            "0ea7ee20fc660aa6",
+            "1c9f4d6d6f8e4f30",
+            "1b672f4c2a2f8289",
+            "021cb00c7bce0ff8"
+          ]
+        }
+      },
+      {
+        "char": "e",
+        "view": {
+          "device_sends": [
+            "1ad15dc02847f347",
+            "13964d136d718360",
+            "14417b016028ea60",
+            "030778db4363a52b"
+          ],
+          "node_shares": {
+            "A": [
+              "04d6aa51647f241f",
+              "1b941395acf93b8a",
+              "114df93cf0d62e3c",
+              "0043c61820660aba"
+            ],
+            "B": [
+              "14e8a1bf6159e5c8",
+              "032994c21647da70",
+              "0e8f3c54dbed6827",
+              "1df3917365d71fd5"
+            ],
+            "C": [
+              "0640b3ef3a26f5fd",
+              "014257a83cbee9fd",
+              "0022ca6e333c6994",
+              "01c8a87479c2d588"
+            ]
+          },
+          "opened_square_mask": [
+            "1e9135ad1f1adfb7",
+            "01146bad87fc283d",
+            "1d89abc575dda50d",
+            "0e93daa54352bf1d"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "1a384255ddc36fb2",
+            "1d74fa5c44bde26e",
+            "1b53ad42a245cdb7",
+            "01bbd00208f8919b"
+          ],
+          "node_shares": {
+            "A": [
+              "1deb39b7cf517a91",
+              "19e9acd8a8e142ab",
+              "185c9bb65b6abb47",
+              "024902b50fe653dd"
+            ],
+            "B": [
+              "01c2d1064fa74c36",
+              "177d8e12ddf8500d",
+              "0e62710799b1eb46",
+              "0754fb51adf4be2f"
+            ],
+            "C": [
+              "0051f541e107391c",
+              "0e98c51479266d4c",
+              "1940f3420ae35963",
+              "166201f94224ede4"
+            ]
+          },
+          "opened_square_mask": [
+            "00619a9205ceb157",
+            "068f90c4f2ef1016",
+            "0f52f6fc62d05898",
+            "0caf89327b5ec427"
+          ]
+        }
+      },
+      {
+        "char": "l",
+        "view": {
+          "device_sends": [
+            "096515c7970d96b4",
+            "12791d1d16af5495",
+            "0b4b1dce479b7bfe",
+            "0c1f652246319070"
+          ],
+          "node_shares": {
+            "A": [
+              "020cb9524ac11288",
+              "041ba268df0f2945",
+              "04504222274baa4c",
+              "1e99a063cbe74cfb"
+            ],
+            "B": [
+              "1d6f01ed9314f03f",
+              "0bc79069a66c89fc",
+              "150b0032072ac033",
+              "11b89d194e13142a"
+            ],
+            "C": [
+              "008444c02229fd48",
+              "101ccd2d7a844ce9",
+              "06a4bdabd189957f",
+              "0fadc282e6059eb5"
+            ]
+          },
+          "opened_square_mask": [
+            "11cd91cb5ae858c2",
+            "067a54f0789891e2",
+            "0a82c7dfff58dc08",
+            "0cbf235a35eebe51"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "04f52ed0d5c2693b",
+            "0c5d016ac2e5763f",
+            "1906229c4614eed9",
+            "10e1d925fd10b64e"
+          ],
+          "node_shares": {
+            "A": [
+              "1cd005ae7f9062f8",
+              "0568ae3fd367b849",
+              "1c46e65025e83912",
+              "153a5fe8993f715f"
+            ],
+            "B": [
+              "0656a566a2747993",
+              "1ce81f88d372bb0e",
+              "0100b92384c79233",
+              "14c6f267be06f865"
+            ],
+            "C": [
+              "1cd954eaddfb2390",
+              "1daf323759258c8b",
+              "02b8608c555034a6",
+              "15feadafa8b9964f"
+            ]
+          },
+          "opened_square_mask": [
+            "1fbf7e0e8df6f783",
+            "0eb0781a344edf94",
+            "0f8298c838805e2a",
+            "03ea0f5eb74a6e31"
+          ]
+        }
+      },
+      {
+        "char": "s",
+        "view": {
+          "device_sends": [
+            "1ee99fd9ec3aadd6",
+            "15ca83dc9ca71a3f",
+            "0c6c56d71a49b205",
+            "190b8689b832acc3"
+          ],
+          "node_shares": {
+            "A": [
+              "004e03217b2f73fa",
+              "0a70ec833f3e753b",
+              "1b3c262c2ff023bc",
+              "0779ccf216f6314a"
+            ],
+            "B": [
+              "09adf30c1ea7a9fe",
+              "179d2b759add9484",
+              "17eb5774eb470078",
+              "1b509845c7b40368"
+            ],
+            "C": [
+              "160409d26628e22a",
+              "1df1e80725e3f5e7",
+              "0cd8825ee4c8dbcb",
+              "1d359ac82155cb1d"
+            ]
+          },
+          "opened_square_mask": [
+            "0004c6e2b2aa4af7",
+            "1334085778e02bdb",
+            "0ce25bd5c5b8e801",
+            "0969ca304ecac15a"
+          ]
+        }
+      },
+      {
+        "char": "t",
+        "view": {
+          "device_sends": [
+            "1f238cb9c7b07443",
+            "0e691ace55c43afe",
+            "14cd8b2d404ce28a",
+            "1ba5cc20e9a38b71"
+          ],
+          "node_shares": {
+            "A": [
+              "1ba56ac6a31c3598",
+              "149894c346ad5471",
+              "14cf709c451613d5",
+              "129ef532f6eb2668"
+            ],
+            "B": [
+              "0100e9e57c54f4cc",
+              "003846d8b339e95c",
+              "1bc85e014d5af970",
+              "18465a82c6568455"
+            ],
+            "C": [
+              "0359ab53e08ed580",
+              "0b2f24640618c22a",
+              "0f6831626d8ef2b1",
+              "151ab04a42be5559"
+            ]
+          },
+          "opened_square_mask": [
+            "03743ba3d35bafd5",
+            "1aa22150ebdc328a",
+            "02288c5a1d2ba998",
+            "160d08d7f2e579ae"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "002c4e1330067e7f",
+            "047f19bcf70c5a74",
+            "1be4db06c00cdaa4",
+            "1ec70168128a85f4"
+          ],
+          "node_shares": {
+            "A": [
+              "0ae8c4170f90f631",
+              "10e8ca010839f27f",
+              "15c74033cafbd4f6",
+              "0e36be7605143954"
+            ],
+            "B": [
+              "157834d6c33b4858",
+              "0b93d8d0de1d6924",
+              "1b1da53b68e77a4b",
+              "055e19dc6d8d7319"
+            ],
+            "C": [
+              "1f9f07122d33c181",
+              "03835d2e19a8a457",
+              "0f1b1a90cc1cb0cc",
+              "0c6b27ad8d5e5357"
+            ]
+          },
+          "opened_square_mask": [
+            "16377687a9ee28a2",
+            "161d5dbd6ca2680d",
+            "16530b5f4e2cf0c7",
+            "08fc28793f5fcee8"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "048bfa5533fccbe2",
+            "07af1c8118f3f43e",
+            "0dff112f73fa4d33",
+            "0992c4bd97dfa32b"
+          ],
+          "node_shares": {
+            "A": [
+              "19d804ebc09170bd",
+              "08e1794eff19a990",
+              "0c80947da87c859d",
+              "06e47421c0cb573a"
+            ],
+            "B": [
+              "186bdc6de3c52e77",
+              "08529e9fe860d25b",
+              "104dce0aac75ca04",
+              "0d7a79e6b1455982"
+            ],
+            "C": [
+              "0dbc1ea65ba960e7",
+              "0ecbe811188583f8",
+              "03319d77ab0db04a",
+              "0ba111f78def4f58"
+            ]
+          },
+          "opened_square_mask": [
+            "199d20bf0f9301d9",
+            "0ed991f5923ac393",
+            "1c8be12d17e28f36",
+            "0e9a419c7d38949e"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "07fd6ea6b6f7b7d2",
+            "15015f1070828453",
+            "11be2174c4958cb4",
+            "1c6dc5f6c689f10e"
+          ],
+          "node_shares": {
+            "A": [
+              "0a1b35a12c62b726",
+              "1afb5a83d44b85fd",
+              "069b81d933efcd3f",
+              "16e6c92cd8a04ea5"
+            ],
+            "B": [
+              "18929771707ddd75",
+              "056f506dab26ee65",
+              "0db5daf8434ba68d",
+              "16967595780a94af"
+            ],
+            "C": [
+              "1d5232ed631f6b86",
+              "1f95550e808d8b44",
+              "0baea32e88c48c34",
+              "1282c13daf551c7b"
+            ]
+          },
+          "opened_square_mask": [
+            "0993c9f0b16988ea",
+            "0bbd788fea37b080",
+            "1aa4acee09687bd8",
+            "078b915afa59e12b"
+          ]
+        }
+      },
+      {
+        "char": "g",
+        "view": {
+          "device_sends": [
+            "199f50df0142f094",
+            "01e1d8c06c6ed003",
+            "15cd697468bf7b2c",
+            "0a7dc2f685890b41"
+          ],
+          "node_shares": {
+            "A": [
+              "0e03cfbb479c24d3",
+              "1facbe938b626ea8",
+              "1f085542ec22f952",
+              "0c8c7a6a3c8dbcef"
+            ],
+            "B": [
+              "11f5660f74d90488",
+              "1c1ba913702fcd34",
+              "18ba0386887f8c80",
+              "04e55862f4e4d0a7"
+            ],
+            "C": [
+              "0006ca35438ad691",
+              "04379859046dc445",
+              "083da7368b5d7a42",
+              "0e8e2d32ce8d7299"
+            ]
+          },
+          "opened_square_mask": [
+            "1b85c837cd28b340",
+            "080950466c9417d1",
+            "049aa00c9cfab3a4",
+            "0d841ab3f7464e5f"
+          ]
+        }
+      },
+      {
+        "char": "h",
+        "view": {
+          "device_sends": [
+            "14e18faca607ed62",
+            "0f618d22957e3c02",
+            "1b5817d1986d7ee9",
+            "08da669a9646c3cf"
+          ],
+          "node_shares": {
+            "A": [
+              "1d27ee09b3ae21c5",
+              "01130d5afe27186a",
+              "0cb27425ecc57e3a",
+              "1753fb8617f7c00b"
+            ],
+            "B": [
+              "04f061ba0dafb697",
+              "02667e12a5ae3946",
+              "03b3302a68beb4d2",
+              "16046180856f1956"
+            ],
+            "C": [
+              "1de7b03c3ea227a1",
+              "1c8674925c2aae4a",
+              "0f9a5bafaa7bccbd",
+              "12a7a2f9629926a8"
+            ]
+          },
+          "opened_square_mask": [
+            "180ff23847d67fe2",
+            "1aa79895fd43e684",
+            "1ecabbed4f6df9df",
+            "1310b7f7251133b8"
+          ]
+        }
+      },
+      {
+        "char": "t",
+        "view": {
+          "device_sends": [
+            "0e7ad0e0b0efcf72",
+            "0ba8bef046014fbf",
+            "0666a53957f14037",
+            "1f64f632406e711e"
+          ],
+          "node_shares": {
+            "A": [
+              "1ecd0215e2d10c86",
+              "153a01525a7b59ef",
+              "1fc88f6fca86fd24",
+              "19754f97cdeb83e2"
+            ],
+            "B": [
+              "088a624a7e38125a",
+              "08aad6a3fdbf0861",
+              "1348e4409d5daace",
+              "14c7d89509ec328b"
+            ],
+            "C": [
+              "18a89b9f9ef6e103",
+              "021b2809a7c59da7",
+              "0cee8c4f981b5804",
+              "11c2d7d3282849a9"
+            ]
+          },
+          "opened_square_mask": [
+            "07aa7d8a44a2d210",
+            "005a0f105e2c32be",
+            "084b79b7f5697205",
+            "09f72ef88a2e6614"
+          ]
+        }
+      },
+      {
+        "char": ".",
+        "view": {
+          "device_sends": [
+            "008033cacef0ddbd",
+            "165dfcefbc0e2b8b",
+            "1c70a0d4b9ba3572",
+            "1358d35e7e89de49"
+          ],
+          "node_shares": {
+            "A": [
+              "15467e111dff0aaa",
+              "03dbdde48ee9408a",
+              "049b0293827d361c",
+              "10a7c1aca72f0d99"
+            ],
+            "B": [
+              "11845305d53704ef",
+              "11aba88dbc49a383",
+              "120959fef8ba4f25",
+              "12aa929e73d8256b"
+            ],
+            "C": [
+              "19352ee90cc9f042",
+              "0a78798db4cd1beb",
+              "095ba36d84c87ab8",
+              "1cadabb4e4f8cd02"
+            ]
+          },
+          "opened_square_mask": [
+            "133d820c65b8cf30",
+            "15f3e78751801a43",
+            "15ec094a66c15405",
+            "1600700891aad35e"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "1464568956ec87fa",
+            "1b9ef1544166c5a1",
+            "0d69bfb8fd6854ba",
+            "179c8ce23c9f8ae0"
+          ],
+          "node_shares": {
+            "A": [
+              "17a5ed7f4b361448",
+              "067e9b81262b6936",
+              "175291399a8677fd",
+              "0883ad7081f6d690"
+            ],
+            "B": [
+              "0a28dfbaa8d336d4",
+              "10a03077a84222cd",
+              "16cef8fc7ec2f3ca",
+              "0610282bea9ee7cb"
+            ],
+            "C": [
+              "1e3132c60bf6b4f2",
+              "08e1340731927427",
+              "11de75c9e6b69436",
+              "116c2a63936a4180"
+            ]
+          },
+          "opened_square_mask": [
+            "095201f0c72456d5",
+            "1addd813ad097a4f",
+            "08007df61794e7e6",
+            "0845efa8663e0bac"
+          ]
+        }
+      },
+      {
+        "char": "h",
+        "view": {
+          "device_sends": [
+            "197d429d9370f894",
+            "1aac3112fe946c27",
+            "18d0eaf2429b27d4",
+            "0e93f779c8d1a4da"
+          ],
+          "node_shares": {
+            "A": [
+              "04b9286f96b2bf4f",
+              "04865606eacde113",
+              "1c96a4ab5b3ef6e2",
+              "0d45695490b599fe"
+            ],
+            "B": [
+              "16c6e7486fe156c5",
+              "0dbe99c0ed4db2aa",
+              "11de474c9f8e87e7",
+              "14b32a0a043455d9"
+            ],
+            "C": [
+              "047ff047f96be9f7",
+              "0dbb103827e46c3d",
+              "118b140805328144",
+              "1e076ca16b160fec"
+            ]
+          },
+          "opened_square_mask": [
+            "0e5acf11b32fbfb1",
+            "0e7910a21b55161c",
+            "0d4643b7be766c27",
+            "0accef58feecc499"
+          ]
+        }
+      },
+      {
+        "char": "e",
+        "view": {
+          "device_sends": [
+            "08e240f9aa2b393c",
+            "0ec17afa567e070d",
+            "1612516c068b4088",
+            "06263be9d366730c"
+          ],
+          "node_shares": {
+            "A": [
+              "0f28683b4babb9ef",
+              "0f5bb68ab9e6fbac",
+              "1300e27522d80574",
+              "0bdfeb4e053bb9f0"
+            ],
+            "B": [
+              "02058370d83308ba",
+              "1fd908fc82182c27",
+              "1e2a2dd693e7e470",
+              "065eed751f36cf93"
+            ],
+            "C": [
+              "0ed21453dc213d64",
+              "10cb4078c400d806",
+              "0ed4efb449401642",
+              "0dc1273cdb8d7667"
+            ]
+          },
+          "opened_square_mask": [
+            "1db06103d9149561",
+            "0fe63cbb06d66ea9",
+            "0d64bdc039c26650",
+            "1fdbcbe52b3a5982"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "048a0d29d97cc145",
+            "10476a6adb1bcbcf",
+            "1345ce43cb05b6f4",
+            "122cf56413cd5409"
+          ],
+          "node_shares": {
+            "A": [
+              "0a195209850a62a0",
+              "159269cd0c49eaa2",
+              "0b51488d9ab63192",
+              "1b2735ca6c735899"
+            ],
+            "B": [
+              "04b8524d0d64e985",
+              "07dfbefd84a7ac9a",
+              "0fc4b37e730662f6",
+              "143b3688b28611bf"
+            ],
+            "C": [
+              "112e5ba96d90b3bf",
+              "028dd7356f0e68bb",
+              "04ea03f3f2436b6f",
+              "109d93ace10695be"
+            ]
+          },
+          "opened_square_mask": [
+            "1096cf884b34254b",
+            "10dfb000e59ec8f7",
+            "15dc1f4810c1aa48",
+            "0de67b6e29a10224"
+          ]
+        }
+      },
+      {
+        "char": "r",
+        "view": {
+          "device_sends": [
+            "136d49fb9c1a1e70",
+            "1bdae50e357b44fd",
+            "010c2ba2b595c31b",
+            "13d625ca0f18d422"
+          ],
+          "node_shares": {
+            "A": [
+              "0583007428baffaa",
+              "067d0b8495986ec2",
+              "0063b54b36e1fd00",
+              "0173de1b562beb94"
+            ],
+            "B": [
+              "1eb40b8b5c84dc2d",
+              "06790745aceb25c6",
+              "0a9adf37e5c58e62",
+              "1c083795908c91cd"
+            ],
+            "C": [
+              "1bc8f4007ac0244a",
+              "1309ed35bd7c6b1f",
+              "15016b7ce358749e",
+              "0283ea4f1947826f"
+            ]
+          },
+          "opened_square_mask": [
+            "00d9f0e521d44fb2",
+            "111ad02848826eda",
+            "120d058765b1046b",
+            "12cc9a98abc3ca5d"
+          ]
+        }
+      },
+      {
+        "char": "t",
+        "view": {
+          "device_sends": [
+            "02aa587d7bc007f6",
+            "0125e4f3f1d637fb",
+            "0ef613ce7a002923",
+            "18fc8ac8d2ffc60d"
+          ],
+          "node_shares": {
+            "A": [
+              "0554ddb81cb6ec68",
+              "1096c8eba5a28116",
+              "16abb9594986617e",
+              "1320f4c8a0f3730e"
+            ],
+            "B": [
+              "193d26a6bf40a8ce",
+              "1b6f66333d47c6cd",
+              "11c1061293369076",
+              "1bd6251490cf1411"
+            ],
+            "C": [
+              "016dfba124086ae6",
+              "13f9d0e11d15b7ff",
+              "1793409423430df6",
+              "1108e622ce3d78f4"
+            ]
+          },
+          "opened_square_mask": [
+            "1cfacd9ec552478e",
+            "1fd1f4abc4ba048c",
+            "0265633f721356ee",
+            "08a1bd5ca9ef25b4"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "1d944de773fd723c",
+            "1af1d49226b46230",
+            "0efe0daacdcb7d73",
+            "0185b446a8ceaf07"
+          ],
+          "node_shares": {
+            "A": [
+              "009264a11f176f70",
+              "0746ad670fe619eb",
+              "170f0d7bcc5e6e7d",
+              "0a7cdf6c0679299f"
+            ],
+            "B": [
+              "0c3fff93ac7b40ed",
+              "0d072280e2f4342a",
+              "1b815be9910fb732",
+              "0e2fdf54c19a9d82"
+            ],
+            "C": [
+              "132d9bcb346d4fd6",
+              "0bb230180d25b1bd",
+              "0d6f969aa291d9fe",
+              "0753413f37ec38ec"
+            ]
+          },
+          "opened_square_mask": [
+            "13d9c46f85b40611",
+            "0c6d5480e0b102b2",
+            "1b19dd6abab808c5",
+            "0d4df8d16c39dde4"
+          ]
+        }
+      },
+      {
+        "char": "r",
+        "view": {
+          "device_sends": [
+            "1d2d8c0c81ae209f",
+            "061685f8d653375d",
+            "1d7cb5ab494ef90b",
+            "1839c6561b10d8a8"
+          ],
+          "node_shares": {
+            "A": [
+              "1184197f50ff52b1",
+              "0419bc65c0782beb",
+              "1d3256b0e894ef84",
+              "09435bd1919b645d"
+            ],
+            "B": [
+              "10046d56a58eea7b",
+              "1894476e7a107d83",
+              "1618eca51dc32669",
+              "09e3aa28cea81aa8"
+            ],
+            "C": [
+              "1e77792a0971c2c4",
+              "0351fc2bc57756a8",
+              "0cb4bca9f9a7ea0c",
+              "0cd8fa059fbc80c7"
+            ]
+          },
+          "opened_square_mask": [
+            "1d6eff8d43f10356",
+            "17b44b623fb605d4",
+            "07710f81a46f8a80",
+            "0b0efab04003a71f"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "156f3e426279faca",
+            "02e205af51777222",
+            "037a062d641a8296",
+            "1ab316892175142b"
+          ],
+          "node_shares": {
+            "A": [
+              "1755dc947552ce29",
+              "036d02c995be602c",
+              "1aca2e8e485d128c",
+              "1c93efdd9862ecca"
+            ],
+            "B": [
+              "05f21616860a046b",
+              "029794fb8a321df6",
+              "16356c32c22539e6",
+              "03aeddebf0cb23b3"
+            ],
+            "C": [
+              "02b80d5504a32d79",
+              "19fb683ae00f81b8",
+              "0f00653ef57db3b4",
+              "1fbd323676d1ef6c"
+            ]
+          },
+          "opened_square_mask": [
+            "078d3e6c91032c38",
+            "135e9cc1c09f2139",
+            "05768fe3d30c9249",
+            "0a75ca862c9cd891"
+          ]
+        }
+      },
+      {
+        "char": "t",
+        "view": {
+          "device_sends": [
+            "1595aeaf303344a1",
+            "1e656a24182d18bc",
+            "0f0064209708800e",
+            "147849a87c7d5f51"
+          ],
+          "node_shares": {
+            "A": [
+              "06dbc9de65e4e329",
+              "0b057511d5957ea3",
+              "045b9f620c92c6e9",
+              "08be8a76c9167c6d"
+            ],
+            "B": [
+              "05b78c7f14580ebe",
+              "1641bfce8e678ed7",
+              "05930f1a3466216e",
+              "1e3c1d7ea6077589"
+            ],
+            "C": [
+              "136ca9a285c30db3",
+              "1eb8cb1f9c02f23e",
+              "16115183bf07179b",
+              "1905580a90e20def"
+            ]
+          },
+          "opened_square_mask": [
+            "0fa7ea5f1030a055",
+            "059b970878c6e1c1",
+            "0236fc6a1db7454d",
+            "0a63a1d074f5aca4"
+          ]
+        }
+      },
+      {
+        "char": "e",
+        "view": {
+          "device_sends": [
+            "12553f0e12e5703c",
+            "184879bbdd86b545",
+            "0ffb3f6a9f27862a",
+            "018556b5da5de06f"
+          ],
+          "node_shares": {
+            "A": [
+              "02ae228ee3c03316",
+              "1cc1093ce5c43c3e",
+              "1b6aa91b8e461764",
+              "1de596e64b1f0c72"
+            ],
+            "B": [
+              "15ca71b4a340ebf3",
+              "08975b95d38f0c6f",
+              "07ea91d482fc372b",
+              "0079a7a833214ba2"
+            ],
+            "C": [
+              "07876bbc78fee0db",
+              "1aa79b2d46acb749",
+              "1caac50feebdb167",
+              "01a0c17181bfa803"
+            ]
+          },
+          "opened_square_mask": [
+            "019bac2d96c74d75",
+            "1f9add93c540a5d2",
+            "0b78c125b66244ac",
+            "1678d7def9cd2f44"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "1491c498cb728f1f",
+            "0d42b10ff276857a",
+            "04a082502916cb27",
+            "039daae9fcca7d2b"
+          ],
+          "node_shares": {
+            "A": [
+              "0df7710aae70bc65",
+              "0e4b69dbbdf0795b",
+              "07a6248a14e871de",
+              "0bbf7004cc0a7980"
+            ],
+            "B": [
+              "162af7ec14369277",
+              "02bc4caa1342b872",
+              "1476bffa4a566e69",
+              "03b012449f57f023"
+            ],
+            "C": [
+              "1bdd97093d58b114",
+              "0ef8497a2eccce49",
+              "03e31b7ba0c11fb3",
+              "10907db6949d9629"
+            ]
+          },
+          "opened_square_mask": [
+            "0d1ab3ae5916f5ed",
+            "1f53059f50abe4fd",
+            "0d5f48cd330c0af3",
+            "08fba821dc332572"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "15818ffc83dd5592",
+            "0ab0cb343f70fcc4",
+            "08463d3925edf639",
+            "1803a2f5f61e96f9"
+          ],
+          "node_shares": {
+            "A": [
+              "066a2bcea8536f26",
+              "04c96b0b368ab794",
+              "1b8cd6a464e6709a",
+              "161d1fea6a39cd5f"
+            ],
+            "B": [
+              "1ed9a4268cd96e5c",
+              "117cd2fed2325d19",
+              "0b2d378f4d800969",
+              "18b17de082aa0d84"
+            ],
+            "C": [
+              "1abc300acad3227b",
+              "09b9c1f5f742eb4d",
+              "1945f1cc4d9985c5",
+              "11316235131c2526"
+            ]
+          },
+          "opened_square_mask": [
+            "04dceee45ae8d4a1",
+            "0a437cb934205a91",
+            "131f14befa3e0630",
+            "070c1777c7e45a06"
+          ]
+        }
+      },
+      {
+        "char": "o",
+        "view": {
+          "device_sends": [
+            "1dd156065f1b3474",
+            "17b5c91f3a0e188d",
+            "1ce688741cedd914",
+            "115f1311e001d313"
+          ],
+          "node_shares": {
+            "A": [
+              "08c3467a12285a9b",
+              "089a798e30d005e3",
+              "15688f2502181550",
+              "0f9f58131e38502a"
+            ],
+            "B": [
+              "0b7436c4b4d8741b",
+              "14d824bb3f4fd9e5",
+              "1a93800d90081444",
+              "14203d4a840c732b"
+            ],
+            "C": [
+              "0bc882c138ff3159",
+              "028d61b68fe02062",
+              "1003f0cd6ddfd669",
+              "1c406aa25dbb3c85"
+            ]
+          },
+          "opened_square_mask": [
+            "1216eeb759031c29",
+            "0716f087c727c0dc",
+            "0d192f55e932a2b9",
+            "06c129f144755640"
+          ]
+        }
+      },
+      {
+        "char": "r",
+        "view": {
+          "device_sends": [
+            "06c675fc02e02124",
+            "06d09d9df9530830",
+            "0c3fbe22d5e67b05",
+            "01f7c8a99d578e80"
+          ],
+          "node_shares": {
+            "A": [
+              "0bffdc1acac50203",
+              "16e48f6472141581",
+              "07491f03476805b3",
+              "179f45361abf0595"
+            ],
+            "B": [
+              "084f88582d4bf1d8",
+              "10d36013c38e7d9e",
+              "060ba487b3a223c0",
+              "07e88b8671b3305a"
+            ],
+            "C": [
+              "0bb09b8d07ef0bf7",
+              "18481087ca5d6cbe",
+              "12ab3c7504f5d69e",
+              "00782f43738dca24"
+            ]
+          },
+          "opened_square_mask": [
+            "183cb15161954126",
+            "160a6eaccd6658b8",
+            "03f2f5d94729f176",
+            "01998f8fecf0880c"
+          ]
+        }
+      },
+      {
+        "char": "m",
+        "view": {
+          "device_sends": [
+            "15c5752052de9e9d",
+            "11c1f04cdbd339ba",
+            "0c7f66340b23ded5",
+            "1d0d7655b7920c9b"
+          ],
+          "node_shares": {
+            "A": [
+              "19054273ad93d1c4",
+              "0ea4d7c9325767bc",
+              "0fbd40266327683a",
+              "12e8d75c7de2c23f"
+            ],
+            "B": [
+              "00d04ffb23cd5515",
+              "1ac512b23963d59e",
+              "01f22d764ae7d8d7",
+              "1efd97b8c0c2d6c7"
+            ],
+            "C": [
+              "062a6d912e9ed934",
+              "169615849444c27f",
+              "0e50926351f0bf16",
+              "0e1990eac15a66e3"
+            ]
+          },
+          "opened_square_mask": [
+            "0173c0b2ef4246e5",
+            "084c36ef67ae8660",
+            "02bb199c93030352",
+            "13352305565cd282"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "04c73f73313a45d3",
+            "15fd25bae24d96fd",
+            "0bbf68ae970ba76a",
+            "1f80948b79b26790"
+          ],
+          "node_shares": {
+            "A": [
+              "019d034085d1efa3",
+              "14fc092d6aa47af9",
+              "0214ad0609746db0",
+              "05471104196577d0"
+            ],
+            "B": [
+              "0d4994d8183b5e9c",
+              "0534c9c7bdb045ee",
+              "0bd0a11b7dcf0ec8",
+              "1f6c6fa3836a17e5"
+            ],
+            "C": [
+              "111967e761f2b1a5",
+              "05cf2d0ad7ab3f10",
+              "121ab1de78bc837f",
+              "1b4c7f5863307061"
+            ]
+          },
+          "opened_square_mask": [
+            "1944425d108768a5",
+            "1041f97fb1647637",
+            "1c544c91660d3783",
+            "074021e34422eb3d"
+          ]
+        }
+      },
+      {
+        "char": "l",
+        "view": {
+          "device_sends": [
+            "01102ac770f0ae61",
+            "1b7ef5a7c4d4001c",
+            "101edafcec8f51bd",
+            "08cbc67267aa6b07"
+          ],
+          "node_shares": {
+            "A": [
+              "0d5f3e7bed7057cc",
+              "1279d5c706a60175",
+              "08152f6ebbc09b85",
+              "187eba38ec086825"
+            ],
+            "B": [
+              "1e8b483136ff7133",
+              "138ca7e9d7edff9a",
+              "1770a996c897b8dd",
+              "096de99018d180b6"
+            ],
+            "C": [
+              "14157952db9036d2",
+              "19f9824f216bfece",
+              "007a26fa7ba7abaf",
+              "1e135c36fb261737"
+            ]
+          },
+          "opened_square_mask": [
+            "153428c38693b8f2",
+            "070506f271e0ce4c",
+            "04d0b12d406217ee",
+            "040d64e226676fa6"
+          ]
+        }
+      },
+      {
+        "char": ".",
+        "view": {
+          "device_sends": [
+            "1cac6afcc1a034dd",
+            "130243328965c7c8",
+            "1c06963f2418b104",
+            "1a0023e7d4dbfd73"
+          ],
+          "node_shares": {
+            "A": [
+              "01d868c3ceb196e8",
+              "09bbaafad073f4b0",
+              "04827981b57d8cda",
+              "128f7232874d0444"
+            ],
+            "B": [
+              "0135112625770fa3",
+              "0ebea9b90c26a92f",
+              "16e3317a1ee21091",
+              "175892b377b22c85"
+            ],
+            "C": [
+              "1cf286160bd75984",
+              "0785ab4c2365624b",
+              "049a55042ba06293",
+              "1617fb1a0100cf11"
+            ]
+          },
+          "opened_square_mask": [
+            "16587119a52a5a8e",
+            "163ba2fa21ed4fd4",
+            "0d57095ca8623de3",
+            "1a4f8c864caf482f"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "0064b2c31b8c21ab",
+            "0440a71f109d5f7f",
+            "0dc3c77febc23b84",
+            "0415b639a7ab60ae"
+          ],
+          "node_shares": {
+            "A": [
+              "06c75dbb6a5cd627",
+              "0d047dfc5f37f8b2",
+              "01fd728fe0fffc47",
+              "0a44b729f1f7d47a"
+            ],
+            "B": [
+              "0e13def902633ea1",
+              "00507722742b16e6",
+              "03e21b6e478b8086",
+              "0638ce6d3b517035"
+            ],
+            "C": [
+              "0b24c34b933feb45",
+              "12ab0ae12c9cf042",
+              "1a207201d774835a",
+              "0f827a68d2b6bb3b"
+            ]
+          },
+          "opened_square_mask": [
+            "1c0c8c41c0b90356",
+            "126c3b2bba0eb266",
+            "0a74d5ee3249c2d2",
+            "0e02eb81f8b81745"
+          ]
+        }
+      },
+      {
+        "char": "p",
+        "view": {
+          "device_sends": [
+            "07ccfd385048df07",
+            "1432607478ddc72d",
+            "1333911e3e0b23e1",
+            "0dc37fefc82622e0"
+          ],
+          "node_shares": {
+            "A": [
+              "1053cf4fdab1993a",
+              "14c0e45c702e4982",
+              "14b04d6433024934",
+              "089cfa170575f5b2"
+            ],
+            "B": [
+              "064384a4f6989498",
+              "0d25be3bcbe32240",
+              "0e4017f3f10013af",
+              "15c43d413c69e1cb"
+            ],
+            "C": [
+              "0968ac0b2eb5d22c",
+              "1e195d67c3ee9437",
+              "1d0f9aa7dbfda2e5",
+              "019ec8a7be20288d"
+            ]
+          },
+          "opened_square_mask": [
+            "0fee5441b2d6c1ba",
+            "020204d2f515a177",
+            "1b087d7b2ddab135",
+            "17e49e7c1dc07b65"
+          ]
+        }
+      },
+      {
+        "char": "l",
+        "view": {
+          "device_sends": [
+            "122c785781c1f52a",
+            "0880eaf1feadcfc4",
+            "112ff3d6f760eb1a",
+            "028ea8867beac3dd"
+          ],
+          "node_shares": {
+            "A": [
+              "0d126196d2ac29a0",
+              "01b33285804f174e",
+              "07b7fb9a537e30ec",
+              "13d23a415d84ed97"
+            ],
+            "B": [
+              "0675c7d4a6648e40",
+              "12b2c86d80e33998",
+              "0317c88fda5e2ecc",
+              "0268f6354372ec03"
+            ],
+            "C": [
+              "0c77d69486ef4804",
+              "0b9a050cfecdaf11",
+              "15303bd5d223a03f",
+              "09c4cf895f08267d"
+            ]
+          },
+          "opened_square_mask": [
+            "02da6aa68c526b81",
+            "04f48f9a212a360c",
+            "0ad33ad4f34c95a0",
+            "1c84db99852c6f8b"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "0d710890b073cfb8",
+            "1e338af03b5f26d1",
+            "06f02a66d40c28a4",
+            "1c105f98dc6fc089"
+          ],
+          "node_shares": {
+            "A": [
+              "167c822c4eb958f8",
+              "0d5be8726d479b2d",
+              "01f6b55922d7fd55",
+              "1415671c425f3046"
+            ],
+            "B": [
+              "072ba43ec0c9163a",
+              "152408d31bf520ca",
+              "1c2b8d81530955c3",
+              "06900978e3017a98"
+            ],
+            "C": [
+              "0257d994f07d90f0",
+              "1d800eba76c343af",
+              "01ddbd258a1eace8",
+              "055a8f6ada9f54f2"
+            ]
+          },
+          "opened_square_mask": [
+            "1b930771d67e966b",
+            "022c76a0025fd5be",
+            "1a5cd103a0a6b63c",
+            "09b236f4a33a7330"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "13ce45311f041120",
+            "18981f6f958d8b9a",
+            "0f35a9ec40bc0b5d",
+            "173d1ff5154f9e38"
+          ],
+          "node_shares": {
+            "A": [
+              "1454ab229f1dff1e",
+              "1f7dc10e9c5f5941",
+              "1b53817ef790b267",
+              "1b190a856a8a5326"
+            ],
+            "B": [
+              "15691354e6e3d40e",
+              "0fc74e0c4a9fa3fb",
+              "025420d864293254",
+              "0c7914230855a129"
+            ],
+            "C": [
+              "1642418879fe2cc3",
+              "10baf0e5190102c4",
+              "02585da8a4461b0e",
+              "186de1578d200bf8"
+            ]
+          },
+          "opened_square_mask": [
+            "189b61d31ef704aa",
+            "12b5875a4488a61b",
+            "0cb39ad9bbd47d32",
+            "16d706abde4127d8"
+          ]
+        }
+      },
+      {
+        "char": ":",
+        "view": {
+          "device_sends": [
+            "0fa30396af4b752c",
+            "01acf7ecefc020a0",
+            "025087365f083e2c",
+            "0450e0f1fd35fd01"
+          ],
+          "node_shares": {
+            "A": [
+              "0f2a52cdc4b206a6",
+              "13a22285031d7ae1",
+              "05c32339ceb3f44e",
+              "1ae42fff74255c77"
+            ],
+            "B": [
+              "166530ada921c8c3",
+              "14b23c5f75ba02d0",
+              "146d588f8e8b0bb0",
+              "175892eacd6c15f7"
+            ],
+            "C": [
+              "1a707c84922c3068",
+              "17aba11b8728822c",
+              "05cf8436a2c10013",
+              "0dc33d15be6e8da4"
+            ]
+          },
+          "opened_square_mask": [
+            "06ef70ae9f29ba8e",
+            "1c8e0c263bde45a7",
+            "1fa78b5835f65b9c",
+            "1d023d56ed6dc16a"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "16f5cff4f726191a",
+            "0eae74fd0dbafe33",
+            "02112717e9854349",
+            "02ab35593ecf2421"
+          ],
+          "node_shares": {
+            "A": [
+              "1ca7f2ffbfb9d812",
+              "1a6613ce778ba28f",
+              "001f165938b77a7e",
+              "0fac2ff743fc0151"
+            ],
+            "B": [
+              "1b172bc1fcf833ca",
+              "142bad195a2596a6",
+              "096d4e4080d72fdd",
+              "11f85f7789d3d9c0"
+            ],
+            "C": [
+              "0840e13e434df453",
+              "116e3f182e4ec6e4",
+              "16739b6646715570",
+              "1e5b70913230256c"
+            ]
+          },
+          "opened_square_mask": [
+            "1dfece87e794e563",
+            "0338690b868c1d61",
+            "16260f5218dc450f",
+            "1b03b2b5d7b8bc7d"
+          ]
+        }
+      },
+      {
+        "char": "r",
+        "view": {
+          "device_sends": [
+            "0524004efaa4a62e",
+            "12f253560c347cea",
+            "1f9d9b5c51a9de2d",
+            "1b3c0ce407c65359"
+          ],
+          "node_shares": {
+            "A": [
+              "01fffebe8a969e20",
+              "06adc3a430716ea3",
+              "1c3f2a415d4e025c",
+              "1a3bccaf18302d66"
+            ],
+            "B": [
+              "126f1840eb4da307",
+              "1c62a7adfe49aad1",
+              "0cd6a6f4687aefa0",
+              "0f446dee3e7faed1"
+            ],
+            "C": [
+              "0b90e9008a1bbee8",
+              "1cef94add144e6b5",
+              "16ea2eca3a370e01",
+              "167fc562a95023a3"
+            ]
+          },
+          "opened_square_mask": [
+            "1d56b978f2b807ff",
+            "11bf8a5159eddd06",
+            "0ac48a078f3f3fe9",
+            "151ca2abab864373"
+          ]
+        }
+      },
+      {
+        "char": "e",
+        "view": {
+          "device_sends": [
+            "1611b835ffc9f5b5",
+            "1e8752b5aec9f3ab",
+            "127b1a3f4631dfd3",
+            "1dfecbd07a6e841d"
+          ],
+          "node_shares": {
+            "A": [
+              "1bd733136b300c56",
+              "1a754cc6475e4539",
+              "14c6cf184e9154fd",
+              "146d029c6cc24d79"
+            ],
+            "B": [
+              "1c7207d44f81f02b",
+              "176a74365e1de4dc",
+              "1c4df44273ea996e",
+              "05cee4a533e3d82b"
+            ],
+            "C": [
+              "07b6c518454e035a",
+              "0e203f035a83d5e2",
+              "0eeb3ca53d84118d",
+              "05c418be5f59da63"
+            ]
+          },
+          "opened_square_mask": [
+            "1be05ffc47528455",
+            "0dc6e9df75a69501",
+            "0f36c09ce72d38aa",
+            "1605302459f01661"
+          ]
+        }
+      },
+      {
+        "char": "s",
+        "view": {
+          "device_sends": [
+            "1bfeb98dd169b68f",
+            "0dcaab173441d1eb",
+            "1cb08c0522ce65ae",
+            "0dc3d51feb511e9d"
+          ],
+          "node_shares": {
+            "A": [
+              "04b8ab73db30e973",
+              "05f82fe1dd9a2d4e",
+              "0379f2d66ca0f2d4",
+              "09e2a47aef2521c5"
+            ],
+            "B": [
+              "021a54c0b111762a",
+              "1e031ec88c88a585",
+              "0258c49756076821",
+              "0d843ea8a4de8443"
+            ],
+            "C": [
+              "192cffcb73bd9ffd",
+              "1c04b15595dd2ce5",
+              "1a2d48923d57a4fd",
+              "08991cdc6bfc59de"
+            ]
+          },
+          "opened_square_mask": [
+            "172348d6df32c019",
+            "1383b1b5beea93ea",
+            "133c280bbcc74dd4",
+            "1fee9b93e49df439"
+          ]
+        }
+      },
+      {
+        "char": "t",
+        "view": {
+          "device_sends": [
+            "0ba152aa654c5299",
+            "07abcd83c012cf14",
+            "195f381252b8bfc8",
+            "1412e738967a2a49"
+          ],
+          "node_shares": {
+            "A": [
+              "196fc8b6a8577c51",
+              "0ff94a1f837382d0",
+              "16ee2a5cccac58a0",
+              "08e034057ee951b3"
+            ],
+            "B": [
+              "04cf42740257a495",
+              "16f3bcb6ed84c71e",
+              "078dba529e94690c",
+              "1649083004a0ccca"
+            ],
+            "C": [
+              "01c0f4d55550defe",
+              "1912f9298f07b608",
+              "01841b5094bf3e4b",
+              "00d6c3ca7c75e19a"
+            ]
+          },
+          "opened_square_mask": [
+            "1424d0f8711e12cc",
+            "11e3001020af5328",
+            "1d2634cc393d055f",
+            "1a7f56c295c72e90"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "09482cf484dc0af0",
+            "19227e9b95ef4c97",
+            "011c032c97b9b94e",
+            "1bc516a92aa6a77f"
+          ],
+          "node_shares": {
+            "A": [
+              "02579c44cb6d1a7e",
+              "09123a00384b3ee8",
+              "13e486c2d11b6cb6",
+              "01ce2462b7eb4b1a"
+            ],
+            "B": [
+              "0e93a8c2f4303bb2",
+              "1a4e0e27f920e1e3",
+              "147205e6b4280213",
+              "0ca8b01b8cf45118"
+            ],
+            "C": [
+              "0f14baf84062a9b3",
+              "1c9fb7d7ce93df39",
+              "17a973567abc9127",
+              "11892b81bb2063be"
+            ]
+          },
+          "opened_square_mask": [
+            "00b4b99b348e26d1",
+            "0625d99dff6b702f",
+            "1f1fba4bbd193a44",
+            "094c4791039e3dbc"
+          ]
+        }
+      },
+      {
+        "char": "a",
+        "view": {
+          "device_sends": [
+            "0da3db5df2e5cb46",
+            "0570e002af49359e",
+            "0d087d0b2baa7555",
+            "13597956d75fa046"
+          ],
+          "node_shares": {
+            "A": [
+              "03985cf3601990d3",
+              "0d3e0ca80083deee",
+              "15f12496afd0e62c",
+              "00c3e45a9451c100"
+            ],
+            "B": [
+              "1b7e2c56fc05a5ab",
+              "1f27623529e1e929",
+              "1717b7698a9f2289",
+              "15638c9f36c458b8"
+            ],
+            "C": [
+              "00e976b5a3e0c95e",
+              "139a9122d59a37e0",
+              "12f723ffc58ff743",
+              "09d88f0634e9e64f"
+            ]
+          },
+          "opened_square_mask": [
+            "17bfdcb9f864fa0a",
+            "1b54536f2b151483",
+            "10b134cc7f974d25",
+            "08164b66e8b56112"
+          ]
+        }
+      },
+      {
+        "char": "n",
+        "view": {
+          "device_sends": [
+            "1a0e6953765b1f11",
+            "09c35bf54959215e",
+            "0fadac2dab3d9b89",
+            "0a852c3eeecc771a"
+          ],
+          "node_shares": {
+            "A": [
+              "055b03b797fa0516",
+              "04d943f6be7734a5",
+              "0a3f2c5c6b3c4039",
+              "119c0571838fc76b"
+            ],
+            "B": [
+              "06d4d21edd9d6982",
+              "03c3516c27e92512",
+              "1dbb3ea9b8b5090d",
+              "017d4594489785ee"
+            ],
+            "C": [
+              "13d02a298a689177",
+              "17636a9d199fa673",
+              "180594f9dc0eb6b7",
+              "0ce6b4fa33d8b282"
+            ]
+          },
+          "opened_square_mask": [
+            "120a2b7c381c7c44",
+            "014e4b69e23a451d",
+            "0e712b8c16ae2496",
+            "13f44f5c1c9a4ba6"
+          ]
+        }
+      },
+      {
+        "char": "d",
+        "view": {
+          "device_sends": [
+            "0455b1b87c06232e",
+            "138a3081b70f0079",
+            "0f759c1eaa6eee01",
+            "15a7400602503bb9"
+          ],
+          "node_shares": {
+            "A": [
+              "06b077cb90eb45de",
+              "1cf0466d93be2886",
+              "072a4d1b6bdd462f",
+              "021cf06101a9981d"
+            ],
+            "B": [
+              "0362a8edb28fd241",
+              "1013c22ec1f113f3",
+              "17aa8507c60e0341",
+              "195af30cf731eeb4"
+            ],
+            "C": [
+              "15ecdf46bc84e803",
+              "12fbf763aa50c32d",
+              "012b2ddcce14b690",
+              "04881c92072478ff"
+            ]
+          },
+          "opened_square_mask": [
+            "04b69277aa226092",
+            "04f1a4b42c3c7af7",
+            "03e76106b7e8a936",
+            "049729ca3c7961a4"
+          ]
+        }
+      },
+      {
+        "char": " ",
+        "view": {
+          "device_sends": [
+            "02ac84cee03a51d0",
+            "1fd8c9509982875c",
+            "08828c628665aac9",
+            "13bac4c6d115df22"
+          ],
+          "node_shares": {
+            "A": [
+              "126f83e70c34116e",
+              "12107d2124b5d65c",
+              "1b179056d98865a4",
+              "141954ac537fe670"
+            ],
+            "B": [
+              "032c710bab486c51",
+              "04e3f2095e658cf9",
+              "06b5b086ad1f18c2",
+              "0cc68b04bde39709"
+            ],
+            "C": [
+              "0a640b0d4883822e",
+              "090b90d57ce49c76",
+              "1e32bf22795881a9",
+              "1f20204eee9c827e"
+            ]
+          },
+          "opened_square_mask": [
+            "172180460dbfbe1c",
+            "07cb7fb009825c20",
+            "06a08d59c2276ed0",
+            "13ae01fd0ab1a0fe"
+          ]
+        }
+      },
+      {
+        "char": "f",
+        "view": {
+          "device_sends": [
+            "1be6d63a8ff14cd0",
+            "198a713a0dadd09a",
+            "09b8cf9deca53965",
+            "101cb13d2383ff8c"
+          ],
+          "node_shares": {
+            "A": [
+              "07d9a01591900b42",
+              "13cdead88ada615a",
+              "08730d272921f075",
+              "1e6f7f9b52f19f6a"
+            ],
+            "B": [
+              "19baf31756cec8e0",
+              "0830fe45e6a61893",
+              "0f7808675e6d39d5",
+              "1f996902299b40e7"
+            ],
+            "C": [
+              "1e6b6cd317a12bc1",
+              "040116e18e7f860a",
+              "0814ea717870d5ad",
+              "01f7176283731fc5"
+            ]
+          },
+          "opened_square_mask": [
+            "1256b2dbda8e7e61",
+            "1c011b785eb795dd",
+            "005072fa46dbfe1e",
+            "17fadcb02c301b97"
+          ]
+        }
+      },
+      {
+        "char": "l",
+        "view": {
+          "device_sends": [
+            "1bf52bc6380c6d3d",
+            "0f2654d7b8c208d7",
+            "0a956c4a2aad2634",
+            "06ce8563038ee2d7"
+          ],
+          "node_shares": {
+            "A": [
+              "096904e6e7abaf1b",
+              "145e877f05fbdf71",
+              "04eceafe0a9b224e",
+              "1e8f49511ab5e34a"
+            ],
+            "B": [
+              "1a71c7b3612f6f18",
+              "115771782b9acb10",
+              "17dcf79b5c2fd353",
+              "0a8ef681330f1fa8"
+            ],
+            "C": [
+              "1c253365b724e19e",
+              "1a4a0708ce69555c",
+              "03361d6699350a70",
+              "16e1c02db23afd20"
+            ]
+          },
+          "opened_square_mask": [
+            "0324fec4b17745a4",
+            "110818821197d50f",
+            "1601708ba1f15e0c",
+            "193ed03efb3126af"
+          ]
+        }
+      },
+      {
+        "char": "u",
+        "view": {
+          "device_sends": [
+            "076d6e2d5fb7b3d6",
+            "1d563d109f0cd33d",
+            "0ab11fbf4947a57d",
+            "1c930a154cfa2feb"
+          ],
+          "node_shares": {
+            "A": [
+              "0f985402fe322221",
+              "0589c289447cfce4",
+              "0bdfd28c4b646207",
+              "132eb096025ac8e3"
+            ],
+            "B": [
+              "04cb69960a0bec8b",
+              "1f983cb1cc15925c",
+              "1dd23a836f6dad91",
+              "0b8e8f15c74cfe76"
+            ],
+            "C": [
+              "0b9c4266f7c1f152",
+              "1ade00c4ef6d70b9",
+              "164df2f0452df030",
+              "0142c054365838b1"
+            ]
+          },
+          "opened_square_mask": [
+            "11915c732a2a5e7c",
+            "03c0636af77e034d",
+            "17a550ed825477ca",
+            "0b684e7730eb7379"
+          ]
+        }
+      },
+      {
+        "char": "i",
+        "view": {
+          "device_sends": [
+            "12c68eb44ab32ecb",
+            "119fbdb558beefd7",
+            "01cc62fdfd36677c",
+            "01373e856083e8ed"
+          ],
+          "node_shares": {
+            "A": [
+              "0e24fc5552d0bef9",
+              "1ad7ef94251740f9",
+              "0b9fb15c7819a458",
+              "1b3316a2b5e2c314"
+            ],
+            "B": [
+              "172db316a7377333",
+              "0d8595f892c4468a",
+              "059ab5aca074854e",
+              "1eb680b58a781cd2"
+            ],
+            "C": [
+              "1aad509405f7cdde",
+              "17a27a7348247876",
+              "0ec598f6e771d668",
+              "061668a7bfa51fdd"
+            ]
+          },
+          "opened_square_mask": [
+            "1bf21320dd9e527e",
+            "114c69ce35457228",
+            "1498b525eb10f308",
+            "159921758e48fc98"
+          ]
+        }
+      },
+      {
+        "char": "d",
+        "view": {
+          "device_sends": [
+            "0d91d1407344fedd",
+            "1479df635bf4df56",
+            "19087024219ce051",
+            "14504282bbc4f33b"
+          ],
+          "node_shares": {
+            "A": [
+              "1548115bedb79278",
+              "13d63244e6be407e",
+              "0fe3c42efc148156",
+              "1075cbed4e9d584f"
+            ],
+            "B": [
+              "1eb77ec12470cc63",
+              "0b66bc6f877b5d40",
+              "171d1e93851aa3e2",
+              "0df9e97e252dacf7"
+            ],
+            "C": [
+              "0c006fe2edd7a131",
+              "00c3114b91c6621c",
+              "18ff1d3d7ed0daee",
+              "01904a948c34faa4"
+            ]
+          },
+          "opened_square_mask": [
+            "1ada6238718eb5a2",
+            "0777be75cc932c3a",
+            "004ff8b2e3775abc",
+            "06262ad0156bf911"
+          ]
+        }
+      },
+      {
+        "char": "s",
+        "view": {
+          "device_sends": [
+            "0cce21d7fa7fbf86",
+            "00b8f6b7eeb099bc",
+            "170502aa5ad7cb9b",
+            "0c1e8c1c9792a018"
+          ],
+          "node_shares": {
+            "A": [
+              "0d351431c69748c1",
+              "00c227dfae52ddf7",
+              "0fdecccf77332e59",
+              "1cef625d5ed73138"
+            ],
+            "B": [
+              "0f33fa10d5ab5ea1",
+              "10a8ae8c1996b668",
+              "0e2930dbc149a0e8",
+              "17b5a4f3e01ec0f0"
+            ],
+            "C": [
+              "0396f1bd63bd5882",
+              "0e95299438166b98",
+              "01f80254c78330b6",
+              "0b5af8aec10a0dee"
+            ]
+          },
+          "opened_square_mask": [
+            "0e4e6d9bfed02b4c",
+            "165a119bb597782d",
+            "0cab28c3605349de",
+            "1253ea9750668f77"
+          ]
+        }
+      },
+      {
+        "char": ".",
+        "view": {
+          "device_sends": [
+            "0ed682427f27f235",
+            "09739025c069b588",
+            "00bdad632f5c3903",
+            "0ec0e7fa91c657a8"
+          ],
+          "node_shares": {
+            "A": [
+              "02796b226993689d",
+              "179e5f762c77986b",
+              "1e4ce3c34ea93a1f",
+              "164304b668a5b347"
+            ],
+            "B": [
+              "1348374089a04fe0",
+              "0dad80cd9df7d5d8",
+              "1a7d6aeebe400cd3",
+              "12b7426c6962e678"
+            ],
+            "C": [
+              "0a3e5d9d0ccc4792",
+              "1ab41fbc359091e6",
+              "0735b14df316b90b",
+              "1705b8dd2df7661b"
+            ]
+          },
+          "opened_square_mask": [
+            "1e4f2624a09998cf",
+            "128049b47febf369",
+            "19761f27d9103d00",
+            "11a6698492f10525"
+          ]
+        }
+      },
+      {
+        "char": "\n",
+        "view": {
+          "device_sends": [
+            "095ac580d5784322",
+            "1e040c0c534fddfd",
+            "1ea304fa5cc8bd45",
+            "19da4b4707dce607"
+          ],
+          "node_shares": {
+            "A": [
+              "1d2d5cb57ee467d4",
+              "0fbd29de9d8bc656",
+              "03bcc565babcc2e8",
+              "148e56289d5bbf3f"
+            ],
+            "B": [
+              "08bfc62e37bf5bef",
+              "0b820774f4272928",
+              "1a480b5a81f999ed",
+              "0094664705120225"
+            ],
+            "C": [
+              "1a12dd1c495c3c5e",
+              "04c0ceac6e4d1029",
+              "01fb2f3fc349a32b",
+              "0add43905d923e6c"
+            ]
+          },
+          "opened_square_mask": [
+            "121809d537e599a5",
+            "0d1ca0503b147e18",
+            "037fb9276c759d1a",
+            "13cac2e12c52045a"
+          ]
+        }
+      }
+    ],
+    "caught": false,
+    "attack_node": null,
+    "rejected_character": null,
+    "rejected_view": null,
+    "failed_phase": null,
+    "client_exchange_phases": 132,
+    "elapsed_seconds": 0.4553,
+    "timing_scope": "Private generation including client reference checks; not a serving benchmark",
+    "mode": "recorded",
+    "live": false,
+    "nodes": {
+      "A": "local process",
+      "B": "local process",
+      "C": "local process"
+    },
+    "parameters": 19295,
+    "client_exchange_phases_per_character": 2
+  },
+  "tampered": {
+    "prompt": "patient reports chest",
+    "private_text": "patient reports chest",
+    "normal_text": null,
+    "bit_exact": null,
+    "steps": [],
+    "caught": true,
+    "attack_node": "B",
+    "rejected_character": 0,
+    "rejected_view": {
+      "device_sends": [
+        "14b5502aa667f00d",
+        "12b06393a27809cd",
+        "1c247b5d2ab5444a",
+        "127809ecac8c9447"
+      ],
+      "node_shares": {
+        "A": [
+          "1d81793b05bf14ec",
+          "0aaf1fe58bae8537",
+          "03353ca7d16e64e7",
+          "070295884d2cc8df"
+        ],
+        "B": [
+          "005f2631bbc65dd9",
+          "1896f87e1f5b9fba",
+          "08e38015b78788bb",
+          "0ed225acb50615f8"
+        ],
+        "C": [
+          "021f60933e7a8d2b",
+          "1cb9e79c54f5db0f",
+          "13e74342770a1227",
+          "0a2b44cafdcd2171"
+        ]
+      },
+      "opened_square_mask": [
+        "0baed05ff4a9246c",
+        "17d6f7e756456287",
+        "1edb2760310c7e80",
+        "0a2c774e89defd7d"
+      ]
+    },
+    "failed_phase": "output",
+    "client_exchange_phases": 2,
+    "elapsed_seconds": 0.0064,
+    "timing_scope": "Private generation including client reference checks; not a serving benchmark",
+    "mode": "recorded",
+    "live": false,
+    "nodes": {
+      "A": "local process",
+      "B": "local process",
+      "C": "local process"
+    },
+    "parameters": 19295,
+    "client_exchange_phases_per_character": 2
+  }
+}
