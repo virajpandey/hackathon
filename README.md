@@ -13,7 +13,7 @@ cd hackathon
 python3 run.py
 ```
 
-Open **http://127.0.0.1:8765/**. The launcher starts three independent Python worker
+Open **http://127.0.0.1:8765/**. The launcher starts three independent Python server
 processes on loopback TCP ports. Ctrl-C stops them and the web server.
 Use `python3 run.py --port 8766` if the default port is occupied.
 
@@ -34,7 +34,7 @@ external APIs. The server does not log prompts or save live traces.
    recording; it is not a real-time throughput measurement.
 3. Compare the generated text with the normal integer model. The client also
    checks every output logit against the reference.
-4. Choose a worker and run again with an injected change. The protocol rejects
+4. Choose a server and run again with an injected change. The protocol rejects
    the first altered character before accepting it.
 5. If needed, use **Play recorded**. The page labels recorded evidence explicitly
    and never silently substitutes it for a failed live run.
@@ -46,24 +46,24 @@ It is not a general-purpose language model.
 ## What is implemented
 
 The client splits input into three additive shares modulo `2^61 − 1`.
-Each worker holds public model weights and one share. Multiplication uses fresh
+Each server holds public model weights and one share. Multiplication uses fresh
 square pairs, and opened values and outputs are checked with MAC tags. The client
 generates preprocessing material and relays the masked square opening.
 
 There are **two client exchange phases per generated character**, plus session
-setup. This is not yet a direct worker-to-worker mesh. The reference computation
+setup. This is not yet a direct server-to-server mesh. The reference computation
 is intentionally retained for demonstrating exactness, not for benchmarking a
 production client.
 
 Any one or two input shares do not reconstruct the input; all three together do.
-That privacy argument assumes independent workers and fresh preprocessing. The
+That privacy argument assumes independent servers and fresh preprocessing. The
 default three processes on one laptop demonstrate the arithmetic, not three
 independent trust domains. The client knows the input and preprocessing by design.
-The check detects a bad computation; the highlighted worker is the one the demo
+The check detects a bad computation; the highlighted server is the one the demo
 deliberately changed, not an identity discovered by the check.
 
 This prototype is not an audited deployment or a complete malicious-secure MPC
-stack. Worker TCP transport is unencrypted and unauthenticated. Distributed
+stack. Server TCP transport is unencrypted and unauthenticated. Distributed
 preprocessing, secure transport, independent operators, and useful-model private
 inference are next-stage work.
 
@@ -73,7 +73,7 @@ inference are next-stage work.
 python3 -m unittest discover -s tests -v
 ```
 
-Tests cover exact output, fresh shares, tampering at each worker, fail-closed
+Tests cover exact output, fresh shares, tampering at each server, fail-closed
 masked openings, the wire format, and the web API. No training runs.
 
 To regenerate the bundled evidence:
@@ -105,23 +105,23 @@ python3 run.py --nodes local local serial:/dev/cu.usbmodem101
 Replace the serial path with the actual device. Serial support uses POSIX APIs;
 the all-Python TCP demo does not.
 
-A worker can also run separately:
+A server can also run separately:
 
 ```sh
 python3 -m engine.node 9101 --host 0.0.0.0
-python3 run.py --nodes local tcp:WORKER_ADDRESS:9101 local
+python3 run.py --nodes local tcp:SERVER_ADDRESS:9101 local
 ```
 
 Use this raw TCP mode only on a trusted test network. The web server always stays
-on localhost. Node labels in the demo distinguish local processes, TCP workers,
+on localhost. Node labels in the demo distinguish local processes, TCP servers,
 and USB chips.
 
 ## Files
 
 ```text
 run.py                  local server and launcher
-engine/                 client, worker, session lifecycle, bundled public model
-hardware/espnode/        existing USB worker firmware and matching model
+engine/                 client, server, session lifecycle, bundled public model
+hardware/espnode/        existing USB server firmware and matching model
 tests/                  standard-library regression and integration tests
 web/                    recording desk, diagram, helper slides, demo
 web/data/               historical quality result and explicitly recorded demo

@@ -7,15 +7,15 @@
  <header class="no-print"><h1>The whiteboard</h1><a href="/">Recording desk</a></header>
  <section class="no-print"><p>Draw the boxes and arrows, not every caption. This is the explanation you return to during the demo.</p>
  <nav><a href="assets/whiteboard.svg" target="_blank">Open full-size diagram</a><a href="whiteboard.pdf">Printable diagram</a><a href="demo.html">Open the demo</a></nav></section>
- <section><img class="board" src="assets/whiteboard.svg" alt="Client splits private input across three workers, then checks their output shares before reading the answer. The masked square opening is relayed through the client."></section>
+ <section><img class="board" src="assets/whiteboard.svg" alt="Your computer splits the input across three servers, then checks their answer pieces before reading the answer. The squaring step goes through your computer."></section>
  <section class="no-print"><h2>Draw it in this order</h2>
  <table><thead><tr><th>Draw</th><th>Say</th></tr></thead><tbody>
- <tr><td>1 / Your device</td><td>“The words start here. We turn them into three random-looking pieces.”</td></tr>
- <tr><td>2 / A, B, C</td><td>“Each worker gets a different piece. They run the same public model on those pieces. No one worker sees the note.”</td></tr>
- <tr><td>3 / Check</td><td>“The answer comes back in pieces too, with checks. Our device verifies them before accepting a character.”</td></tr>
- <tr><td>4 / Answer or stop</td><td>“An honest run matches the normal model. Now we change one worker’s calculation and watch the check stop it.”</td></tr>
- <tr><td>5 / Bottom return arrow</td><td>“For this prototype, the client also relays a masked intermediate value. That’s two exchanges per character—not a finished peer-to-peer network.”</td></tr>
+ <tr><td>1 / Your computer</td><td>“The note starts here. We split it into three random-looking pieces.”</td></tr>
+ <tr><td>2 / A, B, C</td><td>“Each server gets a different piece and runs the same public model on it. No single server sees the note.”</td></tr>
+ <tr><td>3 / Check</td><td>“The answer comes back in pieces, with checksums. Our computer checks them before accepting a character.”</td></tr>
+ <tr><td>4 / Answer or stop</td><td>“A normal run matches the normal model. Now we tamper with one server and the check stops it.”</td></tr>
+ <tr><td>5 / Bottom return arrow</td><td>“In this version, the squaring step also goes through our computer. That’s two round trips per character, not a finished peer-to-peer network.”</td></tr>
  </tbody></table></section>
- <footer class="no-print">The box marked “check” is on the same trusted device as the input. Worker separation is a deployment requirement; three local processes are the default demo.</footer>
+ <footer class="no-print">The check runs on the same computer as the input. For real use, the servers need to be run by different people; in the demo, all three run on our desk.</footer>
 </main>
 </body></html>

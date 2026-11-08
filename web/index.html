@@ -4,19 +4,19 @@
 <title>Blindfold · Recording desk</title><link rel="stylesheet" href="assets/style.css"></head>
 <body><main class="document">
  <header><h1>Blindfold</h1><span class="eyebrow">HACK1984 / recording desk</span></header>
- <p class="lede">Use AI without trusting the computer running it.</p>
- <nav><a href="whiteboard.html">01 / Whiteboard</a><a href="demo.html">02 / Live demo</a><a href="slides.html">03 / Helper slides</a></nav>
+ <p class="lede">Run AI on someone else’s computer without them seeing your input.</p>
+ <nav><a href="whiteboard.html">01 / Whiteboard</a><a href="demo.html">02 / Live demo</a><a href="slides.html">03 / Slides</a></nav>
  <section><h2>One explanation. One demonstration.</h2>
  <table><thead><tr><th>On camera</th><th>What the viewer should understand</th></tr></thead><tbody>
- <tr><td>Open with the problem</td><td>“Using someone else’s AI hardware should not mean handing them your private input.”</td></tr>
- <tr><td>Draw the whiteboard</td><td>Split → three workers → check → answer or stop. Point to the pieces when explaining privacy.</td></tr>
- <tr><td>Run the demo</td><td>Type a note. Show the worker views. Compare the private output with the normal model.</td></tr>
- <tr><td>Change one calculation</td><td>Run again with a worker altered. Point back to the check box when the session stops.</td></tr>
- <tr><td>Use the supporting evidence</td><td>Our separate training result is promising. The deployed demo is still a tiny model; a useful-scale private network is the next step.</td></tr>
- <tr class="total"><td>Close on control</td><td>“Keep one worker under your control, and the other workers cannot reconstruct your input.”</td></tr>
+ <tr><td>Open with the problem</td><td>“If you run AI on someone else’s computer, they can read what you type.”</td></tr>
+ <tr><td>Draw the whiteboard</td><td>Split → three servers → check → answer or stop. Point to the pieces when explaining privacy.</td></tr>
+ <tr><td>Run the demo</td><td>Type a note. Show what each server sees. Compare the output with the normal model.</td></tr>
+ <tr><td>Tamper with one server</td><td>Run again with one server tampered. Point at the check box when it stops.</td></tr>
+ <tr><td>Use the supporting evidence</td><td>In a separate test, the private-friendly model was only 2.48% worse. The demo is still a tiny model; real-size models are next.</td></tr>
+ <tr class="total"><td>Close</td><td>“Run one server yourself, and the other two can’t read your input.”</td></tr>
  </tbody></table></section>
- <section><h2>Before recording</h2><p>Run one honest note and one tampering case. Confirm the mode says fresh computation, not recorded evidence. Use F to hide controls in the demo or slides. The animations replay computed results at a readable pace; they are not speed measurements.</p></section>
+ <section><h2>Before recording</h2><p>Run one normal note and one tampering run. Confirm the mode says fresh computation, not recorded evidence. Use F to hide controls in the demo or slides. The animations replay computed results at a readable pace; they are not speed measurements.</p></section>
  <section><h2>Files for your teammate</h2>
- <nav><a href="whiteboard.pdf">Whiteboard PDF</a><a href="slides.pdf">Helper slides PDF</a><a href="assets/whiteboard.svg">Editable vector diagram</a><a href="data/quality.json">Training evidence</a></nav></section>
+ <nav><a href="whiteboard.pdf">Whiteboard PDF</a><a href="slides.pdf">Slides PDF</a><a href="assets/whiteboard.svg">Editable vector diagram</a><a href="data/quality.json">Training evidence</a></nav></section>
  <footer>Python standard library · local fonts · no external browser requests · synthetic notes only<br>Video duration and finalist format still need the current organizer announcement.</footer>
 </main></body></html>

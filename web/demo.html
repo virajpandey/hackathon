@@ -11,15 +11,15 @@
   <button class="primary" id="run" type="submit" disabled>Run live</button>
   <button id="replay" type="button">Play recorded</button>
  </form>
- <section class="device-panel"><div class="eyebrow">Your device / readable output</div><p id="note" aria-live="polite">patient reports chest</p><div id="outcome"></div><p class="send muted" id="sent">No input has been sent.</p></section>
- <section class="worker-panel"><div class="eyebrow">What the workers actually see / input shares</div>
-  <table class="workers"><thead><tr><th id="head-A">Worker A</th><th id="head-B">Worker B</th><th id="head-C">Worker C</th></tr></thead><tbody id="shares"></tbody></table>
-  <p class="muted worker-caption" id="worker-caption">Each column is a different share. The public model is the same.</p>
+ <section class="device-panel"><div class="eyebrow">Your computer / readable output</div><p id="note" aria-live="polite">patient reports chest</p><div id="outcome"></div><p class="send muted" id="sent">No input has been sent.</p></section>
+ <section class="worker-panel"><div class="eyebrow">What each server sees / its piece of the input</div>
+  <table class="workers"><thead><tr><th id="head-A">Server A</th><th id="head-B">Server B</th><th id="head-C">Server C</th></tr></thead><tbody id="shares"></tbody></table>
+  <p class="muted worker-caption" id="worker-caption">Each server gets a different random-looking piece. All three run the same public model.</p>
  </section>
- <section class="evidence-panel"><nav class="tabs"><button id="compare" disabled>Compare output</button><label for="liar">Alter worker</label><select id="liar"><option>A</option><option selected>B</option><option>C</option></select><button id="tamper" class="danger" disabled>Run with a lie</button></nav>
-  <div id="evidence"><p class="serif">Run the model, compare the answer, then change one worker’s calculation.</p></div>
+ <section class="evidence-panel"><nav class="tabs"><button id="compare" disabled>Compare output</button><label for="liar">Tamper with server</label><select id="liar"><option>A</option><option selected>B</option><option>C</option></select><button id="tamper" class="danger" disabled>Run with tampering</button></nav>
+  <div id="evidence"><p class="serif">Run the model, compare the output, then tamper with one server.</p></div>
  </section>
- <footer class="demo-footer"><span>19,295 parameters · synthetic note templates · client-generated helpers<br>2 client exchange phases per character · no independent trust domains in local mode</span><span id="status" role="status">Preparing</span></footer>
+ <footer class="demo-footer"><span>19,295 parameters · made-up note templates · random masks made on your computer<br>2 round trips per character · all three servers run on our desk, not by separate people</span><span id="status" role="status">Preparing</span></footer>
 </main>
-<div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="slides.html">Helper slides</a></nav><span>Enter / run · C / compare · L / lie · F / fullscreen</span></div>
+<div class="deck-controls"><nav><a href="/">Desk</a><a href="whiteboard.html">Whiteboard</a><a href="slides.html">Slides</a></nav><span>Enter / run · C / compare · L / tamper · F / fullscreen</span></div>
 </body></html>

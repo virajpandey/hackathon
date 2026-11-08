@@ -22,7 +22,7 @@ function reset() {
 }
 function locations(data) {
   nodes.forEach(n => {
-    $("#head-" + n).innerHTML = `Worker ${n}<small>${esc(data.nodes[n])}</small>`;
+    $("#head-" + n).innerHTML = `Server ${n}<small>${esc(data.nodes[n])}</small>`;
   });
 }
 function view(step) {
@@ -41,7 +41,7 @@ function compare() {
   const match = current.bit_exact;
   $("#evidence").innerHTML = `<table><thead><tr><th>Computed by</th><th>Output</th></tr></thead><tbody>
     <tr><td>Normal integer model</td><td class="text">${esc(current.normal_text.trim())}</td></tr>
-    <tr><td>Three workers on shares</td><td class="text">${esc(current.private_text.trim())}</td></tr>
+    <tr><td>Three servers, on pieces</td><td class="text">${esc(current.private_text.trim())}</td></tr>
     </tbody></table>`;
   const height = $(".demo-footer").getBoundingClientRect().top - $("#evidence").getBoundingClientRect().top - 14;
   let size = 25;
@@ -67,11 +67,11 @@ async function display(data) {
   locations(data);
   $("#mode").textContent = data.mode === "recorded"
     ? `Recorded evidence · ${recording.recorded_at}\nNot a live computation`
-    : "Fresh computation · three workers\nAnimated playback of the computed trace";
+    : "Live run · three servers\nPlayed back at reading speed";
   $("#mode").classList.toggle("alarm", data.mode === "recorded");
   const ticket = ++serial;
   note(data.prompt, data.prompt);
-  $("#evidence").innerHTML = '<p class="serif">The workers compute on pieces. Only your device reconstructs the answer.</p>';
+  $("#evidence").innerHTML = '<p class="serif">Each server computes on its piece. Only your computer puts the answer back together.</p>';
   const animate = !matchMedia("(prefers-reduced-motion: reduce)").matches;
   let text = data.prompt;
   for (const step of data.steps) {
@@ -82,7 +82,7 @@ async function display(data) {
     if (animate) await pause(20);
   }
   note(data.prompt, data.private_text);
-  $("#status").textContent = `${data.steps.length} characters accepted · ${data.client_exchange_phases} client exchange phases`;
+  $("#status").textContent = `${data.steps.length} characters accepted · ${data.client_exchange_phases} round trips`;
   $("#evidence").innerHTML = `<p class="serif">${data.bit_exact ? "Same answer. Every output logit matched." : "Output mismatch."}</p>`;
 }
 async function run(recorded = false) {
@@ -90,7 +90,7 @@ async function run(recorded = false) {
   busy = true; buttons(); reset();
   note($("#prompt").value, $("#prompt").value);
   $("#status").classList.remove("alarm");
-  $("#status").textContent = recorded ? "Loading recorded evidence" : "Computing on three workers…";
+  $("#status").textContent = recorded ? "Loading recorded evidence" : "Running on three servers…";
   $("#mode").textContent = recorded ? "Recorded evidence" : "Live computation in progress";
   try {
     const data = recorded ? recording.honest : await request($("#prompt").value);
@@ -108,7 +108,7 @@ async function tamper() {
   if (!current || current.caught || busy) return;
   busy = true; buttons();
   const source = current.mode;
-  $("#status").textContent = source === "recorded" ? "Loading recorded tampering result" : "Rerunning with a real injected change…";
+  $("#status").textContent = source === "recorded" ? "Loading recorded tampering result" : "Running again with one server tampered…";
   try {
     const data = source === "recorded" ? {...recording.tampered, mode: "recorded"} : await request(current.prompt, $("#liar").value);
     current = data;
@@ -127,11 +127,11 @@ async function tamper() {
     note(data.prompt, data.private_text);
     $("#head-" + data.attack_node).classList.add("altered");
     $("#outcome").textContent = data.caught ? "CHECK FAILED / output rejected" : "CHECK DID NOT REJECT THE CHANGE";
-    $("#evidence").innerHTML = `<p class="stop">${data.caught ? "Stopped before accepting the altered character." : "The altered result was not rejected."}</p>
-      <p>Injected at worker ${esc(data.attack_node)} · ${data.steps.length} characters accepted in this run</p>`;
-    $("#sent").textContent = "New run with fresh helpers. A worker changes one intermediate value without a matching tag.";
-    $("#status").textContent = data.caught ? "The check detects tampering, not the identity of the worker." : "Unexpected result — inspect the protocol.";
-    $("#mode").textContent = source === "recorded" ? "Recorded tampering result\nNot a live computation" : "Fresh tampering run\nReal worker arithmetic + real tag check";
+    $("#evidence").innerHTML = `<p class="stop">${data.caught ? "Stopped before accepting the tampered character." : "The tampered result was not rejected."}</p>
+      <p>Server ${esc(data.attack_node)} tampered · ${data.steps.length} characters accepted in this run</p>`;
+    $("#sent").textContent = "New run with fresh random masks. One server changed a number, so its checksum no longer matches.";
+    $("#status").textContent = data.caught ? "The check shows something changed, not which server changed it." : "Unexpected result — inspect the protocol.";
+    $("#mode").textContent = source === "recorded" ? "Recorded tampering result\nNot a live computation" : "Live tampering run\nReal server math + real checksum";
   } catch (error) {
     $("#status").textContent = error.message;
     $("#status").classList.add("alarm");
@@ -156,7 +156,7 @@ fetch("api/status").then(r => r.ok ? r.json() : null).then(data => {
   if (data) locations(data);
   if (!current && !busy) {
     $("#mode").textContent = live ? "Live engine ready\nNo computation run yet" : "Recorded evidence only";
-    $("#status").textContent = live ? "Ready · three workers connected" : "Start python3 run.py for live computation";
+    $("#status").textContent = live ? "Ready · three servers connected" : "Start python3 run.py for live computation";
   }
   buttons();
 }).catch(() => { $("#mode").textContent = "Recorded evidence only"; $("#status").textContent = "Start python3 run.py for live computation"; buttons(); });

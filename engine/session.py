@@ -65,7 +65,7 @@ class Session:
 
     def info(self):
         locations = {name: ("local process" if spec == "local" else
-                           "USB chip" if spec.startswith("serial:") else "TCP worker")
+                           "USB chip" if spec.startswith("serial:") else "TCP server")
                      for name, spec in zip("ABC", self.specs)}
         return {"live": True, "nodes": locations, "parameters": PARAMETERS,
                 "client_exchange_phases_per_character": 2}
