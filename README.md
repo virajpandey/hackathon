@@ -41,7 +41,7 @@ external APIs. The server does not log prompts or save live traces.
    and never silently substitutes it for a failed live run.
 
 The demonstration uses a bundled **19,295-parameter character model**, trained on
-made-up test sentences. Its path is embedding → linear → square → linear.
+made-up doctor-note templates (no real patient data). Its path is embedding → linear → square → linear.
 It is not a general-purpose language model.
 
 ## What is implemented
@@ -85,7 +85,7 @@ python3 tools/build_evidence.py
 python3 tools/record_demo.py
 ```
 
-The second command records only the fixed test prompt in its source.
+The second command records only the fixed synthetic prompt in its source.
 Optional browser QA uses Node.js and an installed Chrome with remote debugging:
 start this server on port 8876, start a disposable Chrome profile at `qa/chrome`
 with `--headless --remote-debugging-port=0`, then run
