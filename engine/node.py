@@ -82,7 +82,7 @@ class Node:
         expected = {b"S": 3, b"X": 3 * self.n_in + 4 * self.hid, b"O": self.hid}
         if kind not in expected or len(v) != expected[kind]:
             raise ValueError("Invalid protocol frame")
-        if kind == b"S" and v[0] not in (0, 1, 2):
+        if kind == b"S" and not 0 <= v[0] < 26:  # servers A..Z
             raise ValueError("Invalid node index")
         return {b"S": self.setup, b"X": self.step_in, b"O": self.step_out}[kind](v)
 

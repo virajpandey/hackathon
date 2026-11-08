@@ -59,7 +59,7 @@ class Handler(SimpleHTTPRequestHandler):
                 raise ValueError("Expected a JSON object")
             result = self.server.session.run(data.get("prompt"), data.get("lie"))
         except (ValueError, TypeError):
-            return self.reply(400, {"error": "Use a short English prompt and an optional node A, B, or C"})
+            return self.reply(400, {"error": "Use a short English prompt and an optional server letter"})
         except (OSError, EOFError, RuntimeError):
             return self.reply(503, {"error": "A worker disconnected or timed out. Restart the server and retry."})
         self.reply(200, result)
@@ -68,14 +68,15 @@ class Handler(SimpleHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description="Blindfold: private, checked inference demo")
     parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--nodes", nargs=3, metavar=("A", "B", "C"),
-                        help="Three endpoints: local, tcp:host:port, or serial:device")
+    parser.add_argument("--servers", type=int, default=3, help="How many local servers to start (2 or more)")
+    parser.add_argument("--nodes", nargs="+", metavar="SPEC",
+                        help="Two or more endpoints: local, tcp:host:port, or serial:device (instead of --servers)")
     args = parser.parse_args()
-    with Session(args.nodes) as session:
+    with Session(args.nodes, args.servers) as session:
         with HTTPServer(("127.0.0.1", args.port), Handler) as server:
             server.session = session
             print(f"Blindfold: http://127.0.0.1:{server.server_port}/", flush=True)
-            print("Three workers ready. Ctrl-C stops the server and local workers.", flush=True)
+            print(f"{len(session.specs)} servers ready. Ctrl-C stops the web server and local servers.", flush=True)
             try:
                 server.serve_forever()
             except KeyboardInterrupt:

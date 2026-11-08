@@ -118,13 +118,15 @@ try {
   await screenshot("demo-ready");
   await evaluate('document.querySelector("#prompt").value = "patient reports knee"; document.querySelector("#run").click()');
   await until('!document.querySelector("#compare").disabled');
-  assert.equal(await evaluate('document.querySelector("#mode").textContent.includes("Fresh computation")'), true);
+  assert.equal(await evaluate('document.querySelector("#mode").textContent.includes("Live run")'), true);
   await screenshot("demo-live");
   await evaluate('document.querySelector("#compare").click()');
-  assert.equal(await evaluate('document.querySelector("#status").textContent.includes("Bit-exact")'), true);
+  assert.equal(await evaluate('document.querySelector("#status").textContent.includes("Exact match")'), true);
   await screenshot("demo-compare");
-  for (const node of ["A", "B", "C"]) {
-    if (node !== "A") {
+  const servers = await evaluate('[...document.querySelectorAll("#liar option")].map(o => o.value)');
+  assert.equal(servers.length, Number(process.env.BLINDFOLD_SERVERS || 3), "Server count on the page");
+  for (const node of servers) {
+    if (node !== servers[0]) {
       await evaluate('document.querySelector("#run").click()');
       await until('!document.querySelector("#compare").disabled');
     }
@@ -151,7 +153,7 @@ try {
   await screenshot("demo-failure");
   assert.deepEqual(errors, [], "Browser exceptions");
   assert.deepEqual([...external], [], "External page requests");
-  console.log("Browser checks passed: five slides, PDFs, live output, A/B/C tampering, replay, explicit failure, no external requests.");
+  console.log(`Browser checks passed: five slides, PDFs, live output, tampering at each of ${servers.length} servers, replay, explicit failure, no external requests.`);
 } finally {
   socket.close();
 }

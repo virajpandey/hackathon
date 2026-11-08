@@ -1,5 +1,5 @@
 const $ = s => document.querySelector(s);
-const nodes = ["A", "B", "C"];
+let nodes = [];
 let live = false, busy = false, current = null, recording = null, serial = 0;
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 const esc = s => String(s ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -15,19 +15,31 @@ function buttons() {
   $("#prompt").disabled = busy;
   $("#liar").disabled = busy || current?.mode === "recorded";
 }
+function setNodes(names) {
+  if (names.join() === nodes.join()) return;
+  const keep = $("#liar").value;
+  nodes = names;
+  $("#heads").innerHTML = nodes.map(n => `<th id="head-${n}">Server ${n}</th>`).join("");
+  $("#liar").innerHTML = nodes.map(n => `<option>${n}</option>`).join("");
+  $("#liar").value = nodes.includes(keep) ? keep : nodes[nodes.length > 1 ? 1 : 0];
+  $("#shares").innerHTML = Array.from({length: 4}, () => `<tr>${nodes.map(() => "<td>—</td>").join("")}</tr>`).join("");
+}
+const digits = () => nodes.length <= 4 ? 16 : nodes.length <= 8 ? 8 : 4;
+const cut = v => digits() < 16 ? v.slice(0, digits()) + "…" : v;
 function reset() {
   $("#shares").innerHTML = Array.from({length: 4}, () => `<tr>${nodes.map(() => "<td>—</td>").join("")}</tr>`).join("");
   nodes.forEach(n => $("#head-" + n).classList.remove("altered"));
   $("#outcome").textContent = "";
 }
 function locations(data) {
+  setNodes(Object.keys(data.nodes));
   nodes.forEach(n => {
     $("#head-" + n).innerHTML = `Server ${n}<small>${esc(data.nodes[n])}</small>`;
   });
 }
 function view(step) {
   if (!step) return;
-  $("#shares").innerHTML = Array.from({length: 4}, (_, i) => `<tr>${nodes.map(n => `<td>${esc(step.view.node_shares[n][i])}</td>`).join("")}</tr>`).join("");
+  $("#shares").innerHTML = Array.from({length: 4}, (_, i) => `<tr>${nodes.map(n => `<td>${esc(cut(step.view.node_shares[n][i]))}</td>`).join("")}</tr>`).join("");
   $("#sent").textContent = "Masked input sent: " + step.view.device_sends.slice(0, 2).join("  ");
 }
 function note(prompt, text) {
@@ -41,7 +53,7 @@ function compare() {
   const match = current.bit_exact;
   $("#evidence").innerHTML = `<table><thead><tr><th>Computed by</th><th>Output</th></tr></thead><tbody>
     <tr><td>Normal integer model</td><td class="text">${esc(current.normal_text.trim())}</td></tr>
-    <tr><td>Three servers, on pieces</td><td class="text">${esc(current.private_text.trim())}</td></tr>
+    <tr><td>${nodes.length} servers, on pieces</td><td class="text">${esc(current.private_text.trim())}</td></tr>
     </tbody></table>`;
   const height = $(".demo-footer").getBoundingClientRect().top - $("#evidence").getBoundingClientRect().top - 14;
   let size = 25;
@@ -67,7 +79,7 @@ async function display(data) {
   locations(data);
   $("#mode").textContent = data.mode === "recorded"
     ? `Recorded evidence · ${recording.recorded_at}\nNot a live computation`
-    : "Live run · three servers\nPlayed back at reading speed";
+    : `Live run · ${nodes.length} servers\nPlayed back at reading speed`;
   $("#mode").classList.toggle("alarm", data.mode === "recorded");
   const ticket = ++serial;
   note(data.prompt, data.prompt);
@@ -90,7 +102,7 @@ async function run(recorded = false) {
   busy = true; buttons(); reset();
   note($("#prompt").value, $("#prompt").value);
   $("#status").classList.remove("alarm");
-  $("#status").textContent = recorded ? "Loading recorded evidence" : "Running on three servers…";
+  $("#status").textContent = recorded ? "Loading recorded evidence" : `Running on ${nodes.length || "the"} servers…`;
   $("#mode").textContent = recorded ? "Recorded evidence" : "Live computation in progress";
   try {
     const data = recorded ? recording.honest : await request($("#prompt").value);
@@ -156,10 +168,10 @@ fetch("api/status").then(r => r.ok ? r.json() : null).then(data => {
   if (data) locations(data);
   if (!current && !busy) {
     $("#mode").textContent = live ? "Live engine ready\nNo computation run yet" : "Recorded evidence only";
-    $("#status").textContent = live ? "Ready · three servers connected" : "Start python3 run.py for live computation";
+    $("#status").textContent = live ? `Ready · ${nodes.length} servers connected` : "Start python3 run.py for live computation";
   }
   buttons();
 }).catch(() => { $("#mode").textContent = "Recorded evidence only"; $("#status").textContent = "Start python3 run.py for live computation"; buttons(); });
-fetch("data/recording.json").then(r => r.ok ? r.json() : null).then(data => { recording = data; buttons(); }).catch(() => {});
+fetch("data/recording.json").then(r => r.ok ? r.json() : null).then(data => { recording = data; if (data && !nodes.length) setNodes(Object.keys(data.honest.nodes)); buttons(); }).catch(() => {});
 addEventListener("resize", fit);
 fit(); reset(); buttons();

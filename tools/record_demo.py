@@ -16,7 +16,7 @@ for result in (honest, tampered):
     result["mode"] = "recorded"
     result["live"] = False
 data = {"recorded_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "Three local TCP worker processes; synthetic input; actual protocol execution",
+        "source": f"{len(session.specs)} local TCP server processes; synthetic input; actual protocol execution",
         "honest": honest, "tampered": tampered}
 target = ROOT / "web/data/recording.json"
 target.write_text(json.dumps(data, indent=2) + "\n")

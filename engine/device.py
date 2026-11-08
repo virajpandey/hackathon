@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The patient's device: holds the note, talks to 3 nodes it doesn't trust, and checks every answer.
+"""The patient's device: holds the note, talks to any number of nodes (2 or more) it doesn't trust, and checks every answer.
 
     python3 device.py tcp:127.0.0.1:9101 tcp:127.0.0.1:9102 serial:/dev/cu.usbmodem101 "patient reports chest"
     ... --lie=C@5            node C lies on character 5 (the device must catch it)
@@ -25,7 +25,7 @@ else:
     from node import P, frame, read_frame
 
 HERE = Path(__file__).resolve().parent
-NAMES = "ABC"
+NAMES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 HEX = lambda vals: [f"{v:016x}" for v in vals[:4]]
 
 
@@ -90,9 +90,9 @@ def rand():
     return secrets.randbelow(P)
 
 
-def shares(v):
-    a, b = rand(), rand()
-    return [a, b, (v - a - b) % P]
+def shares(v, n=3):
+    parts = [rand() for _ in range(n - 1)]
+    return parts + [(v - sum(parts)) % P]
 
 
 def centered(v):
@@ -127,8 +127,8 @@ class Device:
 
     def run(self, prompt, lie=None, pace=0.0, echo=True):
         """One private generation. Returns dict(text, steps, exact, caught, at)."""
-        alpha = rand()
-        al = shares(alpha)
+        alpha, n = rand(), len(self.links)
+        al = shares(alpha, n)
         for i, l in enumerate(self.links):
             lie_at = int(lie.split("@")[1]) if lie and lie.split("@")[0] == NAMES[i] else P - 1
             l.write(frame(b"S", [i, al[i], lie_at]))
@@ -148,9 +148,9 @@ class Device:
             rsh = None
             for vec in (r, [alpha * v % P for v in r], a, [alpha * v % P for v in a],
                         [v * v % P for v in a], [alpha * v * v % P for v in a]):
-                sh = [shares(v) for v in vec]
+                sh = [shares(v, n) for v in vec]
                 rsh = rsh or sh
-                for i in range(3):
+                for i in range(n):
                     per[i].extend(s[i] for s in sh)
             for i, l in enumerate(self.links):
                 l.write(frame(b"X", eps + per[i]))
@@ -161,7 +161,7 @@ class Device:
             d = [sum(g[k] for g in got) % P for k in range(h)]
             ok = all(sum(g[h + k] for g in got) % P == alpha * d[k] % P for k in range(h))
             # What each node actually received for the first input numbers: node A's share includes eps.
-            seen = {NAMES[i]: HEX([(s[i] + (e if i == 0 else 0)) % P for s, e in zip(rsh, eps)]) for i in range(3)}
+            seen = {NAMES[i]: HEX([(s[i] + (e if i == 0 else 0)) % P for s, e in zip(rsh, eps)]) for i in range(n)}
             view = dict(device_sends=HEX(eps), node_shares=seen, opened_square_mask=HEX(d))
             if not ok:
                 return dict(text=text, steps=steps, exact=exact, caught=True, at=step,
@@ -198,12 +198,13 @@ class Device:
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     opt = {a.split("=")[0][2:]: a.split("=", 1)[1] for a in sys.argv[1:] if a.startswith("--") and "=" in a}
-    specs = args[:3]
+    specs = [a for a in args if a.startswith(("tcp:", "serial:"))]  # 2 or more nodes
+    rest = [a for a in args if a not in specs]
     m = json.loads((HERE / "private_lm_model.json").read_text())
     dev = Device([Link(s) for s in specs], m)
-    prompt = "".join(c for c in (args[3] if len(args) > 3 else "patient reports ").lower() if c in dev.idx)
+    prompt = "".join(c for c in (rest[0] if rest else "patient reports ").lower() if c in dev.idx)
     pace = float(opt.get("pace", 0))
-    print("connected to 3 nodes: " + ", ".join(f"{NAMES[i]}={s}" for i, s in enumerate(specs)))
+    print(f"connected to {len(specs)} nodes: " + ", ".join(f"{NAMES[i]}={s}" for i, s in enumerate(specs)))
     if "trace" not in opt:
         t0 = time.time()
         res = dev.run(prompt, lie=opt.get("lie"), pace=pace)
@@ -212,14 +213,14 @@ def main():
             print(f"bit-exact with the normal model: {res['exact']}   every answer checked: True   "
                   f"{n} chars in {secs:.2f}s ({n / secs:.0f} chars/s), 2 client exchange phases per char")
         return
-    lie = opt.get("lie", "C@5")
+    lie = opt.get("lie", f"{NAMES[len(specs) - 1]}@5")
     honest = dev.run(prompt, pace=pace, echo=False)
     lying = dev.run(prompt, lie=lie, pace=pace, echo=False)
     normal = dev.plain_text(prompt)
     exact = honest["exact"] and honest["text"] == normal
     trace = dict(
         prompt=prompt, normal_text=normal, private_text=honest["text"], bit_exact=exact,
-        device_trips_per_char=2, node_exchanges_per_char=0, nodes=list(NAMES), prime="2^61-1",
+        device_trips_per_char=2, node_exchanges_per_char=0, nodes=list(NAMES[:len(specs)]), prime="2^61-1",
         hardware={NAMES[i]: s for i, s in enumerate(specs)},
         steps=honest["steps"],
         cheat=dict(node=lie.split("@")[0], at_char=int(lie.split("@")[1]), caught=lying["caught"],
@@ -228,7 +229,7 @@ def main():
                               for k in ("E", "W1", "b1", "W2", "b2")),
                    architecture="last 10 chars -> embed -> linear -> square -> linear",
                    corpus="synthetic patient notes from templates (no real data)"),
-        label=("Three node programs over TCP or USB. The client creates fresh helper values and relays the masked "
+        label=(f"{len(specs)} node programs over TCP or USB. The client creates fresh helper values and relays the masked "
                "square opening; two client exchange phases per character. A tiny synthetic-note model, not an LLM."),
     )
     Path(opt["trace"]).write_text(json.dumps(trace, indent=1))

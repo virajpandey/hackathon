@@ -6,7 +6,7 @@ import threading
 import time
 from pathlib import Path
 
-from .device import Device, Link
+from .device import NAMES, Device, Link
 
 LIE_AFTER = 12  # characters accepted before an injected change
 
@@ -17,8 +17,10 @@ PARAMETERS = sum(len(row) if isinstance(row, list) else 1
 
 
 class Session:
-    def __init__(self, specs=None):
-        self.specs = specs or ["local"] * 3
+    def __init__(self, specs=None, servers=3):
+        self.specs = specs or ["local"] * servers
+        if not 2 <= len(self.specs) <= len(NAMES):
+            raise ValueError(f"Use 2 to {len(NAMES)} servers")
         self.processes = []
         self.links = []
         self.lock = threading.Lock()
@@ -66,7 +68,7 @@ class Session:
     def info(self):
         locations = {name: ("local process" if spec == "local" else
                            "USB chip" if spec.startswith("serial:") else "TCP server")
-                     for name, spec in zip("ABC", self.specs)}
+                     for name, spec in zip(NAMES, self.specs)}
         return {"live": True, "nodes": locations, "parameters": PARAMETERS,
                 "client_exchange_phases_per_character": 2}
 
@@ -76,8 +78,8 @@ class Session:
         prompt = "".join(c for c in prompt.lower() if c in self.device.idx and c != "\n").strip()
         if not prompt:
             raise ValueError("Enter a short note in English")
-        if lie not in (None, "A", "B", "C"):
-            raise ValueError("Choose node A, B, or C")
+        if lie is not None and lie not in NAMES[:len(self.specs)]:
+            raise ValueError("Choose one of the servers")
         with self.lock:
             normal = self.device.plain_text(prompt)
             # Let some honest text through first so the stop is visible mid-sentence.

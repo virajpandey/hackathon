@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "engine"))
-from device import Device, centered, shares
+from device import NAMES, Device, centered, shares
 from node import Node, P, frame, read_frame
 
 MODEL = json.loads((Path(__file__).resolve().parents[1] / "engine/private_lm_model.json").read_text())
@@ -43,11 +43,15 @@ class ProtocolTests(unittest.TestCase):
             self.assertEqual(centered(sum(parts)), value)
             self.assertTrue(all(0 <= v < P for v in parts))
         self.assertNotEqual(shares(123), shares(123))
+        for n in (2, 5, 7):
+            self.assertEqual(len(shares(-9, n)), n)
+            self.assertEqual(centered(sum(shares(-9, n))), -9)
 
     def test_honest_logits_match_plaintext(self):
-        for prompt in ["patient reports chest", "patient reports knee", "patient reports a"]:
-            with self.subTest(prompt=prompt):
-                device = Device([LocalLink() for _ in range(3)], MODEL)
+        for n in (2, 3, 5, 7):
+          for prompt in ["patient reports chest", "patient reports knee", "patient reports a"]:
+            with self.subTest(servers=n, prompt=prompt):
+                device = Device([LocalLink() for _ in range(n)], MODEL)
                 result = device.run(prompt, echo=False)
                 self.assertTrue(result["exact"])
                 self.assertFalse(result["caught"])
@@ -55,19 +59,21 @@ class ProtocolTests(unittest.TestCase):
                 self.assertEqual(len(result["steps"]), len(result["text"]) - len(prompt))
 
     def test_each_workers_injected_lie_is_rejected_before_output(self):
-        for node in "ABC":
-            with self.subTest(node=node):
-                device = Device([LocalLink() for _ in range(3)], MODEL)
+        for n in (2, 3, 5, 7):
+          for node in NAMES[:n]:
+            with self.subTest(servers=n, node=node):
+                device = Device([LocalLink() for _ in range(n)], MODEL)
                 result = device.run("patient reports chest", lie=f"{node}@0", echo=False)
                 self.assertTrue(result["caught"])
                 self.assertEqual(result["steps"], [])
                 self.assertEqual(result["text"], "patient reports chest")
 
     def test_failed_opening_is_not_broadcast(self):
-        links = [LocalLink(tamper_opening=i == 1) for i in range(3)]
-        result = Device(links, MODEL).run("patient reports chest", echo=False)
-        self.assertTrue(result["caught"])
-        self.assertTrue(all(b"O" not in link.sent for link in links))
+        for n in (2, 3, 5):
+            links = [LocalLink(tamper_opening=i == n - 1) for i in range(n)]
+            result = Device(links, MODEL).run("patient reports chest", echo=False)
+            self.assertTrue(result["caught"])
+            self.assertTrue(all(b"O" not in link.sent for link in links))
 
     def test_fresh_randomness_same_answer(self):
         device = Device([LocalLink() for _ in range(3)], MODEL)
@@ -88,7 +94,7 @@ class ProtocolTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             Node(MODEL).handle(b"X", [0])
         with self.assertRaises(ValueError):
-            Node(MODEL).handle(b"S", [3, 0, 0])
+            Node(MODEL).handle(b"S", [26, 0, 0])
 
 
 if __name__ == "__main__":

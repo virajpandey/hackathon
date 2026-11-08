@@ -14,7 +14,8 @@ python3 run.py
 ```
 
 Open **http://127.0.0.1:8765/**. The launcher starts three independent Python server
-processes on loopback TCP ports. Ctrl-C stops them and the web server.
+processes on loopback TCP ports by default; `python3 run.py --servers 5` starts five.
+Any number from 2 up works. Ctrl-C stops them and the web server.
 Use `python3 run.py --port 8766` if the default port is occupied.
 
 | Page | Purpose |
@@ -45,7 +46,8 @@ It is not a general-purpose language model.
 
 ## What is implemented
 
-The client splits input into three additive shares modulo `2^61 − 1`.
+The client splits input into one additive share per server, modulo `2^61 − 1`.
+The number of servers is a setting, not a limit: the tests run 2, 3, 5 and 7.
 Each server holds public model weights and one share. Multiplication uses fresh
 square pairs, and opened values and outputs are checked with MAC tags. The client
 generates preprocessing material and relays the masked square opening.
@@ -55,10 +57,10 @@ setup. This is not yet a direct server-to-server mesh. The reference computation
 is intentionally retained for demonstrating exactness, not for benchmarking a
 production client.
 
-Any one or two input shares do not reconstruct the input; all three together do.
+Any set of shares missing even one does not reconstruct the input; all of them together do.
 That privacy argument assumes independent servers and fresh preprocessing. The
-default three processes on one laptop demonstrate the arithmetic, not three
-independent trust domains. The client knows the input and preprocessing by design.
+default processes on one laptop demonstrate the arithmetic, not independent
+trust domains. The client knows the input and preprocessing by design.
 The check detects a bad computation; the highlighted server is the one the demo
 deliberately changed, not an identity discovered by the check.
 
@@ -96,6 +98,7 @@ Use `BLINDFOLD_URL` to point it at a different local port.
 The original ESP32 sketch and public integer weights are in `hardware/espnode/`.
 This cleanup does not reflash or test your chips.
 
+Any mix of local processes, TCP servers and chips works, two or more in total.
 For one already-flashed chip on macOS or Linux:
 
 ```sh
